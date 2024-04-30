@@ -1,0 +1,7 @@
+*.pt
+/training/models
+/preprocessed/dev
+/preprocessed/test
+/preprocessed/train
+/data
+token.txt
