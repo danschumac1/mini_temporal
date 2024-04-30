@@ -22,7 +22,7 @@ print(f"GPU Name: {torch.cuda.get_device_name(0)}")  # Should print the name of 
 # IMPORTS
 # =============================================================================
 import os
-os.chdir('/home/dan/DeepLearning/mini_temporal')
+os.chdir('/home/dan/mini_temporal')
 
 import json
 import torch
@@ -113,9 +113,9 @@ eval_dataloader = DataLoader(
 
 #  CHECK TO SEE WHAT THE BATCH LOOKS LIKE
 b = next(iter(train_dataloader))
-b.keys(), b['input_ids'][0][:25], b['labels'][0][:25]
-b['input_ids'].shape
-b['labels'].shape
+# b.keys(), b['input_ids'][0][:25], b['labels'][0][:25]
+# b['input_ids'].shape
+# b['labels'].shape
 print('DATALOADERS DONE')
 
 #endregion
@@ -359,7 +359,7 @@ print('TRAINING DONE')
 
 # Model name (gemma or llama)
 
-file_path = f'./training/models/gemma_{args.model_context}_context_model.pt'
+file_path = f'./training/models/mini_{args.model_context}_context_model.pt'
 
 torch.save(model, file_path)
 print(f'model saved at {file_path}')
