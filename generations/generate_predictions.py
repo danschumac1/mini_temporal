@@ -2,9 +2,6 @@ import os
 # AN ERROR TOLD ME TO DO THIS?
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
-
-
-
 import sys
 import torch
 import pandas as pd
@@ -48,7 +45,8 @@ device = 'cuda'
 print(f"Using {torch.cuda.get_device_name(device)}")
 
 # LOAD DATASET AND TOKEN
-dataset_folder = './data/final/test/'
+dataset_folder = './data/final/test'
+print('\n\n',f'{dataset_folder}/{args.file}', '\n\n')
 dataset = pd.read_json(f'{dataset_folder}/{args.file}', lines=True)
 
 
@@ -59,7 +57,7 @@ with open('./generations/token.txt', 'r') as file:
 if args.model == 'base': # out of the box
     try:
         model = AutoModelForCausalLM.from_pretrained(
-            "google/gemma-2b-it",
+            "google/gemma-2b",# @$@ DELETE "-IT" FOR NIT
             torch_dtype=torch.bfloat16,
         ).to(device)
     except Exception as e:
@@ -67,7 +65,7 @@ if args.model == 'base': # out of the box
         sys.exit(1)
 else: # one of our fine tuned models saved as a .pt file
     try:
-        model_folder = '/home/dan/DeepLearning/TemporalUnderstandingInLLMs/temporalUnderstanding_repo/models'
+        model_folder = '/home/dan/DeepLearning/mini_temporal/training/models'
         model_path = f'{model_folder}/{args.model}'
         model = torch.load(model_path, map_location=device,).to(device)
     except Exception as e:
@@ -93,9 +91,9 @@ for i, batch in enumerate(loader):
     decoded_responses = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
 
     for j, item in enumerate(decoded_responses):
-        # answer = item.split('\nmodel')[1]
-        # question = item[5:].split('\nmodel')[0]
-        print(json.dumps({'INDEX': i * len(decoded_responses) + j, 'OUTPUT': item}))
+        answer = item.split('\nmodel')[1]
+        question = item[5:].split('\nmodel')[0]
+        print(json.dumps({'INDEX': i * len(decoded_responses) + j, 'answer':answer, 'OUTPUT': item}))
 
     # Free up memory
     del input_ids, attention_mask, generated_ids, decoded_responses

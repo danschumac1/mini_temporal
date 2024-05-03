@@ -11,8 +11,24 @@ Created on 04/29/2024
 # =============================================================================
 import pandas as pd
 import string
+import argparse
 import os
-os.chdir('/home/dan/DeepLearning/mini_temporal')
+import json
+os.chdir('/home/dan/DeepLearning/mini_temporal/eval')
+
+#endregion
+#region # ARGPARSE
+# =============================================================================
+# ARGPARSE
+# =============================================================================
+def parse_args():
+    parser = argparse.ArgumentParser(description="Temporal Understanding in LLMs Training Script")
+
+    parser.add_argument('--file', type=str, required=True, help='file to score')
+    parser.add_argument('--sub_folder', type=str, required=False, default=3, help= 'What folder should the corrections be saved in?')
+    return parser.parse_args()
+
+args = parse_args()
 
 #endregion
 #region # HELPER FUNCTIONS
@@ -20,43 +36,6 @@ os.chdir('/home/dan/DeepLearning/mini_temporal')
 # HELPER FUNCTIONS
 # =============================================================================
 
-# def exact_match_f1(pred, answer_list):
-#     """
-#     Calculate the highest F1 score for a given prediction against a list of potential answers.
-
-#     Parameters:
-#     - pred (str): The prediction string to be evaluated.
-#     - answer_list (list of str): A list of answer strings against which the prediction is evaluated.
-    
-#     Returns:
-#     - float: The highest F1 score achieved against any of the answers in the list.
-
-#     Each answer is compared to the prediction by splitting the strings into words and evaluating the overlap.
-#     The best F1 score is determined by comparing the harmonic mean of precision and recall for each answer.
-#     """
-#     pred_words = set(pred.lower().split())  # Convert the prediction into a set of words for faster operations
-#     best_f1 = 0  # Initialize best F1 score
-
-#     # Evaluate each answer in the list against the prediction
-#     for answer in answer_list:
-#         answer_words = set(answer.lower().split())  # Convert answer into a set of words
-#         TP = len(answer_words.intersection(pred_words))
-#         FP = len(pred_words.difference(answer_words))
-#         FN = len(answer_words.difference(pred_words))
-        
-#         # Check if any true positives to avoid division by zero in precision and recall
-#         if TP == 0:
-#             f1 = 0
-#         else:
-#             prec = TP / (TP + FP) if TP + FP > 0 else 0
-#             rec = TP / (TP + FN) if TP + FN > 0 else 0
-#             f1 = 2 * ((prec * rec) / (prec + rec)) if (prec + rec) > 0 else 0
-
-#         # Update best F1 score if the current F1 score is higher
-#         if f1 > best_f1:
-#             best_f1 = f1
-            
-#     return best_f1
 def exact_match_f1(pred, answer_list):
     pred_words = set(pred.lower().split())  # Convert the prediction into a set of words for faster operations
     best_f1 = 0  # Initialize best F1 score
@@ -81,6 +60,7 @@ def exact_match_f1(pred, answer_list):
             best_f1 = f1
 
     return best_f1
+
 def contains_metric(pred, answer_list):
     """
     Checks if any answer in the list is contained within the prediction after removing punctuation
@@ -106,6 +86,16 @@ def contains_metric(pred, answer_list):
 
     return 0
 
+def evaluate2(preds, answers):
+    f1s = []
+    contains = []
+    for pred, answer in zip(preds, answers):
+        print('PRED:',pred)
+        print('ANS:',answer)
+        em = exact_match_f1(pred, answer)
+        print(em)
+        print()
+
 def evaluate(k, df):
     f1s = []
     contains = []
@@ -126,32 +116,28 @@ def evaluate(k, df):
 # =============================================================================
 # LOAD DATA
 # =============================================================================
-actual = pd.read_json('eval/eval_data/test.jsonl', lines=True)
+# GET THE CORRECT ANSWERS
+actual = pd.read_json('./eval_data/test.jsonl', lines=True)
 actual = actual.to_dict(orient='list')[0]
-model_generations = pd.read_json('eval/eval_data/no_t_no.jsonl',  lines=True)
-preds =[]
-for val in model_generations.T[0]:
-    preds.append(val)
+actual = [ans.split('__or__') for ans in actual]
 
-#endregion
-#region # GET SCORES
-# =============================================================================
-# GET SCORES
-# =============================================================================
-evaluate('name',preds)
-for p, a in zip(preds[:50], actual[:50]):
-    if exact_match_f1(p,a) == 1:
-        print(p,a)
-    
+# GET THE PREDICTIONS
+# print('\n\n',f'./eval_data/{args.sub_folder}/{args.file}','\n\n')
 
-contains_metric(preds[0], actual[0])
+model_generations = pd.read_json(f'./eval_data/{args.sub_folder}/{args.file}',  lines=True)
 
+# print('\n\n', model_generations.columns,'\n\n')
 
+preds = [pred for pred in model_generations['PREDICTION']]
 
-print('BASELINES | BASELINES | BASELINES | BASELINES | BASELINES | BASELINES | ')
-for k, df in baselines_dict.items():  # Corrected line
-    evaluate(k, df)
-    
-print('TRAINED | TRAINED | TRAINED | TRAINED | TRAINED | TRAINED | TRAINED | ')
-for k, df in trained_dict.items():  # Corrected line
-    evaluate(k, df)
+f1s = []
+contains = []
+for pred, ans_list in zip(preds, actual):
+    f1s.append(exact_match_f1(pred, ans_list))
+    contains.append(contains_metric(pred, ans_list))
+
+avg_f1 = sum(f1s) / len(f1s)
+avg_contains = sum(contains) / len(contains)
+avg_f1
+
+print(json.dumps({'NAME':args.file[:-6], 'F1': avg_f1, 'ACC':avg_contains}))
