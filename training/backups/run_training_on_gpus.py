@@ -56,7 +56,7 @@ def parse_args():
     parser.add_argument('--model_context', type=str, required=True, help='Model context')
     parser.add_argument('--batch_size', type=int, required=False, default=1, help='How many pass at model at once?')
     parser.add_argument('--epochs', type=int, required=False, default=3, help= 'how many epochs do you wish to train for?')
-
+    parser.add_argument('--base_model', type = str, required=False, default = 'gemma-2b-it')
     return parser.parse_args()
 
 args = parse_args()
@@ -127,7 +127,7 @@ print('DATALOADERS DONE')
 gradient_accumulation_steps = 32 // batch_size
 
 # Define base model paths
-model_id = 'google/gemma-2b-it'
+model_id = f'google/{args.base_model}'
 
 max_seq_len = 1024
 
@@ -171,7 +171,8 @@ model = AutoModelForCausalLM.from_pretrained(
     config.model_id,
     device_map='auto',  # Automatically distribute the model to the available GPUs
     torch_dtype=torch.bfloat16,  # Use bfloat16 for computation
-    use_cache=False
+    use_cache=False,
+    token=token
 )
 
 
@@ -359,7 +360,7 @@ print('TRAINING DONE')
 
 # Model name (gemma or llama)
 
-file_path = f'./training/models/mini_{args.model_context}_context_model.pt'
+file_path = f'./training/models/nit_trained/nit_mini_{args.model_context}_context_model.pt'
 
 torch.save(model, file_path)
 print(f'model saved at {file_path}')

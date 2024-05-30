@@ -1,0 +1,691 @@
+
+\n\nTQE: TRAINING gemma-2b WITH wrong_date_context\n\n
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240528_233502-hysuzdeg
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run wild-plant-99
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/hysuzdeg/workspace
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.23s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.74it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.49it/s]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+Map:   0%|          | 0/350 [00:00<?, ? examples/s]Map: 100%|██████████| 350/350 [00:00<00:00, 9598.45 examples/s]
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+<class 'str'>
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 5939.71 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Data preprocessed
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+  0%|          | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  8%|▊         | 1/12 [01:28<16:11, 88.30s/it]                                                8%|▊         | 1/12 [01:28<16:11, 88.30s/it] 17%|█▋        | 2/12 [02:56<14:40, 88.02s/it]                                               17%|█▋        | 2/12 [02:56<14:40, 88.02s/it] 25%|██▌       | 3/12 [04:26<13:21, 89.05s/it]                                               25%|██▌       | 3/12 [04:26<13:21, 89.05s/it] 33%|███▎      | 4/12 [06:01<12:10, 91.34s/it]                                               33%|███▎      | 4/12 [06:01<12:10, 91.34s/it] 42%|████▏     | 5/12 [07:27<10:25, 89.37s/it]                                               42%|████▏     | 5/12 [07:27<10:25, 89.37s/it] 50%|█████     | 6/12 [08:55<08:53, 88.95s/it]                                               50%|█████     | 6/12 [08:55<08:53, 88.95s/it] 58%|█████▊    | 7/12 [10:31<07:37, 91.48s/it]                                               58%|█████▊    | 7/12 [10:31<07:37, 91.48s/it] 67%|██████▋   | 8/12 [11:55<05:55, 88.97s/it]                                               67%|██████▋   | 8/12 [11:55<05:55, 88.97s/it] 75%|███████▌  | 9/12 [13:23<04:26, 88.81s/it]                                               75%|███████▌  | 9/12 [13:23<04:26, 88.81s/it] 83%|████████▎ | 10/12 [14:56<02:59, 89.95s/it]                                                83%|████████▎ | 10/12 [14:56<02:59, 89.95s/it] 92%|█████████▏| 11/12 [16:23<01:29, 89.11s/it]                                                92%|█████████▏| 11/12 [16:23<01:29, 89.11s/it]100%|██████████| 12/12 [17:48<00:00, 87.76s/it]                                               100%|██████████| 12/12 [17:48<00:00, 87.76s/it]                                               100%|██████████| 12/12 [17:48<00:00, 87.76s/it]100%|██████████| 12/12 [17:48<00:00, 89.03s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 2.3821, 'grad_norm': 1.7093238830566406, 'learning_rate': 1.8379281537176274e-05, 'epoch': 0.36}
+{'loss': 2.3348, 'grad_norm': 1.6586006879806519, 'learning_rate': 1.670843776106934e-05, 'epoch': 0.73}
+{'loss': 2.3456, 'grad_norm': 1.729982614517212, 'learning_rate': 1.5037593984962406e-05, 'epoch': 1.09}
+{'loss': 2.3122, 'grad_norm': 1.645404577255249, 'learning_rate': 1.3366750208855472e-05, 'epoch': 1.45}
+{'loss': 2.2978, 'grad_norm': 1.711371898651123, 'learning_rate': 1.1695906432748539e-05, 'epoch': 1.82}
+{'loss': 2.3126, 'grad_norm': 1.72453773021698, 'learning_rate': 1.0025062656641604e-05, 'epoch': 2.18}
+{'loss': 2.2434, 'grad_norm': 1.7508615255355835, 'learning_rate': 8.35421888053467e-06, 'epoch': 2.55}
+{'loss': 2.3062, 'grad_norm': 1.7300310134887695, 'learning_rate': 6.683375104427736e-06, 'epoch': 2.91}
+{'loss': 2.2608, 'grad_norm': 1.7408018112182617, 'learning_rate': 5.012531328320802e-06, 'epoch': 3.27}
+{'loss': 2.2358, 'grad_norm': 1.6852985620498657, 'learning_rate': 3.341687552213868e-06, 'epoch': 3.64}
+{'loss': 2.2417, 'grad_norm': 1.706752061843872, 'learning_rate': 1.670843776106934e-06, 'epoch': 4.0}
+{'loss': 2.2498, 'grad_norm': 1.7363048791885376, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 1069.6699, 'train_samples_per_second': 1.963, 'train_steps_per_second': 0.011, 'train_loss': 2.2935616970062256, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/TQE/gemma-2b/wrong_date_context
+wandb: - 299.301 MB of 299.301 MB uploadedwandb: \ 299.301 MB of 299.301 MB uploadedwandb: | 299.335 MB of 299.363 MB uploaded (0.003 MB deduped)wandb: / 299.335 MB of 299.363 MB uploaded (0.003 MB deduped)wandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:   train/global_step ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:     train/grad_norm ▅▂▇▁▅▆█▇▇▄▅▇
+wandb: train/learning_rate █▇▇▆▅▅▄▄▃▂▂▁
+wandb:          train/loss █▆▆▅▄▅▁▄▂▁▁▂
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 3941248391823360.0
+wandb:              train/epoch 4.36364
+wandb:        train/global_step 12
+wandb:          train/grad_norm 1.7363
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 2.2498
+wandb:               train_loss 2.29356
+wandb:            train_runtime 1069.6699
+wandb: train_samples_per_second 1.963
+wandb:   train_steps_per_second 0.011
+wandb: 
+wandb: 🚀 View run wild-plant-99 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/hysuzdeg/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 6 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240528_233502-hysuzdeg/logs
+\n\nTQE: TRAINING gemma-2b WITH no_context\n\n
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240528_235310-xsye2iw5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dauntless-violet-100
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/xsye2iw5/workspace
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.68it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.43it/s]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+Map:   0%|          | 0/350 [00:00<?, ? examples/s]Map: 100%|██████████| 350/350 [00:00<00:00, 21115.10 examples/s]
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+<class 'str'>
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 7894.91 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Data preprocessed
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+  0%|          | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  8%|▊         | 1/12 [00:21<03:54, 21.35s/it]                                                8%|▊         | 1/12 [00:21<03:54, 21.35s/it] 17%|█▋        | 2/12 [00:42<03:31, 21.11s/it]                                               17%|█▋        | 2/12 [00:42<03:31, 21.11s/it] 25%|██▌       | 3/12 [01:03<03:10, 21.19s/it]                                               25%|██▌       | 3/12 [01:03<03:10, 21.19s/it] 33%|███▎      | 4/12 [01:24<02:49, 21.17s/it]                                               33%|███▎      | 4/12 [01:24<02:49, 21.17s/it] 42%|████▏     | 5/12 [01:45<02:27, 21.12s/it]                                               42%|████▏     | 5/12 [01:45<02:27, 21.12s/it] 50%|█████     | 6/12 [02:06<02:06, 21.11s/it]                                               50%|█████     | 6/12 [02:06<02:06, 21.11s/it] 58%|█████▊    | 7/12 [02:28<01:46, 21.24s/it]                                               58%|█████▊    | 7/12 [02:28<01:46, 21.24s/it] 67%|██████▋   | 8/12 [02:48<01:23, 20.91s/it]                                               67%|██████▋   | 8/12 [02:48<01:23, 20.91s/it] 75%|███████▌  | 9/12 [03:09<01:02, 20.99s/it]                                               75%|███████▌  | 9/12 [03:09<01:02, 20.99s/it] 83%|████████▎ | 10/12 [03:29<00:41, 20.70s/it]                                                83%|████████▎ | 10/12 [03:29<00:41, 20.70s/it] 92%|█████████▏| 11/12 [03:50<00:20, 20.74s/it]                                                92%|█████████▏| 11/12 [03:50<00:20, 20.74s/it]100%|██████████| 12/12 [04:12<00:00, 21.04s/it]                                               100%|██████████| 12/12 [04:12<00:00, 21.04s/it]                                               100%|██████████| 12/12 [04:12<00:00, 21.04s/it]100%|██████████| 12/12 [04:12<00:00, 21.03s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 3.5386, 'grad_norm': 3.650965690612793, 'learning_rate': 1.8379281537176274e-05, 'epoch': 0.36}
+{'loss': 3.4863, 'grad_norm': 3.2711756229400635, 'learning_rate': 1.670843776106934e-05, 'epoch': 0.73}
+{'loss': 3.5067, 'grad_norm': 3.5854763984680176, 'learning_rate': 1.5037593984962406e-05, 'epoch': 1.09}
+{'loss': 3.2695, 'grad_norm': 2.3154187202453613, 'learning_rate': 1.3366750208855472e-05, 'epoch': 1.45}
+{'loss': 3.2591, 'grad_norm': 2.0782887935638428, 'learning_rate': 1.1695906432748539e-05, 'epoch': 1.82}
+{'loss': 3.2752, 'grad_norm': 2.2521398067474365, 'learning_rate': 1.0025062656641604e-05, 'epoch': 2.18}
+{'loss': 3.1918, 'grad_norm': 1.8483725786209106, 'learning_rate': 8.35421888053467e-06, 'epoch': 2.55}
+{'loss': 3.1728, 'grad_norm': 1.8484513759613037, 'learning_rate': 6.683375104427736e-06, 'epoch': 2.91}
+{'loss': 3.1336, 'grad_norm': 1.9863330125808716, 'learning_rate': 5.012531328320802e-06, 'epoch': 3.27}
+{'loss': 3.0736, 'grad_norm': 1.8117053508758545, 'learning_rate': 3.341687552213868e-06, 'epoch': 3.64}
+{'loss': 3.1113, 'grad_norm': 1.7489306926727295, 'learning_rate': 1.670843776106934e-06, 'epoch': 4.0}
+{'loss': 3.0855, 'grad_norm': 1.7132889032363892, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 253.6185, 'train_samples_per_second': 8.28, 'train_steps_per_second': 0.047, 'train_loss': 3.258657614390055, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/TQE/gemma-2b/no_context
+wandb: - 299.301 MB of 299.301 MB uploadedwandb: \ 299.301 MB of 299.328 MB uploadedwandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:   train/global_step ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:     train/grad_norm █▇█▃▂▃▁▁▂▁▁▁
+wandb: train/learning_rate █▇▇▆▅▅▄▄▃▂▂▁
+wandb:          train/loss █▇█▄▄▄▃▂▂▁▂▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 785975072931840.0
+wandb:              train/epoch 4.36364
+wandb:        train/global_step 12
+wandb:          train/grad_norm 1.71329
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 3.0855
+wandb:               train_loss 3.25866
+wandb:            train_runtime 253.6185
+wandb: train_samples_per_second 8.28
+wandb:   train_steps_per_second 0.047
+wandb: 
+wandb: 🚀 View run dauntless-violet-100 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/xsye2iw5/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 4 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240528_235310-xsye2iw5/logs
+\n\nTQE: TRAINING gemma-2b WITH random_context\n\n
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240528_235740-sprpnjr7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run lucky-sponge-101
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/sprpnjr7/workspace
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.69it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.44it/s]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+Map:   0%|          | 0/350 [00:00<?, ? examples/s]Map: 100%|██████████| 350/350 [00:00<00:00, 10346.09 examples/s]
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+<class 'str'>
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 8050.69 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Data preprocessed
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+  0%|          | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  8%|▊         | 1/12 [01:22<15:04, 82.18s/it]                                                8%|▊         | 1/12 [01:22<15:04, 82.18s/it] 17%|█▋        | 2/12 [02:51<14:25, 86.57s/it]                                               17%|█▋        | 2/12 [02:51<14:25, 86.57s/it] 25%|██▌       | 3/12 [04:25<13:28, 89.85s/it]                                               25%|██▌       | 3/12 [04:25<13:28, 89.85s/it] 33%|███▎      | 4/12 [06:01<12:17, 92.16s/it]                                               33%|███▎      | 4/12 [06:01<12:17, 92.16s/it] 42%|████▏     | 5/12 [07:32<10:42, 91.75s/it]                                               42%|████▏     | 5/12 [07:32<10:42, 91.75s/it] 50%|█████     | 6/12 [09:01<09:06, 91.03s/it]                                               50%|█████     | 6/12 [09:01<09:06, 91.03s/it] 58%|█████▊    | 7/12 [10:30<07:30, 90.07s/it]                                               58%|█████▊    | 7/12 [10:30<07:30, 90.07s/it] 67%|██████▋   | 8/12 [11:58<05:58, 89.51s/it]                                               67%|██████▋   | 8/12 [11:58<05:58, 89.51s/it] 75%|███████▌  | 9/12 [13:28<04:29, 89.82s/it]                                               75%|███████▌  | 9/12 [13:28<04:29, 89.82s/it] 83%|████████▎ | 10/12 [14:51<02:54, 87.49s/it]                                                83%|████████▎ | 10/12 [14:51<02:54, 87.49s/it] 92%|█████████▏| 11/12 [16:21<01:28, 88.35s/it]                                                92%|█████████▏| 11/12 [16:21<01:28, 88.35s/it]100%|██████████| 12/12 [17:53<00:00, 89.61s/it]                                               100%|██████████| 12/12 [17:53<00:00, 89.61s/it]                                               100%|██████████| 12/12 [17:53<00:00, 89.61s/it]100%|██████████| 12/12 [17:53<00:00, 89.49s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 2.4278, 'grad_norm': 1.6701804399490356, 'learning_rate': 1.8379281537176274e-05, 'epoch': 0.36}
+{'loss': 2.4261, 'grad_norm': 1.673949956893921, 'learning_rate': 1.670843776106934e-05, 'epoch': 0.73}
+{'loss': 2.4525, 'grad_norm': 1.6771082878112793, 'learning_rate': 1.5037593984962406e-05, 'epoch': 1.09}
+{'loss': 2.3583, 'grad_norm': 1.6330862045288086, 'learning_rate': 1.3366750208855472e-05, 'epoch': 1.45}
+{'loss': 2.3351, 'grad_norm': 1.638527750968933, 'learning_rate': 1.1695906432748539e-05, 'epoch': 1.82}
+{'loss': 2.3853, 'grad_norm': 1.6886496543884277, 'learning_rate': 1.0025062656641604e-05, 'epoch': 2.18}
+{'loss': 2.3687, 'grad_norm': 1.7588398456573486, 'learning_rate': 8.35421888053467e-06, 'epoch': 2.55}
+{'loss': 2.3336, 'grad_norm': 1.7038054466247559, 'learning_rate': 6.683375104427736e-06, 'epoch': 2.91}
+{'loss': 2.2894, 'grad_norm': 1.6879881620407104, 'learning_rate': 5.012531328320802e-06, 'epoch': 3.27}
+{'loss': 2.3506, 'grad_norm': 1.7251355648040771, 'learning_rate': 3.341687552213868e-06, 'epoch': 3.64}
+{'loss': 2.3174, 'grad_norm': 1.7887980937957764, 'learning_rate': 1.670843776106934e-06, 'epoch': 4.0}
+{'loss': 2.3538, 'grad_norm': 1.744350552558899, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 1075.2092, 'train_samples_per_second': 1.953, 'train_steps_per_second': 0.011, 'train_loss': 2.366558094819387, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/TQE/gemma-2b/random_context
+wandb: - 299.301 MB of 299.301 MB uploadedwandb: \ 299.301 MB of 299.325 MB uploadedwandb: | 299.328 MB of 299.328 MB uploadedwandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:   train/global_step ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:     train/grad_norm ▃▃▃▁▁▃▇▄▃▅█▆
+wandb: train/learning_rate █▇▇▆▅▅▄▄▃▂▂▁
+wandb:          train/loss ▇▇█▄▃▅▄▃▁▄▂▄
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 3931334079012864.0
+wandb:              train/epoch 4.36364
+wandb:        train/global_step 12
+wandb:          train/grad_norm 1.74435
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 2.3538
+wandb:               train_loss 2.36656
+wandb:            train_runtime 1075.2092
+wandb: train_samples_per_second 1.953
+wandb:   train_steps_per_second 0.011
+wandb: 
+wandb: 🚀 View run lucky-sponge-101 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/sprpnjr7/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 4 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240528_235740-sprpnjr7/logs
+\n\nTQE: TRAINING gemma-2b WITH relevant_context\n\n
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240529_001551-4fjcqfu8
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clean-bush-102
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/4fjcqfu8/workspace
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.70it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.45it/s]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+Map:   0%|          | 0/350 [00:00<?, ? examples/s]Map: 100%|██████████| 350/350 [00:00<00:00, 8728.37 examples/s]
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+<class 'str'>
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 7554.58 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Data preprocessed
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+  0%|          | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  8%|▊         | 1/12 [01:32<16:56, 92.39s/it]                                                8%|▊         | 1/12 [01:32<16:56, 92.39s/it] 17%|█▋        | 2/12 [03:01<15:06, 90.60s/it]                                               17%|█▋        | 2/12 [03:01<15:06, 90.60s/it] 25%|██▌       | 3/12 [04:32<13:36, 90.69s/it]                                               25%|██▌       | 3/12 [04:32<13:36, 90.69s/it] 33%|███▎      | 4/12 [06:07<12:19, 92.42s/it]                                               33%|███▎      | 4/12 [06:07<12:19, 92.42s/it] 42%|████▏     | 5/12 [07:33<10:30, 90.10s/it]                                               42%|████▏     | 5/12 [07:33<10:30, 90.10s/it] 50%|█████     | 6/12 [09:02<08:57, 89.58s/it]                                               50%|█████     | 6/12 [09:02<08:57, 89.58s/it] 58%|█████▊    | 7/12 [10:38<07:39, 91.92s/it]                                               58%|█████▊    | 7/12 [10:38<07:39, 91.92s/it] 67%|██████▋   | 8/12 [12:02<05:57, 89.34s/it]                                               67%|██████▋   | 8/12 [12:02<05:57, 89.34s/it] 75%|███████▌  | 9/12 [13:31<04:27, 89.15s/it]                                               75%|███████▌  | 9/12 [13:31<04:27, 89.15s/it] 83%|████████▎ | 10/12 [15:04<03:00, 90.27s/it]                                                83%|████████▎ | 10/12 [15:04<03:00, 90.27s/it] 92%|█████████▏| 11/12 [16:31<01:29, 89.46s/it]                                                92%|█████████▏| 11/12 [16:31<01:29, 89.46s/it]100%|██████████| 12/12 [17:57<00:00, 88.22s/it]                                               100%|██████████| 12/12 [17:57<00:00, 88.22s/it]                                               100%|██████████| 12/12 [17:57<00:00, 88.22s/it]100%|██████████| 12/12 [17:57<00:00, 89.77s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 2.1619, 'grad_norm': 1.6318782567977905, 'learning_rate': 1.8379281537176274e-05, 'epoch': 0.36}
+{'loss': 2.0974, 'grad_norm': 1.5559853315353394, 'learning_rate': 1.670843776106934e-05, 'epoch': 0.73}
+{'loss': 2.1134, 'grad_norm': 1.6358648538589478, 'learning_rate': 1.5037593984962406e-05, 'epoch': 1.09}
+{'loss': 2.079, 'grad_norm': 1.5487207174301147, 'learning_rate': 1.3366750208855472e-05, 'epoch': 1.45}
+{'loss': 2.0659, 'grad_norm': 1.5995368957519531, 'learning_rate': 1.1695906432748539e-05, 'epoch': 1.82}
+{'loss': 2.09, 'grad_norm': 1.5870001316070557, 'learning_rate': 1.0025062656641604e-05, 'epoch': 2.18}
+{'loss': 2.0088, 'grad_norm': 1.6071184873580933, 'learning_rate': 8.35421888053467e-06, 'epoch': 2.55}
+{'loss': 2.0607, 'grad_norm': 1.604731559753418, 'learning_rate': 6.683375104427736e-06, 'epoch': 2.91}
+{'loss': 2.0144, 'grad_norm': 1.595664143562317, 'learning_rate': 5.012531328320802e-06, 'epoch': 3.27}
+{'loss': 1.9934, 'grad_norm': 1.513606309890747, 'learning_rate': 3.341687552213868e-06, 'epoch': 3.64}
+{'loss': 2.0121, 'grad_norm': 1.5703120231628418, 'learning_rate': 1.670843776106934e-06, 'epoch': 4.0}
+{'loss': 2.0233, 'grad_norm': 1.5821293592453003, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 1078.5139, 'train_samples_per_second': 1.947, 'train_steps_per_second': 0.011, 'train_loss': 2.060034225384394, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/TQE/gemma-2b/relevant_context
+wandb: - 299.301 MB of 299.301 MB uploadedwandb: \ 299.301 MB of 299.314 MB uploadedwandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:   train/global_step ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:     train/grad_norm █▃█▃▆▅▆▆▆▁▄▅
+wandb: train/learning_rate █▇▇▆▅▅▄▄▃▂▂▁
+wandb:          train/loss █▅▆▅▄▅▂▄▂▁▂▂
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 3941248391823360.0
+wandb:              train/epoch 4.36364
+wandb:        train/global_step 12
+wandb:          train/grad_norm 1.58213
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 2.0233
+wandb:               train_loss 2.06003
+wandb:            train_runtime 1078.5139
+wandb: train_samples_per_second 1.947
+wandb:   train_steps_per_second 0.011
+wandb: 
+wandb: 🚀 View run clean-bush-102 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/4fjcqfu8/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 4 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240529_001551-4fjcqfu8/logs
+\n\nTQE: TRAINING gemma-7b WITH wrong_date_context\n\n
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240529_003408-noqb9ml6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run visionary-blaze-103
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/noqb9ml6/workspace
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.14s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.11s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.09s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.15it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.05it/s]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+Map:   0%|          | 0/350 [00:00<?, ? examples/s]Map: 100%|██████████| 350/350 [00:00<00:00, 10199.02 examples/s]
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+<class 'str'>
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 7501.08 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Data preprocessed
+lora
+Trainable: 200015872 | total: 8737696768 | Percentage: 2.2891%
+Model prepared for training
+Trainer set up
+  0%|          | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  8%|▊         | 1/12 [05:38<1:02:05, 338.71s/it]                                                   8%|▊         | 1/12 [05:38<1:02:05, 338.71s/it] 17%|█▋        | 2/12 [11:08<55:34, 333.46s/it]                                                  17%|█▋        | 2/12 [11:08<55:34, 333.46s/it] 25%|██▌       | 3/12 [16:45<50:17, 335.23s/it]                                                25%|██▌       | 3/12 [16:45<50:17, 335.23s/it] 33%|███▎      | 4/12 [22:35<45:28, 341.11s/it]                                                33%|███▎      | 4/12 [22:35<45:28, 341.11s/it] 42%|████▏     | 5/12 [27:51<38:42, 331.80s/it]                                                42%|████▏     | 5/12 [27:51<38:42, 331.80s/it] 50%|█████     | 6/12 [33:13<32:50, 328.44s/it]                                                50%|█████     | 6/12 [33:13<32:50, 328.44s/it] 58%|█████▊    | 7/12 [39:06<28:02, 336.48s/it]                                                58%|█████▊    | 7/12 [39:06<28:02, 336.48s/it] 67%|██████▋   | 8/12 [44:14<21:50, 327.62s/it]                                                67%|██████▋   | 8/12 [44:14<21:50, 327.62s/it] 75%|███████▌  | 9/12 [49:38<16:19, 326.49s/it]                                                75%|███████▌  | 9/12 [49:38<16:19, 326.49s/it] 83%|████████▎ | 10/12 [55:16<11:00, 330.00s/it]                                                 83%|████████▎ | 10/12 [55:16<11:00, 330.00s/it] 92%|█████████▏| 11/12 [1:00:38<05:27, 327.37s/it]                                                   92%|█████████▏| 11/12 [1:00:38<05:27, 327.37s/it]100%|██████████| 12/12 [1:05:49<00:00, 322.44s/it]                                                  100%|██████████| 12/12 [1:05:49<00:00, 322.44s/it]                                                  100%|██████████| 12/12 [1:05:49<00:00, 322.44s/it]100%|██████████| 12/12 [1:05:49<00:00, 329.11s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 2.4843, 'grad_norm': 40.4620246887207, 'learning_rate': 1.8379281537176274e-05, 'epoch': 0.36}
+{'loss': 2.4386, 'grad_norm': 42.23358917236328, 'learning_rate': 1.670843776106934e-05, 'epoch': 0.73}
+{'loss': 2.3249, 'grad_norm': 44.42549514770508, 'learning_rate': 1.5037593984962406e-05, 'epoch': 1.09}
+{'loss': 2.1774, 'grad_norm': 25.258953094482422, 'learning_rate': 1.3366750208855472e-05, 'epoch': 1.45}
+{'loss': 2.1556, 'grad_norm': 17.994049072265625, 'learning_rate': 1.1695906432748539e-05, 'epoch': 1.82}
+{'loss': 2.1581, 'grad_norm': 12.481284141540527, 'learning_rate': 1.0025062656641604e-05, 'epoch': 2.18}
+{'loss': 2.0706, 'grad_norm': 11.366690635681152, 'learning_rate': 8.35421888053467e-06, 'epoch': 2.55}
+{'loss': 2.1435, 'grad_norm': 11.971569061279297, 'learning_rate': 6.683375104427736e-06, 'epoch': 2.91}
+{'loss': 2.0255, 'grad_norm': 10.3494291305542, 'learning_rate': 5.012531328320802e-06, 'epoch': 3.27}
+{'loss': 2.0016, 'grad_norm': 8.826892852783203, 'learning_rate': 3.341687552213868e-06, 'epoch': 3.64}
+{'loss': 1.9709, 'grad_norm': 9.404609680175781, 'learning_rate': 1.670843776106934e-06, 'epoch': 4.0}
+{'loss': 1.9574, 'grad_norm': 9.315275192260742, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 3952.0592, 'train_samples_per_second': 0.531, 'train_steps_per_second': 0.003, 'train_loss': 2.159023533264796, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/TQE/gemma-7b/wrong_date_context
+wandb: - 763.069 MB of 763.069 MB uploadedwandb: \ 763.097 MB of 763.097 MB uploadedwandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:   train/global_step ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:     train/grad_norm ▇██▄▃▂▁▂▁▁▁▁
+wandb: train/learning_rate █▇▇▆▅▅▄▄▃▂▂▁
+wandb:          train/loss █▇▆▄▄▄▃▃▂▂▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 1.521013340000256e+16
+wandb:              train/epoch 4.36364
+wandb:        train/global_step 12
+wandb:          train/grad_norm 9.31528
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 1.9574
+wandb:               train_loss 2.15902
+wandb:            train_runtime 3952.0592
+wandb: train_samples_per_second 0.531
+wandb:   train_steps_per_second 0.003
+wandb: 
+wandb: 🚀 View run visionary-blaze-103 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/noqb9ml6/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 4 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240529_003408-noqb9ml6/logs
+\n\nTQE: TRAINING gemma-7b WITH no_context\n\n
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240529_014021-c39txxac
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run polar-durian-104
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/c39txxac/workspace
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.15s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.11s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.03it/s]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+Map:   0%|          | 0/350 [00:00<?, ? examples/s]Map: 100%|██████████| 350/350 [00:00<00:00, 21826.17 examples/s]
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+<class 'str'>
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 11858.59 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Data preprocessed
+lora
+Trainable: 200015872 | total: 8737696768 | Percentage: 2.2891%
+Model prepared for training
+Trainer set up
+  0%|          | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  8%|▊         | 1/12 [01:15<13:50, 75.47s/it]                                                8%|▊         | 1/12 [01:15<13:50, 75.47s/it] 17%|█▋        | 2/12 [02:30<12:31, 75.12s/it]                                               17%|█▋        | 2/12 [02:30<12:31, 75.12s/it] 25%|██▌       | 3/12 [03:46<11:19, 75.45s/it]                                               25%|██▌       | 3/12 [03:46<11:19, 75.45s/it] 33%|███▎      | 4/12 [05:01<10:02, 75.32s/it]                                               33%|███▎      | 4/12 [05:01<10:02, 75.32s/it] 42%|████▏     | 5/12 [06:15<08:45, 75.01s/it]                                               42%|████▏     | 5/12 [06:15<08:45, 75.01s/it] 50%|█████     | 6/12 [07:30<07:29, 74.95s/it]                                               50%|█████     | 6/12 [07:30<07:29, 74.95s/it] 58%|█████▊    | 7/12 [08:47<06:17, 75.49s/it]                                               58%|█████▊    | 7/12 [08:47<06:17, 75.49s/it] 67%|██████▋   | 8/12 [09:59<04:58, 74.52s/it]                                               67%|██████▋   | 8/12 [09:59<04:58, 74.52s/it] 75%|███████▌  | 9/12 [11:14<03:44, 74.69s/it]                                               75%|███████▌  | 9/12 [11:14<03:44, 74.69s/it] 83%|████████▎ | 10/12 [12:26<02:27, 73.78s/it]                                                83%|████████▎ | 10/12 [12:26<02:27, 73.78s/it] 92%|█████████▏| 11/12 [13:40<01:13, 73.94s/it]                                                92%|█████████▏| 11/12 [13:40<01:13, 73.94s/it]100%|██████████| 12/12 [14:58<00:00, 75.04s/it]                                               100%|██████████| 12/12 [14:58<00:00, 75.04s/it]                                               100%|██████████| 12/12 [14:58<00:00, 75.04s/it]100%|██████████| 12/12 [14:58<00:00, 74.86s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 4.4567, 'grad_norm': 52.7237663269043, 'learning_rate': 1.8379281537176274e-05, 'epoch': 0.36}
+{'loss': 4.4415, 'grad_norm': 54.12821960449219, 'learning_rate': 1.670843776106934e-05, 'epoch': 0.73}
+{'loss': 4.1376, 'grad_norm': 48.92903137207031, 'learning_rate': 1.5037593984962406e-05, 'epoch': 1.09}
+{'loss': 3.7983, 'grad_norm': 42.70137405395508, 'learning_rate': 1.3366750208855472e-05, 'epoch': 1.45}
+{'loss': 3.6564, 'grad_norm': 46.09848403930664, 'learning_rate': 1.1695906432748539e-05, 'epoch': 1.82}
+{'loss': 3.3534, 'grad_norm': 27.107139587402344, 'learning_rate': 1.0025062656641604e-05, 'epoch': 2.18}
+{'loss': 3.1967, 'grad_norm': 20.65749740600586, 'learning_rate': 8.35421888053467e-06, 'epoch': 2.55}
+{'loss': 3.0205, 'grad_norm': 22.685529708862305, 'learning_rate': 6.683375104427736e-06, 'epoch': 2.91}
+{'loss': 2.8314, 'grad_norm': 17.942419052124023, 'learning_rate': 5.012531328320802e-06, 'epoch': 3.27}
+{'loss': 2.8176, 'grad_norm': 15.895078659057617, 'learning_rate': 3.341687552213868e-06, 'epoch': 3.64}
+{'loss': 2.7248, 'grad_norm': 15.002779960632324, 'learning_rate': 1.670843776106934e-06, 'epoch': 4.0}
+{'loss': 2.6709, 'grad_norm': 14.100271224975586, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 901.0706, 'train_samples_per_second': 2.331, 'train_steps_per_second': 0.013, 'train_loss': 3.4254830479621887, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/TQE/gemma-7b/no_context
+wandb: - 763.069 MB of 763.069 MB uploadedwandb: \ 763.069 MB of 763.097 MB uploadedwandb: | 763.097 MB of 763.097 MB uploadedwandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:   train/global_step ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:     train/grad_norm ██▇▆▇▃▂▃▂▁▁▁
+wandb: train/learning_rate █▇▇▆▅▅▄▄▃▂▂▁
+wandb:          train/loss ██▇▅▅▄▃▂▂▂▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 3033248483696640.0
+wandb:              train/epoch 4.36364
+wandb:        train/global_step 12
+wandb:          train/grad_norm 14.10027
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 2.6709
+wandb:               train_loss 3.42548
+wandb:            train_runtime 901.0706
+wandb: train_samples_per_second 2.331
+wandb:   train_steps_per_second 0.013
+wandb: 
+wandb: 🚀 View run polar-durian-104 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/c39txxac/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 4 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240529_014021-c39txxac/logs
+Exception in thread IntMsgThr:
+Traceback (most recent call last):
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 300, in check_internal_messages
+    self._loop_check_status(
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 224, in _loop_check_status
+    local_handle = request()
+                   ^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 844, in deliver_internal_messages
+    return self._deliver_internal_messages(internal_message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 516, in _deliver_internal_messages
+    return self._deliver_record(record)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 459, in _deliver_record
+    handle = mailbox._deliver_record(record, interface=self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 455, in _deliver_record
+    interface._publish(record)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+\n\nTQE: TRAINING gemma-7b WITH random_context\n\n
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240529_015543-b53rtza9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run magic-dream-105
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/b53rtza9/workspace
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.14s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.11s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.11s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.04it/s]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+Map:   0%|          | 0/350 [00:00<?, ? examples/s]Map: 100%|██████████| 350/350 [00:00<00:00, 8599.72 examples/s]
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+<class 'str'>
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 7373.95 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Data preprocessed
+lora
+Trainable: 200015872 | total: 8737696768 | Percentage: 2.2891%
+Model prepared for training
+Trainer set up
+  0%|          | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  8%|▊         | 1/12 [05:05<55:56, 305.16s/it]                                                 8%|▊         | 1/12 [05:05<55:56, 305.16s/it] 17%|█▋        | 2/12 [10:35<53:19, 319.99s/it]                                                17%|█▋        | 2/12 [10:35<53:19, 319.99s/it] 25%|██▌       | 3/12 [16:22<49:51, 332.43s/it]                                                25%|██▌       | 3/12 [16:22<49:51, 332.43s/it] 33%|███▎      | 4/12 [22:14<45:21, 340.17s/it]                                                33%|███▎      | 4/12 [22:14<45:21, 340.17s/it] 42%|████▏     | 5/12 [27:49<39:28, 338.35s/it]                                                42%|████▏     | 5/12 [27:49<39:28, 338.35s/it] 50%|█████     | 6/12 [33:21<33:35, 335.97s/it]                                                50%|█████     | 6/12 [33:21<33:35, 335.97s/it] 58%|█████▊    | 7/12 [38:46<27:42, 332.54s/it]                                                58%|█████▊    | 7/12 [38:46<27:42, 332.54s/it] 67%|██████▋   | 8/12 [44:13<22:03, 330.76s/it]                                                67%|██████▋   | 8/12 [44:13<22:03, 330.76s/it] 75%|███████▌  | 9/12 [49:48<16:36, 332.18s/it]                                                75%|███████▌  | 9/12 [49:48<16:36, 332.18s/it] 83%|████████▎ | 10/12 [54:53<10:47, 323.62s/it]                                                 83%|████████▎ | 10/12 [54:53<10:47, 323.62s/it] 92%|█████████▏| 11/12 [1:00:25<05:26, 326.11s/it]                                                   92%|█████████▏| 11/12 [1:00:25<05:26, 326.11s/it]100%|██████████| 12/12 [1:06:06<00:00, 330.79s/it]                                                  100%|██████████| 12/12 [1:06:06<00:00, 330.79s/it]                                                  100%|██████████| 12/12 [1:06:06<00:00, 330.79s/it]100%|██████████| 12/12 [1:06:06<00:00, 330.56s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 2.5068, 'grad_norm': 44.21620559692383, 'learning_rate': 1.8379281537176274e-05, 'epoch': 0.36}
+{'loss': 2.5133, 'grad_norm': 46.28961944580078, 'learning_rate': 1.670843776106934e-05, 'epoch': 0.73}
+{'loss': 2.4206, 'grad_norm': 38.509761810302734, 'learning_rate': 1.5037593984962406e-05, 'epoch': 1.09}
+{'loss': 2.3184, 'grad_norm': 32.9776496887207, 'learning_rate': 1.3366750208855472e-05, 'epoch': 1.45}
+{'loss': 2.3666, 'grad_norm': 23.89925765991211, 'learning_rate': 1.1695906432748539e-05, 'epoch': 1.82}
+{'loss': 2.5773, 'grad_norm': 23.394405364990234, 'learning_rate': 1.0025062656641604e-05, 'epoch': 2.18}
+{'loss': 2.5261, 'grad_norm': 21.031131744384766, 'learning_rate': 8.35421888053467e-06, 'epoch': 2.55}
+{'loss': 2.3886, 'grad_norm': 20.71722984313965, 'learning_rate': 6.683375104427736e-06, 'epoch': 2.91}
+{'loss': 2.1882, 'grad_norm': 16.308826446533203, 'learning_rate': 5.012531328320802e-06, 'epoch': 3.27}
+{'loss': 2.2087, 'grad_norm': 14.541031837463379, 'learning_rate': 3.341687552213868e-06, 'epoch': 3.64}
+{'loss': 2.0646, 'grad_norm': 12.271258354187012, 'learning_rate': 1.670843776106934e-06, 'epoch': 4.0}
+{'loss': 2.1012, 'grad_norm': 12.200529098510742, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 3969.4463, 'train_samples_per_second': 0.529, 'train_steps_per_second': 0.003, 'train_loss': 2.348362445831299, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/TQE/gemma-7b/random_context
+wandb: - 763.069 MB of 763.069 MB uploadedwandb: \ 763.069 MB of 763.093 MB uploadedwandb: | 763.097 MB of 763.097 MB uploadedwandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:   train/global_step ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:     train/grad_norm ██▆▅▃▃▃▃▂▁▁▁
+wandb: train/learning_rate █▇▇▆▅▅▄▄▃▂▂▁
+wandb:          train/loss ▇▇▆▄▅█▇▅▃▃▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 1.5171871913938944e+16
+wandb:              train/epoch 4.36364
+wandb:        train/global_step 12
+wandb:          train/grad_norm 12.20053
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 2.1012
+wandb:               train_loss 2.34836
+wandb:            train_runtime 3969.4463
+wandb: train_samples_per_second 0.529
+wandb:   train_steps_per_second 0.003
+wandb: 
+wandb: 🚀 View run magic-dream-105 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/b53rtza9/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 4 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240529_015543-b53rtza9/logs
+\n\nTQE: TRAINING gemma-7b WITH relevant_context\n\n
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240529_030215-qmtt0n3f
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run drawn-snowball-106
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/qmtt0n3f/workspace
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.15s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.13s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.12it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.02it/s]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+Map:   0%|          | 0/350 [00:00<?, ? examples/s]Map: 100%|██████████| 350/350 [00:00<00:00, 9076.56 examples/s]
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+<class 'str'>
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 7432.14 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Data preprocessed
+lora
+Trainable: 200015872 | total: 8737696768 | Percentage: 2.2891%
+Model prepared for training
+Trainer set up
+  0%|          | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  8%|▊         | 1/12 [05:39<1:02:15, 339.60s/it]                                                   8%|▊         | 1/12 [05:39<1:02:15, 339.60s/it] 17%|█▋        | 2/12 [11:10<55:42, 334.26s/it]                                                  17%|█▋        | 2/12 [11:10<55:42, 334.26s/it] 25%|██▌       | 3/12 [16:46<50:18, 335.38s/it]                                                25%|██▌       | 3/12 [16:46<50:18, 335.38s/it] 33%|███▎      | 4/12 [22:36<45:27, 340.96s/it]                                                33%|███▎      | 4/12 [22:36<45:27, 340.96s/it] 42%|████▏     | 5/12 [27:52<38:44, 332.12s/it]                                                42%|████▏     | 5/12 [27:52<38:44, 332.12s/it] 50%|█████     | 6/12 [33:15<32:52, 328.81s/it]                                                50%|█████     | 6/12 [33:15<32:52, 328.81s/it] 58%|█████▊    | 7/12 [39:08<28:03, 336.69s/it]                                                58%|█████▊    | 7/12 [39:08<28:03, 336.69s/it] 67%|██████▋   | 8/12 [44:18<21:53, 328.45s/it]                                                67%|██████▋   | 8/12 [44:18<21:53, 328.45s/it] 75%|███████▌  | 9/12 [49:43<16:22, 327.38s/it]                                                75%|███████▌  | 9/12 [49:43<16:22, 327.38s/it] 83%|████████▎ | 10/12 [55:21<11:01, 330.52s/it]                                                 83%|████████▎ | 10/12 [55:21<11:01, 330.52s/it] 92%|█████████▏| 11/12 [1:00:43<05:27, 327.77s/it]                                                   92%|█████████▏| 11/12 [1:00:43<05:27, 327.77s/it]100%|██████████| 12/12 [1:05:56<00:00, 323.46s/it]                                                  100%|██████████| 12/12 [1:05:56<00:00, 323.46s/it]                                                  100%|██████████| 12/12 [1:05:56<00:00, 323.46s/it]100%|██████████| 12/12 [1:05:56<00:00, 329.72s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 2.2315, 'grad_norm': 38.34146499633789, 'learning_rate': 1.8379281537176274e-05, 'epoch': 0.36}
+{'loss': 2.1808, 'grad_norm': 40.2329216003418, 'learning_rate': 1.670843776106934e-05, 'epoch': 0.73}
+{'loss': 2.0418, 'grad_norm': 39.564884185791016, 'learning_rate': 1.5037593984962406e-05, 'epoch': 1.09}
+{'loss': 1.9113, 'grad_norm': 21.41516876220703, 'learning_rate': 1.3366750208855472e-05, 'epoch': 1.45}
+{'loss': 1.9032, 'grad_norm': 13.999159812927246, 'learning_rate': 1.1695906432748539e-05, 'epoch': 1.82}
+{'loss': 1.9133, 'grad_norm': 11.497608184814453, 'learning_rate': 1.0025062656641604e-05, 'epoch': 2.18}
+{'loss': 1.8032, 'grad_norm': 10.564451217651367, 'learning_rate': 8.35421888053467e-06, 'epoch': 2.55}
+{'loss': 1.8554, 'grad_norm': 11.502166748046875, 'learning_rate': 6.683375104427736e-06, 'epoch': 2.91}
+{'loss': 1.7376, 'grad_norm': 8.119869232177734, 'learning_rate': 5.012531328320802e-06, 'epoch': 3.27}
+{'loss': 1.7263, 'grad_norm': 7.691107273101807, 'learning_rate': 3.341687552213868e-06, 'epoch': 3.64}
+{'loss': 1.7047, 'grad_norm': 8.347511291503906, 'learning_rate': 1.670843776106934e-06, 'epoch': 4.0}
+{'loss': 1.7007, 'grad_norm': 8.318009376525879, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 3959.3722, 'train_samples_per_second': 0.53, 'train_steps_per_second': 0.003, 'train_loss': 1.8924832741419475, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/TQE/gemma-7b/relevant_context
+wandb: - 763.069 MB of 763.069 MB uploadedwandb: \ 763.069 MB of 763.093 MB uploadedwandb: | 763.097 MB of 763.097 MB uploadedwandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:   train/global_step ▁▂▂▃▄▄▅▅▆▇▇██
+wandb:     train/grad_norm ███▄▂▂▂▂▁▁▁▁
+wandb: train/learning_rate █▇▇▆▅▅▄▄▃▂▂▁
+wandb:          train/loss █▇▅▄▄▄▂▃▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 1.521013340000256e+16
+wandb:              train/epoch 4.36364
+wandb:        train/global_step 12
+wandb:          train/grad_norm 8.31801
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 1.7007
+wandb:               train_loss 1.89248
+wandb:            train_runtime 3959.3722
+wandb: train_samples_per_second 0.53
+wandb:   train_steps_per_second 0.003
+wandb: 
+wandb: 🚀 View run drawn-snowball-106 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/qmtt0n3f/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 4 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240529_030215-qmtt0n3f/logs

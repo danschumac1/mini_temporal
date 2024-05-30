@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_rios.py", line 156, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_rios.py", line 75, in main
+    with open('./training/token.txt', 'r') as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './training/token.txt'
