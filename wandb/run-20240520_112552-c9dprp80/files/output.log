@@ -1,0 +1,40 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_halfway.py", line 248, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_halfway.py", line 138, in main
+    model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=bnb_config, device_map={"":0}, use_cache=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 563, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3754, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 889, in _load_state_dict_into_meta_model
+    hf_quantizer.create_quantized_param(model, param, param_name, param_device, state_dict, unexpected_keys)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/quantizers/quantizer_bnb_4bit.py", line 216, in create_quantized_param
+    new_value = bnb.nn.Params4bit(new_value, requires_grad=False, **kwargs).to(target_device)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 324, in to
+    return self._quantize(device)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 289, in _quantize
+    w_4bit, quant_state = bnb.functional.quantize_4bit(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/functional.py", line 1165, in quantize_4bit
+    absmax = torch.zeros((blocks,), device=A.device, dtype=torch.float32)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 47.53 GiB of which 1.06 MiB is free. Process 1015801 has 45.85 GiB memory in use. Process 1479329 has 304.00 MiB memory in use. Including non-PyTorch memory, this process has 1.29 GiB memory in use. Of the allocated memory 1.04 GiB is allocated by PyTorch, and 2.00 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

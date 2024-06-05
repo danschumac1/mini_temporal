@@ -1,0 +1,40 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.26s/it]
+lora
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.43it/s]
+Map: 100%|██████████| 350/350 [00:00<00:00, 19764.21 examples/s]
+Map: 100%|██████████| 75/75 [00:00<00:00, 12449.95 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+{'loss': 6.3588, 'grad_norm': 9.984224319458008, 'learning_rate': 1.6750418760469013e-05, 'epoch': 0.73}
+{'eval_loss': 6.376537322998047, 'eval_runtime': 4.1279, 'eval_samples_per_second': 18.169, 'eval_steps_per_second': 0.727, 'epoch': 0.73}
+{'loss': 6.2696, 'grad_norm': 9.838428497314453, 'learning_rate': 1.3400335008375211e-05, 'epoch': 1.45}
+{'eval_loss': 6.3068156242370605, 'eval_runtime': 4.1686, 'eval_samples_per_second': 17.991, 'eval_steps_per_second': 0.72, 'epoch': 1.45}
+{'loss': 6.336, 'grad_norm': 10.026028633117676, 'learning_rate': 1.005025125628141e-05, 'epoch': 2.18}
+{'eval_loss': 6.238132953643799, 'eval_runtime': 4.1831, 'eval_samples_per_second': 17.929, 'eval_steps_per_second': 0.717, 'epoch': 2.18}
+{'loss': 6.2083, 'grad_norm': 9.909187316894531, 'learning_rate': 6.700167504187606e-06, 'epoch': 2.91}
+{'eval_loss': 6.194418907165527, 'eval_runtime': 4.2116, 'eval_samples_per_second': 17.808, 'eval_steps_per_second': 0.712, 'epoch': 2.91}
+  0%|          | 0/6 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+ 67%|██████▋   | 4/6 [03:01<01:29, 44.86s/it]
+ 83%|████████▎ | 5/6 [03:43<00:45, 45.08s/it]
+
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.06it/s]
+
+{'eval_loss': 6.168137073516846, 'eval_runtime': 4.2107, 'eval_samples_per_second': 17.812, 'eval_steps_per_second': 0.712, 'epoch': 3.64}
+100%|██████████| 6/6 [04:27<00:00, 44.68s/it]
+
+ 67%|██████▋   | 2/3 [00:01<00:00,  1.13it/s]
+
+{'eval_loss': 6.15548849105835, 'eval_runtime': 4.2133, 'eval_samples_per_second': 17.801, 'eval_steps_per_second': 0.712, 'epoch': 4.36}
+{'train_runtime': 273.4968, 'train_samples_per_second': 7.678, 'train_steps_per_second': 0.022, 'train_loss': 6.24251929918925, 'epoch': 4.36}
+
+100%|██████████| 6/6 [04:32<00:00, 45.38s/it]

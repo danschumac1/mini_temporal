@@ -1,0 +1,66 @@
+
+
+  1%|▌                                                         | 1/100 [00:11<18:49, 11.41s/it]
+{'loss': 2.1464, 'grad_norm': 0.5072889924049377, 'learning_rate': 0.00019805941782534764, 'epoch': 0.0}
+
+  2%|█▏                                                        | 2/100 [00:17<13:48,  8.46s/it]
+
+
+  4%|██▎                                                       | 4/100 [00:32<12:18,  7.69s/it]
+{'loss': 2.0414, 'grad_norm': 0.737712562084198, 'learning_rate': 0.00019205761728518557, 'epoch': 0.0}
+
+  5%|██▉                                                       | 5/100 [00:38<10:57,  6.93s/it]
+
+
+  7%|████                                                      | 7/100 [00:49<09:28,  6.12s/it]
+{'loss': 2.1921, 'grad_norm': 1.3361233472824097, 'learning_rate': 0.00018605581674502352, 'epoch': 0.0}
+
+  8%|████▋                                                     | 8/100 [00:56<09:41,  6.32s/it]
+
+
+ 10%|█████▋                                                   | 10/100 [01:08<09:37,  6.42s/it]
+
+ 11%|██████▎                                                  | 11/100 [01:15<09:37,  6.49s/it]
+ 11%|██████▎                                                  | 11/100 [01:15<09:37,  6.49s/it]Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_follow_along.py", line 157, in <module>
+    trainer.train()
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1859, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2203, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3138, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3161, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/peft_model.py", line 1129, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 161, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 1133, in forward
+    logits = logits.float()
+             ^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 5.67 GiB. GPU 0 has a total capacity of 47.54 GiB of which 3.26 GiB is free. Including non-PyTorch memory, this process has 44.13 GiB memory in use. Of the allocated memory 42.42 GiB is allocated by PyTorch, and 1.38 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

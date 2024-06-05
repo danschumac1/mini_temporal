@@ -1,0 +1,222 @@
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  0%|                               | 0/100 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  6%|█▍                     | 6/100 [00:31<08:02,  5.13s/it]
+{'loss': 4.5556, 'grad_norm': 1.1008652448654175, 'learning_rate': 0.00019805941782534764, 'epoch': 0.09}
+{'loss': 4.3752, 'grad_norm': 1.0778275728225708, 'learning_rate': 0.00019605881764529358, 'epoch': 0.18}
+{'loss': 4.447, 'grad_norm': 1.3706250190734863, 'learning_rate': 0.00019405821746523957, 'epoch': 0.27}
+{'loss': 4.4367, 'grad_norm': 1.8156658411026, 'learning_rate': 0.00019205761728518557, 'epoch': 0.36}
+{'loss': 4.1762, 'grad_norm': 2.1544082164764404, 'learning_rate': 0.00019005701710513156, 'epoch': 0.45}
+{'loss': 3.9591, 'grad_norm': 2.3362643718719482, 'learning_rate': 0.00018805641692507753, 'epoch': 0.55}
+
+  7%|█▌                     | 7/100 [00:36<07:58,  5.15s/it]
+
+
+  9%|██                     | 9/100 [00:46<07:44,  5.10s/it]
+{'loss': 3.5474, 'grad_norm': 5.324288845062256, 'learning_rate': 0.00018205461638491548, 'epoch': 0.82}
+
+
+ 11%|██▍                   | 11/100 [00:56<07:37,  5.14s/it]
+ 11%|██▍                   | 11/100 [00:56<07:37,  5.14s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 12%|██▋                   | 12/100 [01:02<07:49,  5.34s/it]
+{'loss': 3.2947, 'grad_norm': 2.7798519134521484, 'learning_rate': 0.00017605281584475344, 'epoch': 1.09}
+
+
+ 14%|███                   | 14/100 [01:12<07:34,  5.29s/it]
+{'loss': 3.0698, 'grad_norm': 2.8506360054016113, 'learning_rate': 0.00017205161548464542, 'epoch': 1.27}
+
+ 15%|███▎                  | 15/100 [01:18<07:24,  5.23s/it]
+
+
+ 17%|███▋                  | 17/100 [01:28<07:15,  5.24s/it]
+{'loss': 2.8283, 'grad_norm': 2.44779372215271, 'learning_rate': 0.00016604981494448335, 'epoch': 1.55}
+
+
+ 19%|████▏                 | 19/100 [01:38<07:03,  5.22s/it]
+
+ 20%|████▍                 | 20/100 [01:44<07:01,  5.27s/it]
+{'loss': 2.4318, 'grad_norm': 1.618199110031128, 'learning_rate': 0.0001600480144043213, 'epoch': 1.82}
+
+ 22%|████▊                 | 22/100 [01:54<06:44,  5.19s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.3391, 'grad_norm': 1.8487021923065186, 'learning_rate': 0.00015604681404421327, 'epoch': 2.0}
+ 23%|█████                 | 23/100 [02:00<06:59,  5.45s/it]
+{'loss': 2.2737, 'grad_norm': 1.5429104566574097, 'learning_rate': 0.00015404621386415926, 'epoch': 2.09}
+
+
+ 25%|█████▌                | 25/100 [02:11<06:40,  5.34s/it]
+
+ 26%|█████▋                | 26/100 [02:16<06:32,  5.31s/it]
+{'loss': 2.1917, 'grad_norm': 1.2302252054214478, 'learning_rate': 0.00014804441332399721, 'epoch': 2.36}
+
+
+ 28%|██████▏               | 28/100 [02:27<06:27,  5.39s/it]
+
+ 29%|██████▍               | 29/100 [02:32<06:20,  5.37s/it]
+{'loss': 1.984, 'grad_norm': 1.0299128293991089, 'learning_rate': 0.00014204261278383514, 'epoch': 2.64}
+
+
+ 31%|██████▊               | 31/100 [02:43<06:05,  5.29s/it]
+{'loss': 1.8851, 'grad_norm': 1.0224322080612183, 'learning_rate': 0.00013804141242372713, 'epoch': 2.82}
+
+ 32%|███████               | 32/100 [02:48<05:58,  5.28s/it]
+ 33%|███████▎              | 33/100 [02:53<05:50,  5.23s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.8899, 'grad_norm': 0.9665407538414001, 'learning_rate': 0.00013203961188356508, 'epoch': 3.09}
+
+ 35%|███████▋              | 35/100 [03:04<05:52,  5.42s/it]
+{'loss': 1.7914, 'grad_norm': 1.0306470394134521, 'learning_rate': 0.00013003901170351108, 'epoch': 3.18}
+
+ 36%|███████▉              | 36/100 [03:10<05:48,  5.45s/it]
+
+
+ 38%|████████▎             | 38/100 [03:20<05:30,  5.33s/it]
+{'loss': 1.6604, 'grad_norm': 0.7572968602180481, 'learning_rate': 0.000124037211163349, 'epoch': 3.45}
+
+ 39%|████████▌             | 39/100 [03:26<05:25,  5.33s/it]
+
+
+ 41%|█████████             | 41/100 [03:36<05:12,  5.30s/it]
+{'loss': 1.71, 'grad_norm': 0.6132465600967407, 'learning_rate': 0.00011803541062318697, 'epoch': 3.73}
+
+
+ 43%|█████████▍            | 43/100 [03:47<04:59,  5.26s/it]
+{'loss': 1.6334, 'grad_norm': 0.6763601899147034, 'learning_rate': 0.00011403421026307892, 'epoch': 3.91}
+ 44%|█████████▋            | 44/100 [03:52<04:54,  5.26s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 45%|█████████▉            | 45/100 [03:58<05:07,  5.59s/it]
+{'loss': 1.6761, 'grad_norm': 0.8118494153022766, 'learning_rate': 0.0001100330099029709, 'epoch': 4.09}
+
+
+ 47%|██████████▎           | 47/100 [04:09<04:47,  5.42s/it]
+
+ 48%|██████████▌           | 48/100 [04:14<04:38,  5.35s/it]
+{'loss': 1.5652, 'grad_norm': 0.5642200112342834, 'learning_rate': 0.00010403120936280886, 'epoch': 4.36}
+
+
+ 50%|███████████           | 50/100 [04:25<04:26,  5.32s/it]
+
+ 51%|███████████▏          | 51/100 [04:30<04:21,  5.33s/it]
+{'loss': 1.6215, 'grad_norm': 0.6908880472183228, 'learning_rate': 9.802940882264679e-05, 'epoch': 4.64}
+
+
+ 53%|███████████▋          | 53/100 [04:41<04:10,  5.34s/it]
+{'loss': 1.5237, 'grad_norm': 0.6631078720092773, 'learning_rate': 9.402820846253876e-05, 'epoch': 4.82}
+
+ 54%|███████████▉          | 54/100 [04:46<04:03,  5.30s/it]
+ 55%|████████████          | 55/100 [04:51<03:57,  5.28s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.4567, 'grad_norm': 0.6621501445770264, 'learning_rate': 8.802640792237672e-05, 'epoch': 5.09}
+
+ 57%|████████████▌         | 57/100 [05:02<03:54,  5.45s/it]
+{'loss': 1.5196, 'grad_norm': 0.6321412920951843, 'learning_rate': 8.602580774232271e-05, 'epoch': 5.18}
+
+ 58%|████████████▊         | 58/100 [05:08<03:47,  5.42s/it]
+
+
+ 60%|█████████████▏        | 60/100 [05:18<03:35,  5.40s/it]
+{'loss': 1.4584, 'grad_norm': 0.5281866788864136, 'learning_rate': 8.002400720216065e-05, 'epoch': 5.45}
+
+ 61%|█████████████▍        | 61/100 [05:24<03:30,  5.39s/it]
+
+
+ 63%|█████████████▊        | 63/100 [05:34<03:17,  5.34s/it]
+{'loss': 1.4833, 'grad_norm': 0.5693057179450989, 'learning_rate': 7.402220666199861e-05, 'epoch': 5.73}
+
+ 64%|██████████████        | 64/100 [05:40<03:11,  5.32s/it]
+
+ 66%|██████████████▌       | 66/100 [05:50<03:00,  5.31s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 1.4511, 'grad_norm': 0.6812804341316223, 'learning_rate': 6.802040612183656e-05, 'epoch': 6.0}
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 67%|██████████████▋       | 67/100 [05:56<03:01,  5.49s/it]
+{'loss': 1.4019, 'grad_norm': 0.5345475673675537, 'learning_rate': 6.601980594178254e-05, 'epoch': 6.09}
+
+ 68%|██████████████▉       | 68/100 [06:02<02:53,  5.42s/it]
+
+
+ 70%|███████████████▍      | 70/100 [06:12<02:42,  5.42s/it]
+
+ 71%|███████████████▌      | 71/100 [06:18<02:38,  5.46s/it]
+{'loss': 1.4038, 'grad_norm': 0.6334713101387024, 'learning_rate': 5.801740522156648e-05, 'epoch': 6.45}
+
+
+ 73%|████████████████      | 73/100 [06:29<02:25,  5.39s/it]
+
+ 74%|████████████████▎     | 74/100 [06:34<02:19,  5.37s/it]
+{'loss': 1.3218, 'grad_norm': 0.5850799083709717, 'learning_rate': 5.201560468140443e-05, 'epoch': 6.73}
+
+
+ 76%|████████████████▋     | 76/100 [06:45<02:09,  5.39s/it]
+ 77%|████████████████▉     | 77/100 [06:50<02:03,  5.37s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.5237, 'grad_norm': 0.7425456047058105, 'learning_rate': 4.601380414124238e-05, 'epoch': 7.0}
+ 78%|█████████████████▏    | 78/100 [06:56<02:02,  5.57s/it]
+{'loss': 1.3415, 'grad_norm': 0.533070981502533, 'learning_rate': 4.401320396118836e-05, 'epoch': 7.09}
+
+
+ 80%|█████████████████▌    | 80/100 [07:07<01:49,  5.46s/it]
+
+ 81%|█████████████████▊    | 81/100 [07:12<01:43,  5.44s/it]
+{'loss': 1.3552, 'grad_norm': 0.6119264960289001, 'learning_rate': 3.801140342102631e-05, 'epoch': 7.36}
+
+
+ 83%|██████████████████▎   | 83/100 [07:23<01:31,  5.38s/it]
+
+ 84%|██████████████████▍   | 84/100 [07:28<01:26,  5.39s/it]
+{'loss': 1.3471, 'grad_norm': 0.5802359580993652, 'learning_rate': 3.200960288086426e-05, 'epoch': 7.64}
+
+ 85%|██████████████████▋   | 85/100 [07:34<01:21,  5.40s/it]
+
+
+ 87%|███████████████████▏  | 87/100 [07:44<01:09,  5.35s/it]
+{'loss': 1.3033, 'grad_norm': 0.5813885927200317, 'learning_rate': 2.6007802340702216e-05, 'epoch': 7.91}
+ 88%|███████████████████▎  | 88/100 [07:50<01:03,  5.32s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.3054, 'grad_norm': 0.5560140609741211, 'learning_rate': 2.200660198059418e-05, 'epoch': 8.09}
+ 89%|███████████████████▌  | 89/100 [07:56<01:00,  5.52s/it]
+
+
+ 91%|████████████████████  | 91/100 [08:06<00:49,  5.47s/it]
+{'loss': 1.3829, 'grad_norm': 0.5812095999717712, 'learning_rate': 1.8005401620486147e-05, 'epoch': 8.27}
+
+ 92%|████████████████████▏ | 92/100 [08:12<00:43,  5.42s/it]
+
+
+ 94%|████████████████████▋ | 94/100 [08:22<00:32,  5.35s/it]
+{'loss': 1.3262, 'grad_norm': 0.5890074372291565, 'learning_rate': 1.2003601080324098e-05, 'epoch': 8.55}
+
+ 95%|████████████████████▉ | 95/100 [08:28<00:26,  5.33s/it]
+
+
+ 97%|█████████████████████▎| 97/100 [08:38<00:16,  5.37s/it]
+{'loss': 1.4051, 'grad_norm': 0.5701576471328735, 'learning_rate': 6.001800540162049e-06, 'epoch': 8.82}
+
+
+ 99%|█████████████████████▊| 99/100 [08:49<00:05,  5.29s/it]
+ 99%|█████████████████████▊| 99/100 [08:49<00:05,  5.29s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+100%|█████████████████████| 100/100 [08:55<00:00,  5.50s/it]
+{'loss': 1.2764, 'grad_norm': 0.5826510190963745, 'learning_rate': 0.0, 'epoch': 9.09}
+{'train_runtime': 540.1362, 'train_samples_per_second': 5.924, 'train_steps_per_second': 0.185, 'train_loss': 1.9645033884048462, 'epoch': 9.09}
+100%|█████████████████████| 100/100 [08:55<00:00,  5.50s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+100%|█████████████████████| 100/100 [08:55<00:00,  5.36s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.

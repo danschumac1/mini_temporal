@@ -13,9 +13,13 @@ This code takes a GEMMA model and a dataset, processes the data, fine-tunes, and
 import os
 os.chdir('/home/dan/mini_temporal')
 
+#os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
+#os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+#os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+
 # import json
 import pandas as pd
-# import torch
+import torch
 from datasets import Dataset
 from huggingface_hub import login
 from peft import LoraConfig, get_peft_model
@@ -33,6 +37,10 @@ import argparse
 import wandb 
 import warnings
 
+#torch.cuda.set_per_process_memory_fraction(0.95)
+#torch.cuda.set_device(1)
+
+device = 'cuda'
 #endregion
 #region # ARGPARSE
 # =============================================================================
@@ -66,7 +74,8 @@ def format_instruction(df, model_path, context=False):
     # USING AN INSTRUCTION TUNED TRAINED MODEL
 
     # all IT models use the same special tokens, so I will use 2b-it for both 2b-it and 7b-it
-    fi_tokenizer = AutoTokenizer.from_pretrained("google/gemma-2b-it", add_bos_token=True, add_eos_token=True)
+    fi_tokenizer = AutoTokenizer.from_pretrained("google/gemma-2b-it", add_bos_token=True, add_eos_token=True, max_length=512,truncation=True)
+    fi_tokenizer.padding_side = 'right'
 
     # Does this matte? I don't think so during training.
     # fi_tokenizer.padding_side = 'right'
@@ -79,7 +88,7 @@ def format_instruction(df, model_path, context=False):
 
             # Plug in the question, context, and answer.
             message = [
-                {"role": "user", "content": f'{question} Here is the context: {context}'},
+                    {"role": "user", "content": f'{question} Here is the context: {context[:500]}'},
                 {"role": "assistant", "content": f'The answer is: {answer}.'},
             ]
 
@@ -121,10 +130,9 @@ def format_instruction(df, model_path, context=False):
 def other_preprocessing(df, tokenizer, context):
 
     # convert from pandas to dataset obj
-    dataset = Dataset.from_pandas(df)
+    df2 = df.copy()
 
     # shuffle
-    dataset = dataset.shuffle(seed=1234)
 
     # TOKENIZE DATASET
     if context == 'random_context':
@@ -135,9 +143,14 @@ def other_preprocessing(df, tokenizer, context):
         context_plug = 'wd'
     elif context == 'no_context':
         context_plug = 'no'
-    print(df['no_prompt'].iloc[0])
-    print(type(df['no_prompt'].iloc[0]))
-    dataset = dataset.map(lambda x: tokenizer(x[f'{context_plug}_prompt']), batched=True)
+    df2 = df2[[context_plug+"_prompt"]]
+    dataset = Dataset.from_pandas(df2)
+    #print(df['no_prompt'].iloc[0])
+    #print(type(df['no_prompt'].iloc[0]))
+    dataset = dataset.map(lambda x: tokenizer(x[f'{context_plug}_prompt'], max_length=512, truncation=True), batched=True)
+    dataset = dataset.remove_columns(f'{context_plug}_prompt')
+    dataset = dataset.shuffle(seed=1234)
+    print(dataset)
     # generated_text = tokenizer.decode(dataset[0][0], skip_special_tokens=False)
     # print('\n\n',f'GENERATED TEXT: {generated_text}', '\n\n')
     return dataset
@@ -161,6 +174,13 @@ def main():
     bnb_config = BitsAndBytesConfig(
         load_in_8bit=False, # Example setting, adjust as needed
     )
+    '''
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.bfloat16
+    )
+    '''
 
     #endregion
     #region # LOAD MODEL, TOKENIZER, AND DATASET
@@ -171,11 +191,13 @@ def main():
     # LOAD MODEL
     model_id = f"google/{args.base_model}"
     
-    model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=bnb_config, device_map={"":0}, use_cache=False)
+    model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=bnb_config, device_map="auto", torch_dtype=torch.bfloat16, use_cache=False)
+    #model = AutoModelForCausalLM.from_pretrained(model_id, device_map={"":0}, use_cache=False)
+    #model = AutoModelForCausalLM.from_pretrained(model_id, use_cache=False)
 
     print('tokenizer')
     # SET UP TOKENIZER
-    tokenizer = AutoTokenizer.from_pretrained(model_id, add_bos_token=False, add_eos_token=False, )
+    tokenizer = AutoTokenizer.from_pretrained(model_id, add_bos_token=False, add_eos_token=False, truncation=True,  max_length=512)
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = 'right'
 
@@ -214,22 +236,23 @@ def main():
     # =============================================================================
     print('lora')
     lora_config = LoraConfig(
-        r=64,
-        lora_alpha=64,
+        r=16,
+        lora_alpha=32,
         target_modules=['o_proj', 'q_proj', 'up_proj', 'v_proj', 'k_proj', 'down_proj', 'gate_proj'],
         lora_dropout=0.05,
         bias="none",
         task_type="CAUSAL_LM"
-    ) 
+    )
 
-    model = get_peft_model(model, lora_config)
-    model.gradient_checkpointing_enable()
-    model.enable_input_require_grads()
+    #model = get_peft_model(model, lora_config).to(device)
+    #model.gradient_checkpointing_enable()
+    #model.enable_input_require_grads()
 
     # CALCULATE THE NUMBER OF TRAINABLE PARAMS
-    trainable, total = model.get_nb_trainable_parameters()
-    print(f"Trainable: {trainable} | total: {total} | Percentage: {trainable/total*100:.4f}%")
+    #trainable, total = model.get_nb_trainable_parameters()
+    #print(f"Trainable: {trainable} | total: {total} | Percentage: {trainable/total*100:.4f}%")
     print('Model prepared for training')
+    
     #endregion
     #region # SET UP TRAINER
     # =============================================================================
@@ -239,7 +262,7 @@ def main():
         model=model,
         train_dataset=train_data,
         eval_dataset=dev_data,
-        dataset_text_field="prompt",
+        #dataset_text_field="prompt",
         peft_config=lora_config,
         args=transformers.TrainingArguments(
             run_name = f'{args.base_model}-{args.model_context}-trained',
@@ -248,17 +271,20 @@ def main():
             per_device_eval_batch_size = args.batch_size,
             eval_accumulation_steps=1,
             gradient_accumulation_steps=8,
-            warmup_steps=0.03,
+            warmup_steps=1, # FATEMEH DID 1
             gradient_checkpointing=True,
-            learning_rate=args.lr,
-            logging_steps=1,
-            output_dir="outputs",
+            fp16=True,
             optim="paged_adamw_8bit",
+            learning_rate=args.lr,
+            logging_steps=25,
+            eval_steps=500,
+            output_dir="outputs",
             save_strategy="no",
+            evaluation_strategy= 'steps',
             report_to="wandb"  # Integrate with wandb
         ),
-        data_collator=transformers.DataCollatorForLanguageModeling(tokenizer, mlm=False),
-        max_seq_length=512  # Specify the desired max sequence length
+        max_seq_length=512,  # Specify the desired max sequence length
+        data_collator=transformers.DataCollatorForLanguageModeling(tokenizer, mlm=False)
     )
     print('Trainer set up')
     #endregion
@@ -268,6 +294,7 @@ def main():
     # =============================================================================
     # EXECUTE THE FINE TUNING PROCESS
     trainer.train()
+    print("THIS IS A TEST")
 
     # Specify save location of new model
     new_model = f"./training/models/{args.dataset}/{args.base_model.replace('.','_')}/{args.model_context}"

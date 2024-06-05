@@ -1,0 +1,136 @@
+
+
+  1%|▌                                                         | 1/100 [00:15<25:53, 15.70s/it]
+{'loss': 1.9562, 'grad_norm': 0.9228785037994385, 'learning_rate': 0.00019805941782534764, 'epoch': 0.0}
+
+  2%|█▏                                                        | 2/100 [00:22<17:29, 10.71s/it]
+
+  3%|█▋                                                        | 3/100 [00:28<13:30,  8.35s/it]
+
+  4%|██▎                                                       | 4/100 [00:34<11:36,  7.25s/it]
+
+  5%|██▉                                                       | 5/100 [00:40<11:11,  7.07s/it]
+
+  6%|███▍                                                      | 6/100 [00:46<10:35,  6.76s/it]
+
+  7%|████                                                      | 7/100 [00:53<10:28,  6.76s/it]
+
+  8%|████▋                                                     | 8/100 [01:00<10:28,  6.83s/it]
+
+  9%|█████▏                                                    | 9/100 [01:06<10:06,  6.67s/it]
+
+ 10%|█████▋                                                   | 10/100 [01:12<09:40,  6.45s/it]
+
+ 11%|██████▎                                                  | 11/100 [01:19<09:26,  6.37s/it]
+
+ 12%|██████▊                                                  | 12/100 [01:25<09:10,  6.25s/it]
+
+ 13%|███████▍                                                 | 13/100 [01:29<08:25,  5.81s/it]
+
+ 14%|███████▉                                                 | 14/100 [01:35<08:23,  5.85s/it]
+
+ 15%|████████▌                                                | 15/100 [01:42<08:26,  5.96s/it]
+
+
+ 17%|█████████▋                                               | 17/100 [01:55<08:54,  6.44s/it]
+
+ 18%|██████████▎                                              | 18/100 [02:01<08:30,  6.23s/it]
+
+ 19%|██████████▊                                              | 19/100 [02:07<08:18,  6.16s/it]
+{'loss': 1.0897, 'grad_norm': 0.5614372491836548, 'learning_rate': 0.0001620486145843753, 'epoch': 0.0}
+
+ 20%|███████████▍                                             | 20/100 [02:15<08:54,  6.68s/it]
+
+
+ 22%|████████████▌                                            | 22/100 [02:29<08:55,  6.87s/it]
+{'loss': 0.8826, 'grad_norm': 0.39276209473609924, 'learning_rate': 0.00015604681404421327, 'epoch': 0.0}
+
+
+ 24%|█████████████▋                                           | 24/100 [02:41<08:05,  6.38s/it]
+
+ 25%|██████████████▎                                          | 25/100 [02:47<07:48,  6.24s/it]
+{'loss': 0.9909, 'grad_norm': 0.5186572074890137, 'learning_rate': 0.00015004501350405122, 'epoch': 0.0}
+
+
+ 27%|███████████████▍                                         | 27/100 [02:59<07:35,  6.24s/it]
+
+ 28%|███████████████▉                                         | 28/100 [03:05<07:23,  6.16s/it]
+
+ 29%|████████████████▌                                        | 29/100 [03:11<07:12,  6.09s/it]
+{'loss': 0.9278, 'grad_norm': 0.4955854117870331, 'learning_rate': 0.00014204261278383514, 'epoch': 0.0}
+
+ 30%|█████████████████                                        | 30/100 [03:18<07:16,  6.24s/it]
+
+
+ 32%|██████████████████▏                                      | 32/100 [03:31<07:17,  6.43s/it]
+
+ 33%|██████████████████▊                                      | 33/100 [03:37<07:09,  6.41s/it]
+{'loss': 0.8525, 'grad_norm': 0.3902958333492279, 'learning_rate': 0.0001340402120636191, 'epoch': 0.01}
+
+
+ 35%|███████████████████▉                                     | 35/100 [03:49<06:35,  6.09s/it]
+{'loss': 0.7966, 'grad_norm': 0.3717527985572815, 'learning_rate': 0.00013003901170351108, 'epoch': 0.01}
+
+
+ 37%|█████████████████████                                    | 37/100 [04:03<06:56,  6.62s/it]
+{'loss': 0.8747, 'grad_norm': 0.36849743127822876, 'learning_rate': 0.000126037811343403, 'epoch': 0.01}
+
+
+ 39%|██████████████████████▏                                  | 39/100 [04:17<06:52,  6.76s/it]
+{'loss': 0.767, 'grad_norm': 0.4192209541797638, 'learning_rate': 0.000122036610983295, 'epoch': 0.01}
+
+ 40%|██████████████████████▊                                  | 40/100 [04:22<06:16,  6.27s/it]Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_follow_along.py", line 155, in <module>
+    trainer.train()
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1859, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2203, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3138, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3161, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/peft_model.py", line 1129, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 161, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 1145, in forward
+    loss = loss_fct(shift_logits, shift_labels)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/loss.py", line 1179, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/functional.py", line 3059, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.49 GiB. GPU 0 has a total capacity of 47.54 GiB of which 4.07 GiB is free. Including non-PyTorch memory, this process has 43.21 GiB memory in use. Of the allocated memory 41.63 GiB is allocated by PyTorch, and 1.24 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

@@ -1,0 +1,53 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+tokenizer
+load data
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.05it/s]
+Data loaded
+<bos><start_of_turn>user
+Who did not ordain women until 1994?<end_of_turn>
+<start_of_turn>model
+The answer is: The Church of England.<end_of_turn>
+<eos>
+<class 'str'>
+
+
+Map:  77%|███████▋  | 46000/60000 [00:04<00:01, 10743.22 examples/s]
+<bos><start_of_turn>user
+How many northern counties remained part of Britain until 1922?<end_of_turn>
+<start_of_turn>model
+The answer is: six.<end_of_turn>
+<eos>
+Map: 100%|██████████| 60000/60000 [00:06<00:00, 9957.86 examples/s]
+Map:  27%|██▋       | 2000/7500 [00:00<00:00, 13148.39 examples/s]
+Data preprocessed
+Map: 100%|██████████| 7500/7500 [00:00<00:00, 11068.52 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 298, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 252, in main
+    args=transformers.TrainingArguments(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 128, in __init__
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py", line 1623, in __post_init__
+    self.optim = OptimizerNames(self.optim)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/enum.py", line 712, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/enum.py", line 1143, in __new__
+    raise exc
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/enum.py", line 1120, in __new__
+    result = cls._missing_(value)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/utils/generic.py", line 495, in _missing_
+    raise ValueError(
+ValueError: paged_adamw_16bit is not a valid OptimizerNames, please select one of ['adamw_hf', 'adamw_torch', 'adamw_torch_fused', 'adamw_torch_xla', 'adamw_torch_npu_fused', 'adamw_apex_fused', 'adafactor', 'adamw_anyprecision', 'sgd', 'adagrad', 'adamw_bnb_8bit', 'adamw_8bit', 'lion_8bit', 'lion_32bit', 'paged_adamw_32bit', 'paged_adamw_8bit', 'paged_lion_32bit', 'paged_lion_8bit', 'rmsprop', 'rmsprop_bnb', 'rmsprop_bnb_8bit', 'rmsprop_bnb_32bit', 'galore_adamw', 'galore_adamw_8bit', 'galore_adafactor', 'galore_adamw_layerwise', 'galore_adamw_8bit_layerwise', 'galore_adafactor_layerwise']
+Trainable: 19611648 | total: 2525784064 | Percentage: 0.7765%
+Model prepared for training

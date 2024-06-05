@@ -1,0 +1,43 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.75it/s]
+tokenizer
+load data
+Data loaded
+<bos><start_of_turn>user
+Who did not ordain women until 1994?<end_of_turn>
+<start_of_turn>model
+The answer is: The Church of England.<end_of_turn>
+<eos>
+<class 'str'>
+Map:   0%|          | 0/60000 [00:00<?, ? examples/s]
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 319, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 228, in main
+    train_data = other_preprocessing(train, tokenizer, args.model_context)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 151, in other_preprocessing
+    dataset = dataset.map(lambda x: tokenizer(x[f'{context_plug}_prompt'][:512]), batched=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3156, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/datasets/arrow_dataset.py", line 3570, in _map_single
+    writer.write_batch(batch)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/datasets/arrow_writer.py", line 571, in write_batch
+    pa_table = pa.Table.from_arrays(arrays, schema=schema)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/table.pxi", line 3986, in pyarrow.lib.Table.from_arrays
+  File "pyarrow/table.pxi", line 3266, in pyarrow.lib.Table.validate
+  File "pyarrow/error.pxi", line 91, in pyarrow.lib.check_status
+pyarrow.lib.ArrowInvalid: Column 10 named input_ids expected length 1000 but got length 512

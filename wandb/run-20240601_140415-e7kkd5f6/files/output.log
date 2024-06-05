@@ -1,0 +1,38 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+tokenizer
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.11it/s]
+load data
+Data loaded
+<bos><start_of_turn>user
+Who did not ordain women until 1994?<end_of_turn>
+<start_of_turn>model
+The answer is: The Church of England.<end_of_turn>
+<eos>
+<class 'str'>
+
+
+Map: 100%|██████████| 60000/60000 [00:06<00:00, 9408.31 examples/s]
+Map:  53%|█████▎    | 4000/7500 [00:00<00:00, 11180.72 examples/s]
+<bos><start_of_turn>user
+How many northern counties remained part of Britain until 1922?<end_of_turn>
+<start_of_turn>model
+The answer is: six.<end_of_turn>
+<eos>
+<class 'str'>
+Data preprocessed
+
+Map: 100%|██████████| 7500/7500 [00:00<00:00, 10714.11 examples/s]
+Trainable: 19611648 | total: 2525784064 | Percentage: 0.7765%
+Model prepared for training
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 295, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 251, in main
+    args=transformers.TrainingArguments(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'predict_with_generate'

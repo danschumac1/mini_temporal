@@ -1,0 +1,18 @@
+Generation script started at Sat 01 Jun 2024 05:47:36 PM CDT
+Processing TQE, model gemma-1.1-7b-it, evaluated with relevant_context
+Completed TQE, model gemma-1.1-7b-it, evaluated with relevant_context
+Processing TQE, model gemma-1.1-7b-it, evaluated with no_context
+Completed TQE, model gemma-1.1-7b-it, evaluated with no_context
+Processing TQE, model gemma-1.1-7b-it, evaluated with random_context
+Completed TQE, model gemma-1.1-7b-it, evaluated with random_context
+Processing TQE, model gemma-1.1-7b-it, evaluated with wrong_date_context
+Completed TQE, model gemma-1.1-7b-it, evaluated with wrong_date_context
+Processing TQE, model gemma-1.1-2b-it, evaluated with relevant_context
+Completed TQE, model gemma-1.1-2b-it, evaluated with relevant_context
+Processing TQE, model gemma-1.1-2b-it, evaluated with no_context
+Completed TQE, model gemma-1.1-2b-it, evaluated with no_context
+Processing TQE, model gemma-1.1-2b-it, evaluated with random_context
+Completed TQE, model gemma-1.1-2b-it, evaluated with random_context
+Processing TQE, model gemma-1.1-2b-it, evaluated with wrong_date_context
+Completed TQE, model gemma-1.1-2b-it, evaluated with wrong_date_context
+IT script ended at Sat 01 Jun 2024 06:06:51 PM CDT

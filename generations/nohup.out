@@ -1,0 +1,88 @@
+Using NVIDIA RTX A6000
+loading test data
+formatting instructions
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+other preprocessing
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 5507.52 examples/s]
+
+
+ GENERATED TEXT: <pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><pad><bos><start_of_turn>user
+QUESTION: Which country is granted independence from Soviet Union in September 1991? Here is the context: In September 1991, Armenia was one of the countries that declared independence from the Soviet Union. The dissolution of the Soviet Union occurred over several months and officially came to an end in December 1991, with the declaration of the Alma-Ata Protocol, leading to the independence of several former Soviet republics, including Armenia. <end_of_turn>
+<start_of_turn>model
+The answer is:  
+
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  2.17it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.17it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.67it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.46it/s]
+{"INDEX": 0, "QUESTION": "QUESTION: Which country is granted independence from Soviet Union in September 1991? Here is the context: In September 1991, Armenia was one of the countries that declared independence from the Soviet Union. The dissolution of the Soviet Union occurred over several months and officially came to an end in December 1991, with the declaration of the Alma-Ata Protocol, leading to the independence of several former Soviet republics, including Armenia. ", "PREDICTION": "The answer is: <b>Armenia</b>\n\nThe provided text explicitly states that Armenia was one of the countries"}
+{"INDEX": 1, "QUESTION": "QUESTION: A jury in Michigan finds whom guilty of second-degree murder for administering a lethal injection to a terminally ill man in March 1999? Here is the context: A jury in Michigan found Jack Kevorkian, also known as \"Dr. Death,\" guilty of second-degree murder for administering a lethal injection to Thomas Youk, a terminally ill man, in March 1999. Kevorkian was an advocate for the right to die and assisted in the deaths of dozens of individuals who were terminally ill or suffering from chronic painful conditions. The case garnered significant media attention and sparked national debate over the ethics of euthanasia and physician-assisted suicide. ", "PREDICTION": "The answer is: \nJack Kevorkian was found guilty of second-degree murder for administering a"}
+{"INDEX": 2, "QUESTION": "QUESTION: Which planet moved across the sun was witnessed in early June 2004? Here is the context: In early June 2004, observers on Earth had the opportunity to witness a rare astronomical event known as the Transit of Venus. During this event, the planet Venus passed directly between the Earth and the Sun, appearing as a small black dot moving across the face of the Sun. This phenomenon occurs in a pattern that repeats every 243 years, with pairs of transits eight years apart separated by long gaps of 121.5 years and 105.5 years. The 2004 transit was the first of the 21st century and the first since 1882. Observers around the world used safe viewing techniques to watch the transit, as looking directly at the Sun without proper protection can cause serious eye damage. ", "PREDICTION": "The answer is: <b>Venus</b>\n\nThe passage states that \"During this event, the planet Venus"}
+{"INDEX": 3, "QUESTION": "QUESTION: Chinese troops kill hundreds of pro-democracy students in which city in June 1989? Here is the context: In June 1989, Chinese troops killed hundreds of pro-democracy students in Beijing, specifically in Tiananmen Square. This event is often referred to as the Tiananmen Square Massacre. The Chinese government's military crackdown on the student-led demonstrations was widely condemned by the international community. The exact number of casualties remains unknown and is a subject of controversy, as the Chinese government has never released official figures and has restricted discussion of the events. ", "PREDICTION": "The answer is: <b>Beijing</b>\n\nThe passage states that \"Chinese troops killed hundreds of pro-"}
+{"INDEX": 4, "QUESTION": "QUESTION: What activity became legal in The Republic of Ireland when the 15th Amendment to the Constitution was passed in 1995? Here is the context: The 15th Amendment to the Constitution of Ireland, which was passed in 1995, made divorce legal in the country. Before this amendment, the Irish Constitution recognized the indissolubility of marriage, effectively prohibiting divorce. The amendment, which modified Article 41.3.2\u00b0 of the Constitution, allowed for the dissolution of a marriage where at least four years of separation had occurred. This change reflected a significant shift in Irish society and its attitudes towards marriage and divorce, aligning Ireland's laws more closely with those of other European countries. ", "PREDICTION": "The answer is: <strong>Divorce became legal in The Republic of Ireland.</strong>\n\nThe passage states that"}
+{"INDEX": 5, "QUESTION": "QUESTION: Which country ratified the Berne convention on copyright in March 1989? Here is the context: The United States of America ratified the Berne Convention on copyright in March 1989. ", "PREDICTION": "The answer is: <b>United States of America</b>\n\nThe provided text states that the United States of"}
+{"INDEX": 6, "QUESTION": "QUESTION: Which Pakistan prime minister gave birth in office in 1990? Here is the context: Benazir Bhutto, who served as the Prime Minister of Pakistan, made history by becoming the first elected female leader of a Muslim-majority country. During her second term in office in 1990, she gave birth to her daughter, Bakhtawar Bhutto Zardari, which marked another momentous occasion as Bhutto became the first serving prime minister in the world to give birth. Her leadership and personal milestones remain significant in the context of women's progress in global politics. ", "PREDICTION": "The answer is: <strong>Benazir Bhutto.</strong>\n\nThe provided text explicitly states that Ben"}
+{"INDEX": 7, "QUESTION": "QUESTION: Which former dictator died in hospital in Saudi Arabia during August 2003? Here is the context: Idi Amin, the former dictator of Uganda, died in a hospital in Jeddah, Saudi Arabia on August 16, 2003. He had been living in exile in Saudi Arabia since being ousted from power in 1979. His rule in Uganda, from 1971 to 1979, was characterized by widespread human rights abuses, political repression, ethnic persecution, extrajudicial killings, nepotism, corruption, and gross economic mismanagement. The number of people killed as a result of his regime is estimated by international observers and human rights groups to range from 100,000 to 500,000. ", "PREDICTION": "The answer is: <b>Idi Amin</b>\n\nThe provided text states that \"Idi Amin,"}
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/generations/generations_baselines.py", line 241, in <module>
+    main() # @$@
+    ^^^^^^
+  File "/home/dan/mini_temporal/generations/generations_baselines.py", line 205, in main
+    generated_ids = base_model.generate(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/generation/utils.py", line 1773, in generate
+    result = self._beam_search(
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/generation/utils.py", line 2632, in _beam_search
+    outputs = self(
+              ^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 1098, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 902, in forward
+    layer_outputs = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 638, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+                                                          ^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 539, in forward
+    query_states = self.q_proj(hidden_states)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

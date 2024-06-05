@@ -1,0 +1,214 @@
+2024-05-31 21:27:07,893 INFO    StreamThr :458593 [internal.py:wandb_internal():86] W&B internal server running at pid: 458593, started at: 2024-05-31 21:27:07.893302
+2024-05-31 21:27:07,895 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status
+2024-05-31 21:27:07,897 INFO    WriterThread:458593 [datastore.py:open_for_write():87] open: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/run-yv479niq.wandb
+2024-05-31 21:27:07,897 DEBUG   SenderThread:458593 [sender.py:send():379] send: header
+2024-05-31 21:27:07,899 DEBUG   SenderThread:458593 [sender.py:send():379] send: run
+2024-05-31 21:27:08,072 INFO    SenderThread:458593 [dir_watcher.py:__init__():211] watching files in: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files
+2024-05-31 21:27:08,072 INFO    SenderThread:458593 [sender.py:_start_run_threads():1124] run started: yv479niq with start time 1717208827.892728
+2024-05-31 21:27:08,076 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: check_version
+2024-05-31 21:27:08,077 DEBUG   SenderThread:458593 [sender.py:send_request():406] send_request: check_version
+2024-05-31 21:27:08,225 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: run_start
+2024-05-31 21:27:08,251 DEBUG   HandlerThread:458593 [system_info.py:__init__():26] System info init
+2024-05-31 21:27:08,251 DEBUG   HandlerThread:458593 [system_info.py:__init__():41] System info init done
+2024-05-31 21:27:08,251 INFO    HandlerThread:458593 [system_monitor.py:start():194] Starting system monitor
+2024-05-31 21:27:08,251 INFO    SystemMonitor:458593 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-31 21:27:08,251 INFO    HandlerThread:458593 [system_monitor.py:probe():214] Collecting system info
+2024-05-31 21:27:08,252 INFO    SystemMonitor:458593 [interfaces.py:start():190] Started cpu monitoring
+2024-05-31 21:27:08,253 INFO    SystemMonitor:458593 [interfaces.py:start():190] Started disk monitoring
+2024-05-31 21:27:08,253 INFO    SystemMonitor:458593 [interfaces.py:start():190] Started gpu monitoring
+2024-05-31 21:27:08,254 INFO    SystemMonitor:458593 [interfaces.py:start():190] Started memory monitoring
+2024-05-31 21:27:08,254 INFO    SystemMonitor:458593 [interfaces.py:start():190] Started network monitoring
+2024-05-31 21:27:08,289 DEBUG   HandlerThread:458593 [system_info.py:probe():150] Probing system
+2024-05-31 21:27:08,291 DEBUG   HandlerThread:458593 [system_info.py:_probe_git():135] Probing git
+2024-05-31 21:27:08,296 DEBUG   HandlerThread:458593 [system_info.py:_probe_git():143] Probing git done
+2024-05-31 21:27:08,296 DEBUG   HandlerThread:458593 [system_info.py:probe():198] Probing system done
+2024-05-31 21:27:08,296 DEBUG   HandlerThread:458593 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-glibc2.31', 'python': '3.11.8', 'heartbeatAt': '2024-06-01T02:27:08.289490', 'startedAt': '2024-06-01T02:27:07.888713', 'docker': None, 'cuda': None, 'args': ('--dataset', 'AQA', '--epochs', '1', '--model_context', 'wrong_date_context', '--base_model', 'gemma-1.1-2b-it', '--batch_size', '16'), 'state': 'running', 'program': '/home/dan/mini_temporal/training/fine_tune_gemma_it.py', 'codePathLocal': 'training/fine_tune_gemma_it.py', 'codePath': 'training/fine_tune_gemma_it.py', 'git': {'remote': 'https://github.com/danschumac1/mini_temporal.git', 'commit': '8bb66919de0b66973f8e7f8985e76eb93f7ea3bb'}, 'email': None, 'root': '/home/dan/mini_temporal', 'host': 'rr183367ip01', 'username': 'dan', 'executable': '/home/dan/miniconda3/envs/danEnv/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2.3158125000000003, 'min': 2200.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.723, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.219, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.718, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.72, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}], 'disk': {'/': {'total': 1832.2072448730469, 'used': 1702.5785789489746}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 251.51310348510742}}
+2024-05-31 21:27:08,296 INFO    HandlerThread:458593 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-31 21:27:08,296 INFO    HandlerThread:458593 [system_monitor.py:probe():227] Publishing system info
+2024-05-31 21:27:08,297 DEBUG   HandlerThread:458593 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-31 21:27:09,073 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/conda-environment.yaml
+2024-05-31 21:27:10,367 DEBUG   HandlerThread:458593 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-31 21:27:10,367 INFO    HandlerThread:458593 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-31 21:27:10,369 DEBUG   SenderThread:458593 [sender.py:send():379] send: files
+2024-05-31 21:27:10,369 INFO    SenderThread:458593 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-31 21:27:10,461 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-31 21:27:10,461 DEBUG   SenderThread:458593 [sender.py:send_request():406] send_request: python_packages
+2024-05-31 21:27:10,462 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 21:27:10,462 DEBUG   SenderThread:458593 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 21:27:10,464 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:27:10,526 DEBUG   SenderThread:458593 [sender.py:send():379] send: telemetry
+2024-05-31 21:27:10,743 INFO    wandb-upload_0:458593 [upload_job.py:push():131] Uploaded file /tmp/tmpco09ms_hwandb/rernf7p2-wandb-metadata.json
+2024-05-31 21:27:11,073 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/conda-environment.yaml
+2024-05-31 21:27:11,073 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/requirements.txt
+2024-05-31 21:27:11,073 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/wandb-metadata.json
+2024-05-31 21:27:11,073 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:27:13,073 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:27:13,873 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:27:15,074 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:27:17,075 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:27:19,441 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:27:24,442 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:27:25,462 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 21:27:25,462 DEBUG   SenderThread:458593 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 21:27:25,464 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:27:29,610 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:27:34,612 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:27:39,616 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:27:40,462 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 21:27:40,505 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:27:46,463 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:27:51,465 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:27:55,463 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:28:00,466 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:28:05,779 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:28:08,235 DEBUG   SenderThread:458593 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 21:28:08,255 DEBUG   SystemMonitor:458593 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-31 21:28:08,408 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:28:09,091 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/config.yaml
+2024-05-31 21:28:10,463 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:28:13,410 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:28:15,786 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:28:18,410 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:28:20,788 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:28:23,411 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:28:25,463 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:28:28,412 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:28:30,790 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:28:33,412 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:28:36,179 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:28:38,258 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:28:39,259 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:28:40,463 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:28:44,260 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:28:46,187 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:28:49,261 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:28:51,187 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:28:54,262 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:28:55,464 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:28:59,263 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:01,190 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:29:04,264 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:06,191 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:29:08,260 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:29:10,261 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:10,464 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:29:15,262 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:16,225 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:29:20,368 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:21,112 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:29:21,241 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:29:23,112 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:29:25,113 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:29:25,513 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:29:25,579 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:27,113 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:29:28,893 DEBUG   SenderThread:458593 [sender.py:send():379] send: config
+2024-05-31 21:29:28,893 DEBUG   SenderThread:458593 [sender.py:send():379] send: metric
+2024-05-31 21:29:28,893 DEBUG   SenderThread:458593 [sender.py:send():379] send: telemetry
+2024-05-31 21:29:28,893 DEBUG   SenderThread:458593 [sender.py:send():379] send: metric
+2024-05-31 21:29:28,893 WARNING SenderThread:458593 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-05-31 21:29:28,893 DEBUG   SenderThread:458593 [sender.py:send():379] send: telemetry
+2024-05-31 21:29:28,899 DEBUG   SenderThread:458593 [sender.py:send():379] send: telemetry
+2024-05-31 21:29:28,899 DEBUG   SenderThread:458593 [sender.py:send():379] send: config
+2024-05-31 21:29:29,114 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:29:29,914 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-31 21:29:29,914 DEBUG   SenderThread:458593 [sender.py:send_request():406] send_request: log_artifact
+2024-05-31 21:29:30,733 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:29:30,806 INFO    wandb-upload_0:458593 [upload_job.py:push():89] Uploaded file /tmp/tmp0n8kem99/README.md
+2024-05-31 21:29:30,806 INFO    wandb-upload_1:458593 [upload_job.py:push():89] Uploaded file /tmp/tmp0n8kem99/adapter_config.json
+2024-05-31 21:29:30,991 INFO    wandb-upload_3:458593 [upload_job.py:push():89] Uploaded file /tmp/tmp0n8kem99/model_architecture.txt
+2024-05-31 21:29:31,114 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:29:33,688 INFO    wandb-upload_2:458593 [upload_job.py:push():89] Uploaded file /tmp/tmp0n8kem99/adapter_model.safetensors
+2024-05-31 21:29:34,131 INFO    SenderThread:458593 [sender.py:send_request_log_artifact():1456] logged artifact model-distinctive-surf-135 - {'id': 'QXJ0aWZhY3Q6ODU2NTg1ODM0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE4MTIxNzkwMQ==', 'latestArtifact': None}}
+2024-05-31 21:29:34,131 DEBUG   SenderThread:458593 [sender.py:send():379] send: telemetry
+2024-05-31 21:29:34,132 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:35,115 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:29:35,734 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:29:38,261 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:29:39,262 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:40,499 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:29:44,263 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:46,327 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:29:49,267 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:50,119 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/config.yaml
+2024-05-31 21:29:51,328 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:29:54,403 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:29:55,500 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:29:59,403 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:01,490 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:30:04,405 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:06,945 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:30:08,262 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:30:10,263 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:10,500 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:30:15,264 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:15,901 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:30:20,265 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:20,903 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:30:25,266 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:25,500 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:30:30,267 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:31,488 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:30:35,268 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:36,626 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:30:38,264 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:30:40,500 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:30:41,265 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:46,205 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:30:46,266 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:51,133 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:30:51,206 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:30:51,482 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:30:55,500 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:30:56,483 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:00,940 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:01,483 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:06,205 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:06,485 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:08,265 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:31:10,500 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:31:12,266 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:15,989 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:17,268 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:20,990 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:22,268 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:25,501 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:31:27,269 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:31,325 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:32,270 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:37,175 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:37,271 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:38,266 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:31:40,501 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:31:43,268 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:46,119 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:48,269 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:51,121 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:53,269 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:31:56,673 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:56,673 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:31:56,674 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:31:58,270 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:32:01,674 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:32:03,271 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:32:07,352 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:32:08,267 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:32:09,268 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:32:11,674 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:32:13,151 INFO    Thread-12 :458593 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_212707-yv479niq/files/output.log
+2024-05-31 21:32:14,269 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:32:16,956 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:32:19,270 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:32:21,957 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:32:24,271 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:32:26,674 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 21:32:29,272 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:32:32,037 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-31 21:32:34,273 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 21:32:38,269 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:32:38,329 INFO    memory    :458593 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-05-31 21:32:38,329 DEBUG   SystemMonitor:458593 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-31 21:32:38,330 DEBUG   SystemMonitor:458593 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-31 21:32:38,331 DEBUG   SenderThread:458593 [sender.py:send():379] send: stats
+2024-05-31 21:32:39,289 INFO    MainThread:458593 [internal.py:handle_exit():76] Internal process exited
+2024-05-31 21:32:39,332 DEBUG   HandlerThread:458593 [handler.py:handle_request():146] handle_request: status_report

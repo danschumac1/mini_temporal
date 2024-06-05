@@ -1,0 +1,120 @@
+2024-05-31 18:20:40,622 INFO    StreamThr :287360 [internal.py:wandb_internal():86] W&B internal server running at pid: 287360, started at: 2024-05-31 18:20:40.621536
+2024-05-31 18:20:40,623 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status
+2024-05-31 18:20:40,625 INFO    WriterThread:287360 [datastore.py:open_for_write():87] open: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/run-1y2piizl.wandb
+2024-05-31 18:20:40,626 DEBUG   SenderThread:287360 [sender.py:send():379] send: header
+2024-05-31 18:20:40,628 DEBUG   SenderThread:287360 [sender.py:send():379] send: run
+2024-05-31 18:20:40,838 INFO    SenderThread:287360 [dir_watcher.py:__init__():211] watching files in: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files
+2024-05-31 18:20:40,839 INFO    SenderThread:287360 [sender.py:_start_run_threads():1124] run started: 1y2piizl with start time 1717197640.621402
+2024-05-31 18:20:40,846 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: check_version
+2024-05-31 18:20:40,846 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: check_version
+2024-05-31 18:20:40,932 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: run_start
+2024-05-31 18:20:40,940 DEBUG   HandlerThread:287360 [system_info.py:__init__():26] System info init
+2024-05-31 18:20:40,940 DEBUG   HandlerThread:287360 [system_info.py:__init__():41] System info init done
+2024-05-31 18:20:40,940 INFO    HandlerThread:287360 [system_monitor.py:start():194] Starting system monitor
+2024-05-31 18:20:40,940 INFO    SystemMonitor:287360 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-31 18:20:40,940 INFO    HandlerThread:287360 [system_monitor.py:probe():214] Collecting system info
+2024-05-31 18:20:40,941 INFO    SystemMonitor:287360 [interfaces.py:start():190] Started cpu monitoring
+2024-05-31 18:20:40,942 INFO    SystemMonitor:287360 [interfaces.py:start():190] Started disk monitoring
+2024-05-31 18:20:40,942 INFO    SystemMonitor:287360 [interfaces.py:start():190] Started gpu monitoring
+2024-05-31 18:20:40,943 INFO    SystemMonitor:287360 [interfaces.py:start():190] Started memory monitoring
+2024-05-31 18:20:40,944 INFO    SystemMonitor:287360 [interfaces.py:start():190] Started network monitoring
+2024-05-31 18:20:40,979 DEBUG   HandlerThread:287360 [system_info.py:probe():150] Probing system
+2024-05-31 18:20:40,980 DEBUG   HandlerThread:287360 [system_info.py:_probe_git():135] Probing git
+2024-05-31 18:20:40,985 DEBUG   HandlerThread:287360 [system_info.py:_probe_git():143] Probing git done
+2024-05-31 18:20:40,986 DEBUG   HandlerThread:287360 [system_info.py:probe():198] Probing system done
+2024-05-31 18:20:40,986 DEBUG   HandlerThread:287360 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-glibc2.31', 'python': '3.11.8', 'heartbeatAt': '2024-05-31T23:20:40.979079', 'startedAt': '2024-05-31T23:20:40.616979', 'docker': None, 'cuda': None, 'args': ('--dataset', 'AQA', '--epochs', '4', '--model_context', 'relevant_context', '--base_model', 'gemma-1.1-7b-it', '--batch_size', '16'), 'state': 'running', 'program': '/home/dan/mini_temporal/training/fine_tune_gemma_it.py', 'codePathLocal': 'training/fine_tune_gemma_it.py', 'codePath': 'training/fine_tune_gemma_it.py', 'git': {'remote': 'https://github.com/danschumac1/mini_temporal.git', 'commit': '8bb66919de0b66973f8e7f8985e76eb93f7ea3bb'}, 'email': None, 'root': '/home/dan/mini_temporal', 'host': 'rr183367ip01', 'username': 'dan', 'executable': '/home/dan/miniconda3/envs/danEnv/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2.2965, 'min': 2200.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.565, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.972, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.972, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}], 'disk': {'/': {'total': 1832.2072448730469, 'used': 1702.431209564209}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 251.51310348510742}}
+2024-05-31 18:20:40,986 INFO    HandlerThread:287360 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-31 18:20:40,986 INFO    HandlerThread:287360 [system_monitor.py:probe():227] Publishing system info
+2024-05-31 18:20:40,986 DEBUG   HandlerThread:287360 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-31 18:20:41,840 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/conda-environment.yaml
+2024-05-31 18:20:43,105 DEBUG   HandlerThread:287360 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-31 18:20:43,106 INFO    HandlerThread:287360 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-31 18:20:43,108 DEBUG   SenderThread:287360 [sender.py:send():379] send: files
+2024-05-31 18:20:43,108 INFO    SenderThread:287360 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-31 18:20:43,201 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-31 18:20:43,202 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 18:20:43,204 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: python_packages
+2024-05-31 18:20:43,205 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 18:20:43,205 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 18:20:43,352 DEBUG   SenderThread:287360 [sender.py:send():379] send: telemetry
+2024-05-31 18:20:43,443 INFO    wandb-upload_0:287360 [upload_job.py:push():131] Uploaded file /tmp/tmptb_7uz9lwandb/2prazc4c-wandb-metadata.json
+2024-05-31 18:20:43,839 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/conda-environment.yaml
+2024-05-31 18:20:43,839 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/wandb-metadata.json
+2024-05-31 18:20:43,840 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/requirements.txt
+2024-05-31 18:20:43,840 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/output.log
+2024-05-31 18:20:45,670 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:20:45,840 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/output.log
+2024-05-31 18:20:47,840 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/output.log
+2024-05-31 18:20:49,841 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/output.log
+2024-05-31 18:20:51,101 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:20:51,842 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/output.log
+2024-05-31 18:20:53,842 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/output.log
+2024-05-31 18:20:56,613 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:20:58,202 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 18:20:58,202 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 18:20:58,204 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 18:21:02,346 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:07,347 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:12,351 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:12,849 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/config.yaml
+2024-05-31 18:21:13,202 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 18:21:13,202 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 18:21:13,244 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 18:21:18,345 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:23,346 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:28,202 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 18:21:28,202 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 18:21:28,245 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 18:21:28,347 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:33,348 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:38,349 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:40,945 DEBUG   SystemMonitor:287360 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-31 18:21:40,947 DEBUG   SenderThread:287360 [sender.py:send():379] send: stats
+2024-05-31 18:21:43,202 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 18:21:43,203 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 18:21:43,244 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 18:21:44,300 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:49,301 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:54,302 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:21:58,202 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 18:21:58,202 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 18:21:58,245 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 18:22:00,299 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:05,300 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:10,301 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:10,948 DEBUG   SenderThread:287360 [sender.py:send():379] send: stats
+2024-05-31 18:22:13,202 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 18:22:13,203 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 18:22:13,245 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 18:22:16,300 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:21,301 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:26,302 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:28,203 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 18:22:28,203 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 18:22:28,245 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 18:22:31,329 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:36,330 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:40,949 DEBUG   SenderThread:287360 [sender.py:send():379] send: stats
+2024-05-31 18:22:41,950 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:43,202 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-31 18:22:43,203 DEBUG   SenderThread:287360 [sender.py:send_request():406] send_request: stop_status
+2024-05-31 18:22:43,245 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-31 18:22:47,122 DEBUG   HandlerThread:287360 [handler.py:handle_request():146] handle_request: status_report
+2024-05-31 18:22:47,873 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/output.log
+2024-05-31 18:22:48,979 INFO    memory    :287360 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-05-31 18:22:48,979 DEBUG   SystemMonitor:287360 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-31 18:22:48,979 DEBUG   SystemMonitor:287360 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-31 18:22:48,982 DEBUG   SenderThread:287360 [sender.py:send():379] send: stats
+2024-05-31 18:22:49,645 WARNING StreamThr :287360 [internal.py:is_dead():414] Internal process exiting, parent pid 287287 disappeared
+2024-05-31 18:22:49,645 ERROR   StreamThr :287360 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-05-31 18:22:49,874 INFO    Thread-12 :287360 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/files/output.log
+2024-05-31 18:22:49,958 INFO    MainThread:287360 [internal.py:handle_exit():76] Internal process exited
+2024-05-31 18:22:49,981 INFO    HandlerThread:287360 [handler.py:finish():866] shutting down handler
+2024-05-31 18:22:49,981 INFO    HandlerThread:287360 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-31 18:22:49,981 INFO    HandlerThread:287360 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-31 18:22:49,982 INFO    HandlerThread:287360 [interfaces.py:finish():202] Joined disk monitor
+2024-05-31 18:22:49,982 INFO    HandlerThread:287360 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-31 18:22:49,982 INFO    HandlerThread:287360 [interfaces.py:finish():202] Joined memory monitor
+2024-05-31 18:22:49,982 INFO    HandlerThread:287360 [interfaces.py:finish():202] Joined network monitor
+2024-05-31 18:22:49,982 INFO    WriterThread:287360 [datastore.py:close():296] close: /home/dan/mini_temporal/wandb/run-20240531_182040-1y2piizl/run-1y2piizl.wandb
+2024-05-31 18:22:49,982 INFO    SenderThread:287360 [sender.py:finish():1546] shutting down sender

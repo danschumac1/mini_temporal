@@ -1,0 +1,37 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.65it/s]
+tokenizer
+load data
+Data loaded
+<bos><start_of_turn>user
+Who did not ordain women until 1994?<end_of_turn>
+<start_of_turn>model
+The answer is: The Church of England.<end_of_turn>
+<eos>
+<class 'str'>
+
+
+Map:  78%|███████▊  | 47000/60000 [00:04<00:01, 10542.37 examples/s]
+<bos><start_of_turn>user
+How many northern counties remained part of Britain until 1922?<end_of_turn>
+<start_of_turn>model
+The answer is: six.<end_of_turn>
+<eos>
+Map: 100%|██████████| 60000/60000 [00:06<00:00, 9736.05 examples/s]
+Map:  27%|██▋       | 2000/7500 [00:00<00:00, 12746.57 examples/s]
+Data preprocessed
+Map: 100%|██████████| 7500/7500 [00:00<00:00, 10756.89 examples/s]
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 318, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 251, in main
+    trainable, total = model.get_nb_trainable_parameters()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'GemmaForCausalLM' object has no attribute 'get_nb_trainable_parameters'

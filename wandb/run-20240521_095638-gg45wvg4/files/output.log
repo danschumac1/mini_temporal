@@ -1,0 +1,20 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.48it/s]
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_halfway.py", line 259, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_halfway.py", line 168, in main
+    train['no_prompt'] = format_instruction(train, model_path = args.base_model)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_halfway.py", line 67, in format_instruction
+    tokenized_instructions.append(question + ' The answer is: ' + answer)
+                                  ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate tuple (not "str") to tuple

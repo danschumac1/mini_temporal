@@ -1,0 +1,172 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.15it/s]
+tokenizer
+load data
+Data loaded
+<bos><start_of_turn>user
+Who did not ordain women until 1994?<end_of_turn>
+<start_of_turn>model
+The answer is: The Church of England.<end_of_turn>
+<eos>
+<class 'str'>
+
+
+Map:  98%|█████████▊| 59000/60000 [00:05<00:00, 9086.45 examples/s]
+Dataset({
+    features: ['question', 'answer', 'type', 'relevant_context', 'random_context', 'wrong_date_context', 'no_prompt', 'rel_prompt', 'rand_prompt', 'wd_prompt', 'input_ids', 'attention_mask'],
+    num_rows: 60000
+})
+<bos><start_of_turn>user
+How many northern counties remained part of Britain until 1922?<end_of_turn>
+<start_of_turn>model
+The answer is: six.<end_of_turn>
+<eos>
+<class 'str'>
+Dataset({
+    features: ['question', 'answer', 'type', 'relevant_context', 'random_context', 'wrong_date_context', 'no_prompt', 'rel_prompt', 'rand_prompt', 'wd_prompt', 'input_ids', 'attention_mask'],
+    num_rows: 7500
+})
+Data preprocessed
+lora
+Map: 100%|██████████| 60000/60000 [00:06<00:00, 9882.35 examples/s]
+Map: 100%|██████████| 7500/7500 [00:00<00:00, 10971.12 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Trainer set up
+  0%|          | 0/1875 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  7%|▋         | 126/1875 [18:09<5:23:26, 11.10s/it]

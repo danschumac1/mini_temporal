@@ -1,0 +1,18 @@
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240531_213400-u4pd80um
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run soft-hill-136
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/u4pd80um/workspace
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.76it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.26it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.89it/s]
+Terminated

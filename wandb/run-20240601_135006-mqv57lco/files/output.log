@@ -1,0 +1,39 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+tokenizer
+Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.10it/s]
+load data
+Data loaded
+<bos><start_of_turn>user
+Who did not ordain women until 1994?<end_of_turn>
+<start_of_turn>model
+The answer is: The Church of England.<end_of_turn>
+<eos>
+<class 'str'>
+
+
+Map:  92%|█████████▏| 55000/60000 [00:05<00:00, 10212.26 examples/s]
+<bos><start_of_turn>user
+How many northern counties remained part of Britain until 1922?<end_of_turn>
+<start_of_turn>model
+The answer is: six.<end_of_turn>
+<eos>
+<class 'str'>
+Data preprocessed
+Map: 100%|██████████| 60000/60000 [00:06<00:00, 9851.28 examples/s]
+Map: 100%|██████████| 7500/7500 [00:00<00:00, 9770.73 examples/s]
+Trainable: 19611648 | total: 2525784064 | Percentage: 0.7765%
+Model prepared for training
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 293, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 269, in main
+    data_collator=transformers.DataCollatorForLanguageModeling(tokenizer, mlm=False, padding=True,truncation=True),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: DataCollatorForLanguageModeling.__init__() got an unexpected keyword argument 'padding'

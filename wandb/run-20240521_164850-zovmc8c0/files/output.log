@@ -1,0 +1,58 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.53it/s]
+tokenizer
+load data
+Data loaded
+0    <bos><start_of_turn>user\nIn June 2004,who mad...
+1    <bos><start_of_turn>user\nWhat was the name of...
+2    <bos><start_of_turn>user\nRussia attacked the ...
+3    <bos><start_of_turn>user\nIn July 2003 which L...
+4    <bos><start_of_turn>user\nWhere was Spielberg ...
+Name: no_prompt, dtype: object
+<bos><start_of_turn>user
+In June 2004,who made its first increase in interest rates in nearly four years?<end_of_turn>
+<start_of_turn>model
+The answer is: The Federal Reserve.<end_of_turn>
+<eos>
+<class 'str'>
+<bos><start_of_turn>user
+Who was named president of Disney-ABC television group in 2004?<end_of_turn>
+<start_of_turn>model
+The answer is: Anne Sweeney.<end_of_turn>
+<eos>
+<class 'str'>
+Data preprocessed
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+Map: 100%|██████████| 350/350 [00:00<00:00, 20391.53 examples/s]
+Map: 100%|██████████| 75/75 [00:00<00:00, 11012.14 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 5.4771, 'grad_norm': 9.435344696044922, 'learning_rate': 1.6750418760469013e-05, 'epoch': 0.73}
+{'loss': 5.402, 'grad_norm': 9.268244743347168, 'learning_rate': 1.3400335008375211e-05, 'epoch': 1.45}
+{'loss': 5.4479, 'grad_norm': 9.477545738220215, 'learning_rate': 1.005025125628141e-05, 'epoch': 2.18}
+  0%|          | 0/6 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+
+ 67%|██████▋   | 4/6 [03:00<01:30, 45.17s/it]
+{'loss': 5.3726, 'grad_norm': 9.524882316589355, 'learning_rate': 6.700167504187606e-06, 'epoch': 2.91}
+
+ 83%|████████▎ | 5/6 [03:45<00:44, 44.94s/it]
+{'loss': 5.3065, 'grad_norm': 9.53063678741455, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 271.0117, 'train_samples_per_second': 7.749, 'train_steps_per_second': 0.022, 'train_loss': 5.388743718465169, 'epoch': 4.36}
+100%|██████████| 6/6 [04:29<00:00, 44.95s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(

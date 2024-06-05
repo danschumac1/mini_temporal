@@ -1,0 +1,199 @@
+2024-05-30 09:53:15,938 INFO    StreamThr :4176674 [internal.py:wandb_internal():86] W&B internal server running at pid: 4176674, started at: 2024-05-30 09:53:15.937794
+2024-05-30 09:53:15,939 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: status
+2024-05-30 09:53:15,940 INFO    WriterThread:4176674 [datastore.py:open_for_write():87] open: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/run-qbb8k93v.wandb
+2024-05-30 09:53:15,941 DEBUG   SenderThread:4176674 [sender.py:send():379] send: header
+2024-05-30 09:53:15,944 DEBUG   SenderThread:4176674 [sender.py:send():379] send: run
+2024-05-30 09:53:16,162 INFO    SenderThread:4176674 [dir_watcher.py:__init__():211] watching files in: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files
+2024-05-30 09:53:16,162 INFO    SenderThread:4176674 [sender.py:_start_run_threads():1124] run started: qbb8k93v with start time 1717080795.937607
+2024-05-30 09:53:16,166 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: check_version
+2024-05-30 09:53:16,166 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: check_version
+2024-05-30 09:53:16,249 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: run_start
+2024-05-30 09:53:16,257 DEBUG   HandlerThread:4176674 [system_info.py:__init__():26] System info init
+2024-05-30 09:53:16,257 DEBUG   HandlerThread:4176674 [system_info.py:__init__():41] System info init done
+2024-05-30 09:53:16,257 INFO    HandlerThread:4176674 [system_monitor.py:start():194] Starting system monitor
+2024-05-30 09:53:16,257 INFO    SystemMonitor:4176674 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-30 09:53:16,257 INFO    HandlerThread:4176674 [system_monitor.py:probe():214] Collecting system info
+2024-05-30 09:53:16,257 INFO    SystemMonitor:4176674 [interfaces.py:start():190] Started cpu monitoring
+2024-05-30 09:53:16,258 INFO    SystemMonitor:4176674 [interfaces.py:start():190] Started disk monitoring
+2024-05-30 09:53:16,258 INFO    SystemMonitor:4176674 [interfaces.py:start():190] Started gpu monitoring
+2024-05-30 09:53:16,259 INFO    SystemMonitor:4176674 [interfaces.py:start():190] Started memory monitoring
+2024-05-30 09:53:16,260 INFO    SystemMonitor:4176674 [interfaces.py:start():190] Started network monitoring
+2024-05-30 09:53:16,278 DEBUG   HandlerThread:4176674 [system_info.py:probe():150] Probing system
+2024-05-30 09:53:16,280 DEBUG   HandlerThread:4176674 [system_info.py:_probe_git():135] Probing git
+2024-05-30 09:53:16,284 DEBUG   HandlerThread:4176674 [system_info.py:_probe_git():143] Probing git done
+2024-05-30 09:53:16,284 DEBUG   HandlerThread:4176674 [system_info.py:probe():198] Probing system done
+2024-05-30 09:53:16,284 DEBUG   HandlerThread:4176674 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-glibc2.31', 'python': '3.11.8', 'heartbeatAt': '2024-05-30T14:53:16.278684', 'startedAt': '2024-05-30T14:53:15.933459', 'docker': None, 'cuda': None, 'args': ('--dataset', 'AQA', '--epochs', '4', '--model_context', 'random_context', '--base_model', 'gemma-1.1-2b-it', '--batch_size', '16'), 'state': 'running', 'program': '/home/dan/mini_temporal/training/fine_tune_gemma_it.py', 'codePathLocal': 'training/fine_tune_gemma_it.py', 'codePath': 'training/fine_tune_gemma_it.py', 'git': {'remote': 'https://github.com/danschumac1/mini_temporal.git', 'commit': 'f1409aa0cbf8842bb7345c46ef6ca210cdfc3b13'}, 'email': None, 'root': '/home/dan/mini_temporal', 'host': 'rr183367ip01', 'username': 'dan', 'executable': '/home/dan/miniconda3/envs/danEnv/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2.6788749999999992, 'min': 2200.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.74, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.74, 'min': 2200.0, 'max': 3500.0}, {'current': 3.743, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 3.742, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.742, 'min': 2200.0, 'max': 3500.0}, {'current': 3.743, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.737, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.738, 'min': 2200.0, 'max': 3500.0}, {'current': 3.738, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 2.481, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.741, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.138, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.737, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.739, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 2.698, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}], 'disk': {'/': {'total': 1832.2072448730469, 'used': 1699.7396507263184}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 251.51310348510742}}
+2024-05-30 09:53:16,284 INFO    HandlerThread:4176674 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-30 09:53:16,284 INFO    HandlerThread:4176674 [system_monitor.py:probe():227] Publishing system info
+2024-05-30 09:53:16,284 DEBUG   HandlerThread:4176674 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-30 09:53:17,163 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/conda-environment.yaml
+2024-05-30 09:53:18,552 DEBUG   HandlerThread:4176674 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-30 09:53:18,553 INFO    HandlerThread:4176674 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-30 09:53:18,554 DEBUG   SenderThread:4176674 [sender.py:send():379] send: files
+2024-05-30 09:53:18,555 INFO    SenderThread:4176674 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-30 09:53:18,647 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-30 09:53:18,647 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: python_packages
+2024-05-30 09:53:18,648 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-30 09:53:18,648 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: stop_status
+2024-05-30 09:53:18,650 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-30 09:53:18,761 DEBUG   SenderThread:4176674 [sender.py:send():379] send: telemetry
+2024-05-30 09:53:18,930 INFO    wandb-upload_0:4176674 [upload_job.py:push():131] Uploaded file /tmp/tmpgrsop1kbwandb/i3cn29zd-wandb-metadata.json
+2024-05-30 09:53:19,163 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/conda-environment.yaml
+2024-05-30 09:53:19,163 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/output.log
+2024-05-30 09:53:19,163 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/requirements.txt
+2024-05-30 09:53:19,163 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/wandb-metadata.json
+2024-05-30 09:53:21,008 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: status_report
+2024-05-30 09:53:21,047 DEBUG   SenderThread:4176674 [sender.py:send():379] send: exit
+2024-05-30 09:53:21,048 INFO    SenderThread:4176674 [sender.py:send_exit():586] handling exit code: 1
+2024-05-30 09:53:21,048 INFO    SenderThread:4176674 [sender.py:send_exit():588] handling runtime: 4
+2024-05-30 09:53:21,048 INFO    SenderThread:4176674 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-30 09:53:21,048 INFO    SenderThread:4176674 [sender.py:send_exit():594] send defer
+2024-05-30 09:53:21,048 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:21,048 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-30 09:53:21,048 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:21,048 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-05-30 09:53:21,048 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 1
+2024-05-30 09:53:21,048 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:21,048 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-30 09:53:21,049 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:21,049 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-05-30 09:53:21,049 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 2
+2024-05-30 09:53:21,049 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:21,049 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-30 09:53:21,049 INFO    HandlerThread:4176674 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-30 09:53:21,049 DEBUG   SystemMonitor:4176674 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-30 09:53:21,049 INFO    HandlerThread:4176674 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-30 09:53:21,065 INFO    HandlerThread:4176674 [interfaces.py:finish():202] Joined disk monitor
+2024-05-30 09:53:21,064 DEBUG   SystemMonitor:4176674 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-30 09:53:21,065 DEBUG   SystemMonitor:4176674 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-30 09:53:21,163 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/output.log
+2024-05-30 09:53:21,163 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/wandb-summary.json
+2024-05-30 09:53:21,285 INFO    HandlerThread:4176674 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-30 09:53:21,285 INFO    HandlerThread:4176674 [interfaces.py:finish():202] Joined memory monitor
+2024-05-30 09:53:21,285 INFO    HandlerThread:4176674 [interfaces.py:finish():202] Joined network monitor
+2024-05-30 09:53:21,286 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:21,286 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-05-30 09:53:21,286 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 3
+2024-05-30 09:53:21,286 DEBUG   SenderThread:4176674 [sender.py:send():379] send: stats
+2024-05-30 09:53:21,286 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:21,286 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-30 09:53:21,287 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:21,287 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-05-30 09:53:21,287 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 4
+2024-05-30 09:53:21,287 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:21,287 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-30 09:53:21,287 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:21,287 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-05-30 09:53:21,287 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 5
+2024-05-30 09:53:21,287 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:21,287 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-30 09:53:21,287 DEBUG   SenderThread:4176674 [sender.py:send():379] send: summary
+2024-05-30 09:53:21,287 INFO    SenderThread:4176674 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-30 09:53:21,287 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:21,287 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-05-30 09:53:21,287 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 6
+2024-05-30 09:53:21,288 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:21,288 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-30 09:53:21,288 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:21,288 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-05-30 09:53:21,290 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: status_report
+2024-05-30 09:53:21,342 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 7
+2024-05-30 09:53:21,342 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:21,342 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-30 09:53:21,343 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:21,343 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-05-30 09:53:22,048 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-30 09:53:22,163 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/config.yaml
+2024-05-30 09:53:22,164 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/wandb-summary.json
+2024-05-30 09:53:23,051 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 8
+2024-05-30 09:53:23,051 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: poll_exit
+2024-05-30 09:53:23,051 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:23,051 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-30 09:53:23,052 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:23,052 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-05-30 09:53:23,052 INFO    SenderThread:4176674 [job_builder.py:build():318] Attempting to build job artifact
+2024-05-30 09:53:23,052 INFO    SenderThread:4176674 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-05-30 09:53:23,066 INFO    SenderThread:4176674 [job_builder.py:build():431] adding wandb-job metadata file
+2024-05-30 09:53:23,068 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 9
+2024-05-30 09:53:23,068 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:23,069 DEBUG   SenderThread:4176674 [sender.py:send():379] send: artifact
+2024-05-30 09:53:23,069 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-30 09:53:23,164 INFO    Thread-12 :4176674 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/output.log
+2024-05-30 09:53:23,487 INFO    wandb-upload_0:4176674 [upload_job.py:push():86] Skipped uploading /home/dan/.local/share/wandb/artifacts/staging/tmpqqa8r2t3
+2024-05-30 09:53:23,795 INFO    wandb-upload_1:4176674 [upload_job.py:push():89] Uploaded file /tmp/tmpgkorqtr9/wandb-job.json
+2024-05-30 09:53:24,052 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-30 09:53:24,815 INFO    SenderThread:4176674 [sender.py:send_artifact():1468] sent artifact job-https___github.com_danschumac1_mini_temporal.git_training_fine_tune_gemma_it.py - {'id': 'QXJ0aWZhY3Q6ODU0NzA1NDUx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzcxMDQwNw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODQ3NTkzNzg5', 'versionIndex': 4}}}
+2024-05-30 09:53:24,815 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:24,815 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-05-30 09:53:24,815 INFO    SenderThread:4176674 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-30 09:53:25,164 INFO    SenderThread:4176674 [dir_watcher.py:finish():388] scan: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files
+2024-05-30 09:53:25,165 INFO    SenderThread:4176674 [dir_watcher.py:finish():402] scan save: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/wandb-summary.json wandb-summary.json
+2024-05-30 09:53:25,165 INFO    SenderThread:4176674 [dir_watcher.py:finish():402] scan save: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/output.log output.log
+2024-05-30 09:53:25,165 INFO    SenderThread:4176674 [dir_watcher.py:finish():402] scan save: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/conda-environment.yaml conda-environment.yaml
+2024-05-30 09:53:25,165 INFO    SenderThread:4176674 [dir_watcher.py:finish():402] scan save: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/config.yaml config.yaml
+2024-05-30 09:53:25,170 INFO    SenderThread:4176674 [dir_watcher.py:finish():402] scan save: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/wandb-metadata.json wandb-metadata.json
+2024-05-30 09:53:25,171 INFO    SenderThread:4176674 [dir_watcher.py:finish():402] scan save: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/requirements.txt requirements.txt
+2024-05-30 09:53:25,171 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 10
+2024-05-30 09:53:25,175 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: poll_exit
+2024-05-30 09:53:25,175 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:25,175 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-30 09:53:25,175 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:25,175 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-05-30 09:53:25,175 INFO    SenderThread:4176674 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-30 09:53:25,436 INFO    wandb-upload_1:4176674 [upload_job.py:push():131] Uploaded file /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/conda-environment.yaml
+2024-05-30 09:53:25,537 INFO    wandb-upload_4:4176674 [upload_job.py:push():131] Uploaded file /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/requirements.txt
+2024-05-30 09:53:25,544 INFO    wandb-upload_0:4176674 [upload_job.py:push():131] Uploaded file /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/output.log
+2024-05-30 09:53:25,569 INFO    wandb-upload_2:4176674 [upload_job.py:push():131] Uploaded file /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/wandb-summary.json
+2024-05-30 09:53:25,583 INFO    wandb-upload_3:4176674 [upload_job.py:push():131] Uploaded file /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/files/config.yaml
+2024-05-30 09:53:25,783 INFO    Thread-11 (_thread_body):4176674 [sender.py:transition_state():614] send defer: 11
+2024-05-30 09:53:25,784 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:25,784 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-30 09:53:25,784 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:25,784 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-05-30 09:53:25,784 INFO    SenderThread:4176674 [file_pusher.py:join():178] waiting for file pusher
+2024-05-30 09:53:25,784 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 12
+2024-05-30 09:53:25,785 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:25,785 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-30 09:53:25,785 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:25,785 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-05-30 09:53:25,785 INFO    SenderThread:4176674 [file_stream.py:finish():614] file stream finish called
+2024-05-30 09:53:26,053 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-30 09:53:31,054 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-30 09:53:36,056 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-30 09:53:41,058 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-30 09:53:46,063 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-30 09:53:51,065 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-30 09:53:53,102 WARNING FileStreamThread:4176674 [file_stream.py:request_with_retry():687] requests_with_retry encountered retryable exception: 500 Server Error: Internal Server Error for url: https://api.wandb.ai/files/danschumac1-nlp/temporal_understanding/qbb8k93v/file_stream. func: functools.partial(<bound method Session.post of <requests.sessions.Session object at 0x7f32e9557a50>>, timeout=180.0), args: ('https://api.wandb.ai/files/danschumac1-nlp/temporal_understanding/qbb8k93v/file_stream',), kwargs: {'json': {'files': {'wandb-summary.json': {'offset': 0, 'content': ['{"_wandb": {"runtime": 4}}']}, 'wandb-events.jsonl': {'offset': 0, 'content': ['{"system.network.sent": 150774.67, "system.network.recv": 131632.67, "system.proc.memory.availableMB": 231053.2, "system.memory": 10.3, "system.proc.memory.rssMB": 1059.05, "system.proc.memory.percent": 0.41, "system.disk.\\\\.usagePercent": 97.7, "system.disk.\\\\.usageGB": 1699.74, "system.disk.in": 0.0, "system.disk.out": 0.02, "system.cpu": 1.5, "system.cpu.0.cpu_percent": 23.2, "system.cpu.1.cpu_percent": 68.87, "system.cpu.2.cpu_percent": 53.4, "system.cpu.3.cpu_percent": 45.8, "system.cpu.4.cpu_percent": 35.53, "system.cpu.5.cpu_percent": 26.77, "system.cpu.6.cpu_percent": 34.63, "system.cpu.7.cpu_percent": 94.5, "system.cpu.8.cpu_percent": 83.5, "system.cpu.9.cpu_percent": 52.93, "system.cpu.10.cpu_percent": 90.63, "system.cpu.11.cpu_percent": 43.9, "system.cpu.12.cpu_percent": 64.87, "system.cpu.13.cpu_percent": 73.17, "system.cpu.14.cpu_percent": 46.2, "system.cpu.15.cpu_percent": 49.6, "system.cpu.16.cpu_percent": 54.2, "system.cpu.17.cpu_percent": 23.6, "system.cpu.18.cpu_percent": 33.0, "system.cpu.19.cpu_percent": 24.5, "system.cpu.20.cpu_percent": 61.0, "system.cpu.21.cpu_percent": 19.1, "system.cpu.22.cpu_percent": 20.27, "system.cpu.23.cpu_percent": 32.7, "system.cpu.24.cpu_percent": 94.63, "system.cpu.25.cpu_percent": 100.0, "system.cpu.26.cpu_percent": 20.17, "system.cpu.27.cpu_percent": 23.57, "system.cpu.28.cpu_percent": 24.17, "system.cpu.29.cpu_percent": 60.07, "system.cpu.30.cpu_percent": 50.7, "system.cpu.31.cpu_percent": 31.8, "system.cpu.32.cpu_percent": 26.93, "system.cpu.33.cpu_percent": 31.6, "system.cpu.34.cpu_percent": 24.63, "system.cpu.35.cpu_percent": 23.1, "system.cpu.36.cpu_percent": 23.7, "system.cpu.37.cpu_percent": 30.33, "system.cpu.38.cpu_percent": 22.03, "system.cpu.39.cpu_percent": 21.33, "system.cpu.40.cpu_percent": 16.17, "system.cpu.41.cpu_percent": 15.57, "system.cpu.42.cpu_percent": 16.0, "system.cpu.43.cpu_percent": 17.93, "system.cpu.44.cpu_percent": 22.23, "system.cpu.45.cpu_percent": 18.67, "system.cpu.46.cpu_percent": 18.33, "system.cpu.47.cpu_percent": 20.07, "system.cpu.48.cpu_percent": 24.03, "system.cpu.49.cpu_percent": 20.83, "system.cpu.50.cpu_percent": 47.87, "system.cpu.51.cpu_percent": 19.8, "system.cpu.52.cpu_percent": 54.27, "system.cpu.53.cpu_percent": 21.9, "system.cpu.54.cpu_percent": 22.3, "system.cpu.55.cpu_percent": 49.2, "system.cpu.56.cpu_percent": 19.4, "system.cpu.57.cpu_percent": 20.0, "system.cpu.58.cpu_percent": 14.6, "system.cpu.59.cpu_percent": 16.67, "system.cpu.60.cpu_percent": 31.6, "system.cpu.61.cpu_percent": 24.8, "system.cpu.62.cpu_percent": 42.67, "system.cpu.63.cpu_percent": 23.7, "system.proc.cpu.threads": 49, "_wandb": true, "_timestamp": 1717080801.065342, "_runtime": 5.127735}']}, 'output.log': {'offset': 6, 'content': ['ERROR 2024-05-30T14:53:23.050175 Loading checkpoint shards:   0%|          | 0/2 [00:01<?, ?it/s]\n', 'ERROR 2024-05-30T14:53:23.050175 Traceback (most recent call last):\n', 'ERROR 2024-05-30T14:53:23.050175   File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 284, in <module>\n', 'ERROR 2024-05-30T14:53:23.050175     main()\n', 'ERROR 2024-05-30T14:53:23.050175   File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 174, in main\n', 'ERROR 2024-05-30T14:53:23.050175     model = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=bnb_config, device_map={"":0}, use_cache=False)\n', 'ERROR 2024-05-30T14:53:23.050175             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', 'ERROR 2024-05-30T14:53:23.050175   File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 563, in from_pretrained\n', 'ERROR 2024-05-30T14:53:23.050175     return model_class.from_pretrained(\n', 'ERROR 2024-05-30T14:53:23.050175            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', 'ERROR 2024-05-30T14:53:23.050175   File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3754, in from_pretrained\n', 'ERROR 2024-05-30T14:53:23.050175     ) = cls._load_pretrained_model(\n', 'ERROR 2024-05-30T14:53:23.050175         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', 'ERROR 2024-05-30T14:53:23.050175   File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4214, in _load_pretrained_model\n', 'ERROR 2024-05-30T14:53:23.050175     new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(\n', 'ERROR 2024-05-30T14:53:23.050175                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', 'ERROR 2024-05-30T14:53:23.050175   File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/modeling_utils.py", line 889, in _load_state_dict_into_meta_model\n', 'ERROR 2024-05-30T14:53:23.050175     hf_quantizer.create_quantized_param(model, param, param_name, param_device, state_dict, unexpected_keys)\n', 'ERROR 2024-05-30T14:53:23.050175   File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/quantizers/quantizer_bnb_4bit.py", line 216, in create_quantized_param\n', 'ERROR 2024-05-30T14:53:23.050175     new_value = bnb.nn.Params4bit(new_value, requires_grad=False, **kwargs).to(target_device)\n', 'ERROR 2024-05-30T14:53:23.050175                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', 'ERROR 2024-05-30T14:53:23.050175   File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 324, in to\n', 'ERROR 2024-05-30T14:53:23.050175     return self._quantize(device)\n', 'ERROR 2024-05-30T14:53:23.050175            ^^^^^^^^^^^^^^^^^^^^^^\n', 'ERROR 2024-05-30T14:53:23.050175   File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py", line 288, in _quantize\n', 'ERROR 2024-05-30T14:53:23.050175     w = self.data.contiguous().cuda(device)\n', 'ERROR 2024-05-30T14:53:23.050175         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', 'ERROR 2024-05-30T14:53:23.050175 torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacity of 47.54 GiB of which 18.88 MiB is free. Process 4175187 has 5.94 GiB memory in use. Process 4175172 has 2.33 GiB memory in use. Process 4175190 has 5.94 GiB memory in use. Process 4175178 has 2.33 GiB memory in use. Process 4175169 has 2.33 GiB memory in use. Process 4175175 has 2.33 GiB memory in use. Process 4175181 has 5.94 GiB memory in use. Process 4175184 has 5.94 GiB memory in use. Process 4176489 has 1.61 GiB memory in use. Process 4176498 has 1.99 GiB memory in use. Process 4176495 has 1.45 GiB memory in use. Process 4176486 has 1.84 GiB memory in use. Process 4176501 has 2.05 GiB memory in use. Process 4176507 has 1.89 GiB memory in use. Process 4176504 has 2.05 GiB memory in use. Including non-PyTorch memory, this process has 1.51 GiB memory in use. Of the allocated memory 1.21 GiB is allocated by PyTorch, and 9.70 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n']}}, 'dropped': 0}}
+2024-05-30 09:53:55,465 INFO    SenderThread:4176674 [file_stream.py:finish():618] file stream finish is done
+2024-05-30 09:53:55,466 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 13
+2024-05-30 09:53:55,466 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: poll_exit
+2024-05-30 09:53:55,466 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:55,466 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-30 09:53:55,466 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: status_report
+2024-05-30 09:53:55,466 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:55,467 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-05-30 09:53:55,467 INFO    SenderThread:4176674 [sender.py:transition_state():614] send defer: 14
+2024-05-30 09:53:55,467 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: defer
+2024-05-30 09:53:55,467 INFO    HandlerThread:4176674 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-30 09:53:55,467 DEBUG   SenderThread:4176674 [sender.py:send():379] send: final
+2024-05-30 09:53:55,467 DEBUG   SenderThread:4176674 [sender.py:send():379] send: footer
+2024-05-30 09:53:55,467 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: defer
+2024-05-30 09:53:55,467 INFO    SenderThread:4176674 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-05-30 09:53:55,467 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-30 09:53:55,468 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-30 09:53:55,468 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: poll_exit
+2024-05-30 09:53:55,468 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: server_info
+2024-05-30 09:53:55,468 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: poll_exit
+2024-05-30 09:53:55,468 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-30 09:53:55,469 DEBUG   SenderThread:4176674 [sender.py:send_request():406] send_request: server_info
+2024-05-30 09:53:55,469 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-30 09:53:55,471 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-30 09:53:55,518 INFO    MainThread:4176674 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-05-30 09:53:55,518 INFO    MainThread:4176674 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-05-30 09:53:55,518 INFO    MainThread:4176674 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-05-30 09:53:55,518 DEBUG   HandlerThread:4176674 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-30 09:53:55,518 INFO    HandlerThread:4176674 [handler.py:finish():866] shutting down handler
+2024-05-30 09:53:56,469 INFO    WriterThread:4176674 [datastore.py:close():296] close: /home/dan/mini_temporal/wandb/run-20240530_095315-qbb8k93v/run-qbb8k93v.wandb
+2024-05-30 09:53:56,518 INFO    SenderThread:4176674 [sender.py:finish():1546] shutting down sender
+2024-05-30 09:53:56,518 INFO    SenderThread:4176674 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-30 09:53:56,518 INFO    SenderThread:4176674 [file_pusher.py:join():178] waiting for file pusher

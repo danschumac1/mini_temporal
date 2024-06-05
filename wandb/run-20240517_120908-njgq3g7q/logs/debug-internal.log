@@ -1,0 +1,228 @@
+2024-05-17 12:09:08,104 INFO    StreamThr :306870 [internal.py:wandb_internal():86] W&B internal server running at pid: 306870, started at: 2024-05-17 12:09:08.103895
+2024-05-17 12:09:08,106 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: status
+2024-05-17 12:09:08,108 INFO    WriterThread:306870 [datastore.py:open_for_write():87] open: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/run-njgq3g7q.wandb
+2024-05-17 12:09:08,108 DEBUG   SenderThread:306870 [sender.py:send():379] send: header
+2024-05-17 12:09:08,111 DEBUG   SenderThread:306870 [sender.py:send():379] send: run
+2024-05-17 12:09:08,461 INFO    SenderThread:306870 [dir_watcher.py:__init__():211] watching files in: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/files
+2024-05-17 12:09:08,461 INFO    SenderThread:306870 [sender.py:_start_run_threads():1124] run started: njgq3g7q with start time 1715965748.10368
+2024-05-17 12:09:08,466 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: check_version
+2024-05-17 12:09:08,467 DEBUG   SenderThread:306870 [sender.py:send_request():406] send_request: check_version
+2024-05-17 12:09:08,539 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: run_start
+2024-05-17 12:09:08,563 DEBUG   HandlerThread:306870 [system_info.py:__init__():26] System info init
+2024-05-17 12:09:08,563 DEBUG   HandlerThread:306870 [system_info.py:__init__():41] System info init done
+2024-05-17 12:09:08,563 INFO    HandlerThread:306870 [system_monitor.py:start():194] Starting system monitor
+2024-05-17 12:09:08,563 INFO    SystemMonitor:306870 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-17 12:09:08,563 INFO    HandlerThread:306870 [system_monitor.py:probe():214] Collecting system info
+2024-05-17 12:09:08,564 INFO    SystemMonitor:306870 [interfaces.py:start():190] Started cpu monitoring
+2024-05-17 12:09:08,564 INFO    SystemMonitor:306870 [interfaces.py:start():190] Started disk monitoring
+2024-05-17 12:09:08,565 INFO    SystemMonitor:306870 [interfaces.py:start():190] Started gpu monitoring
+2024-05-17 12:09:08,566 INFO    SystemMonitor:306870 [interfaces.py:start():190] Started memory monitoring
+2024-05-17 12:09:08,567 INFO    SystemMonitor:306870 [interfaces.py:start():190] Started network monitoring
+2024-05-17 12:09:08,580 DEBUG   HandlerThread:306870 [system_info.py:probe():150] Probing system
+2024-05-17 12:09:08,581 DEBUG   HandlerThread:306870 [system_info.py:_probe_git():135] Probing git
+2024-05-17 12:09:08,585 DEBUG   HandlerThread:306870 [system_info.py:_probe_git():143] Probing git done
+2024-05-17 12:09:08,585 DEBUG   HandlerThread:306870 [system_info.py:probe():198] Probing system done
+2024-05-17 12:09:08,585 DEBUG   HandlerThread:306870 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-glibc2.31', 'python': '3.11.8', 'heartbeatAt': '2024-05-17T17:09:08.580081', 'startedAt': '2024-05-17T17:09:08.099724', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/danschumac1/mini_temporal.git', 'commit': 'f1409aa0cbf8842bb7345c46ef6ca210cdfc3b13'}, 'email': None, 'root': '/home/dan/mini_temporal', 'host': 'rr183367ip01', 'username': 'dan', 'executable': '/home/dan/miniconda3/envs/danEnv/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2.242093750000001, 'min': 2200.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.977, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.717, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}], 'disk': {'/': {'total': 1832.2072448730469, 'used': 1657.5941734313965}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 251.51310348510742}}
+2024-05-17 12:09:08,586 INFO    HandlerThread:306870 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-17 12:09:08,586 INFO    HandlerThread:306870 [system_monitor.py:probe():227] Publishing system info
+2024-05-17 12:09:08,586 DEBUG   HandlerThread:306870 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-17 12:09:09,462 INFO    Thread-12 :306870 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/files/conda-environment.yaml
+2024-05-17 12:09:10,454 DEBUG   HandlerThread:306870 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-17 12:09:10,455 INFO    HandlerThread:306870 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-17 12:09:10,456 DEBUG   SenderThread:306870 [sender.py:send():379] send: files
+2024-05-17 12:09:10,457 INFO    SenderThread:306870 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-17 12:09:10,461 INFO    Thread-12 :306870 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/files/conda-environment.yaml
+2024-05-17 12:09:10,462 INFO    Thread-12 :306870 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/files/wandb-metadata.json
+2024-05-17 12:09:10,536 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-17 12:09:10,536 DEBUG   SenderThread:306870 [sender.py:send_request():406] send_request: python_packages
+2024-05-17 12:09:10,537 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-17 12:09:10,537 DEBUG   SenderThread:306870 [sender.py:send_request():406] send_request: stop_status
+2024-05-17 12:09:10,541 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:09:10,697 DEBUG   SenderThread:306870 [sender.py:send():379] send: telemetry
+2024-05-17 12:09:10,697 DEBUG   SenderThread:306870 [sender.py:send():379] send: config
+2024-05-17 12:09:10,698 DEBUG   SenderThread:306870 [sender.py:send():379] send: metric
+2024-05-17 12:09:10,698 DEBUG   SenderThread:306870 [sender.py:send():379] send: telemetry
+2024-05-17 12:09:10,698 DEBUG   SenderThread:306870 [sender.py:send():379] send: metric
+2024-05-17 12:09:10,698 WARNING SenderThread:306870 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-05-17 12:09:10,698 DEBUG   SenderThread:306870 [sender.py:send():379] send: telemetry
+2024-05-17 12:09:10,698 DEBUG   SenderThread:306870 [sender.py:send():379] send: telemetry
+2024-05-17 12:09:10,698 DEBUG   SenderThread:306870 [sender.py:send():379] send: config
+2024-05-17 12:09:10,827 INFO    wandb-upload_0:306870 [upload_job.py:push():131] Uploaded file /tmp/tmpqrva1_uqwandb/5dtgtchv-wandb-metadata.json
+2024-05-17 12:09:11,462 INFO    Thread-12 :306870 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/files/requirements.txt
+2024-05-17 12:09:11,462 INFO    Thread-12 :306870 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/files/output.log
+2024-05-17 12:09:13,462 INFO    Thread-12 :306870 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/files/output.log
+2024-05-17 12:09:13,700 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: status_report
+2024-05-17 12:09:14,505 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-17 12:09:14,505 DEBUG   SenderThread:306870 [sender.py:send_request():406] send_request: log_artifact
+2024-05-17 12:09:15,158 INFO    wandb-upload_3:306870 [upload_job.py:push():89] Uploaded file /tmp/tmptl2dg_7u/model_architecture.txt
+2024-05-17 12:09:15,209 INFO    wandb-upload_1:306870 [upload_job.py:push():89] Uploaded file /tmp/tmptl2dg_7u/adapter_config.json
+2024-05-17 12:09:15,231 INFO    wandb-upload_0:306870 [upload_job.py:push():89] Uploaded file /tmp/tmptl2dg_7u/README.md
+2024-05-17 12:09:25,537 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-17 12:09:25,538 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:09:31,537 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:09:36,538 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:09:40,537 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:09:45,540 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:09:50,541 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:09:55,537 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:10:00,706 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:10:05,707 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:10:08,567 DEBUG   SystemMonitor:306870 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-17 12:10:10,538 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:10:15,709 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:10:20,709 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:10:25,538 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:10:30,711 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:10:35,832 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:10:37,730 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-17 12:10:40,538 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:10:45,833 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:10:50,834 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:10:55,538 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:11:01,180 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:11:02,076 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-17 12:11:06,314 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:11:10,538 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:11:16,315 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:11:21,316 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:11:25,538 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:11:31,344 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:11:36,345 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:11:39,470 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-17 12:11:40,797 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:11:45,798 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:11:50,798 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:11:55,278 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-17 12:11:55,797 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:12:00,800 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:12:05,968 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:12:10,798 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:12:15,970 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:12:20,203 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-17 12:12:21,479 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:12:22,651 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-17 12:12:25,798 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:12:31,648 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:12:36,649 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:12:40,798 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:12:46,650 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:12:51,651 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:12:55,798 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:13:01,652 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:13:06,653 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:13:10,798 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:13:16,654 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:13:21,655 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:13:25,798 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:13:31,670 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:13:36,671 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:13:40,798 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:13:46,672 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:13:51,673 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:13:55,799 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:14:01,675 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:14:06,675 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:14:10,799 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:14:16,677 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:14:21,677 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:14:25,799 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:14:31,679 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:14:36,679 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:14:40,799 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:14:46,681 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:14:51,681 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:14:55,799 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:15:01,682 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:15:06,683 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:15:10,799 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:15:16,684 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:15:21,685 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:15:24,317 INFO    wandb-upload_2:306870 [upload_job.py:push():89] Uploaded file /tmp/tmptl2dg_7u/adapter_model.safetensors
+2024-05-17 12:15:24,710 INFO    SenderThread:306870 [sender.py:send_request_log_artifact():1456] logged artifact model-njgq3g7q - {'id': 'QXJ0aWZhY3Q6ODQwMjYzNTIz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NjEwNTUyNQ==', 'latestArtifact': None}}
+2024-05-17 12:15:24,713 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: status_report
+2024-05-17 12:15:24,791 DEBUG   SenderThread:306870 [sender.py:send_request():406] send_request: stop_status
+2024-05-17 12:15:24,853 DEBUG   SenderThread:306870 [sender.py:send():379] send: stats
+2024-05-17 12:15:24,853 DEBUG   SenderThread:306870 [sender.py:send():379] send: config
+2024-05-17 12:15:24,854 DEBUG   SenderThread:306870 [sender.py:send():379] send: metric
+2024-05-17 12:15:24,854 DEBUG   SenderThread:306870 [sender.py:send():379] send: metric
+2024-05-17 12:15:24,854 WARNING SenderThread:306870 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-05-17 12:15:24,854 DEBUG   SenderThread:306870 [sender.py:send():379] send: config
+2024-05-17 12:15:24,854 DEBUG   SenderThread:306870 [sender.py:send_request():406] send_request: log_artifact
+2024-05-17 12:15:25,438 INFO    wandb-upload_2:306870 [upload_job.py:push():89] Uploaded file /tmp/tmpsbyqd1ef/model_architecture.txt
+2024-05-17 12:15:25,479 INFO    wandb-upload_3:306870 [upload_job.py:push():89] Uploaded file /tmp/tmpsbyqd1ef/README.md
+2024-05-17 12:15:25,498 INFO    wandb-upload_1:306870 [upload_job.py:push():89] Uploaded file /tmp/tmpsbyqd1ef/adapter_config.json
+2024-05-17 12:15:25,564 INFO    Thread-12 :306870 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/files/config.yaml
+2024-05-17 12:15:25,799 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:15:27,565 INFO    Thread-12 :306870 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/files/output.log
+2024-05-17 12:15:31,687 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:15:36,687 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:15:40,800 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:15:46,688 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:15:51,689 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:15:55,800 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:16:01,690 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:16:06,691 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:16:10,800 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:16:16,692 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:16:21,693 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:16:25,800 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:16:31,695 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:16:36,695 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:16:40,800 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:16:46,697 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:16:51,697 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:16:55,800 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:17:01,699 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:17:06,699 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:17:10,800 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:17:16,701 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:17:21,701 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:17:25,800 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:17:31,703 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:17:36,704 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:17:40,801 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:17:46,705 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:17:51,706 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:17:55,801 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:18:01,708 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:18:06,709 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:18:10,801 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:18:16,710 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:18:21,710 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:18:25,801 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:18:31,712 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:18:36,712 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:18:40,801 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:18:46,713 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:18:51,714 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:18:55,801 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:19:01,715 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:19:06,716 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:19:10,801 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:19:16,717 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:19:21,718 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:19:25,802 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:19:31,719 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:19:36,720 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:19:40,802 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:19:46,721 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:19:51,722 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:19:55,802 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:20:01,723 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:20:06,724 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-17 12:20:10,802 DEBUG   HandlerThread:306870 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-17 12:20:14,727 INFO    memory    :306870 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-05-17 12:20:14,727 DEBUG   SystemMonitor:306870 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-17 12:20:14,727 DEBUG   SystemMonitor:306870 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-17 12:20:21,190 WARNING StreamThr :306870 [internal.py:is_dead():414] Internal process exiting, parent pid 306299 disappeared
+2024-05-17 12:20:21,190 ERROR   StreamThr :306870 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-05-17 12:20:21,730 INFO    HandlerThread:306870 [handler.py:finish():866] shutting down handler
+2024-05-17 12:20:21,730 INFO    HandlerThread:306870 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-17 12:20:21,730 INFO    HandlerThread:306870 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-17 12:20:21,730 INFO    HandlerThread:306870 [interfaces.py:finish():202] Joined disk monitor
+2024-05-17 12:20:21,731 INFO    HandlerThread:306870 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-17 12:20:21,731 INFO    HandlerThread:306870 [interfaces.py:finish():202] Joined memory monitor
+2024-05-17 12:20:21,731 INFO    HandlerThread:306870 [interfaces.py:finish():202] Joined network monitor
+2024-05-17 12:20:21,731 INFO    WriterThread:306870 [datastore.py:close():296] close: /home/dan/mini_temporal/wandb/run-20240517_120908-njgq3g7q/run-njgq3g7q.wandb
+2024-05-17 12:22:00,491 INFO    wandb-upload_0:306870 [upload_job.py:push():89] Uploaded file /tmp/tmpsbyqd1ef/adapter_model.safetensors
+2024-05-17 12:22:00,491 INFO    MainThread:306870 [internal.py:handle_exit():76] Internal process exited

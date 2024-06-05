@@ -1,0 +1,2 @@
+Generation script started at Tue 04 Jun 2024 02:35:32 PM CDT
+Processing AQA, model gemma-2b, trained on relevant_context, evaluated with relevant_context

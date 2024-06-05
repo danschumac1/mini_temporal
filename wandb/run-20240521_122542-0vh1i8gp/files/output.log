@@ -1,0 +1,1336 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+tokenizer
+load data
+Data loaded
+Formatted 350 instructions
+0    In June 2004,who made its first increase in in...
+1    What was the name of the lead singer of Queen,...
+2    Russia attacked the capital city of what regio...
+3    In July 2003 which Labour M.P. was heavily rep...
+4    Where was Spielberg honored on Dec 3, 2006? Th...
+Name: no_prompt, dtype: object
+The Federal Reserve
+Freddie Mercury
+Chechnya
+Clare Short
+Kennedy Center
+Italy
+Kelly Robbins
+Supreme Court
+Florida
+Sydney
+Liberia
+Nagano
+Danielle Ammaccapane
+Rudolf Hess
+Serena Williams
+Operation Desert Storm
+Roh Moo-hyun
+Saddam Hussein
+AOL Time Warner
+Israel
+Czechoslovakia
+Tony Blair
+Operation Desert Storm
+Afghanistan
+Who Wants to Be a Millionaire?
+Ronald Reagan__or__President Reagan
+Derek Jeter
+FC Barcelona
+Steve Martin
+Brian Keenan
+Alistair Campbell
+Somalia
+Belfast
+6.7
+Napster
+Aretha Franklin
+Tampa Bay
+Kuwait
+Saddam Hussein
+The Berlin Wall
+Manuel Noriega
+Brad Pitt and Jennifer Aniston
+Concorde
+Ivory Coast
+Hutton Inquiry
+113
+Princess Diana
+Nancy Lopez
+Oklahoma
+11__or__Eleven
+Hungary
+Paula Jones
+Stefan Edberg
+Iraq
+Manhattan
+Jose Luis Rodriguez Zapatero
+Pennsylvania
+British National Party
+Sacagawea
+Nigel Mansell
+Thinkpad
+5__or__Five
+Montenegro
+Rick Perry
+H.L. Hunley
+Nicaragua
+Channel tunnel__or__Chunnel
+Saddam Hussein
+Schindler's List
+Yugoslavia
+Fernando Henrique Cardoso
+Australia
+Australia
+Kursk
+Boris Yeltsin
+Panama
+Mark Thatcher
+Michail Gorbachev
+Paris
+Julia Roberts
+Gloria Carter Spann
+The Internet Society
+IRS__or__Internal Revenue Service
+Titanic
+Israel
+Ion Iliescu
+Olusegun Obasanjo
+South Korea
+Mikail Markhasev
+Charismatic
+George Steinbrenner
+Evander Hollyfield
+Hurricane Andrew
+Lebanon
+Saudia Arabia
+Soviet Union
+Jack Kemp
+Switzerland
+Chicago Bulls
+Christopher Bowman
+Columbia
+Toronto Blue Jays
+Serbia
+Roger Federer
+Brazil
+Lisa Marie Presley
+Windows XP
+Pakistan
+Italy
+Terry Nichols
+Nevada Test Site
+MG Rover
+260
+Bobby Abreu
+Carlos Reina
+The Love Bug
+19__or__Nineteen
+Hussein bin Talal
+Sonia Gandhi
+Fourteen__or__14
+San Francisco Bay Area
+Hong Kong
+Scott O'Grady
+Germany
+Hurricane Hugo
+Pope John Paul II
+Sydney
+Virgin and Richard Branson
+United Airlines Flight 585
+Mikhail Gorbachev
+Evan Mecham
+Nelson Mandela
+Mikhail Gorbachev
+Ali Hassan Abu Kamal
+12__or__Twelve
+Ricky Ponting
+Chornobyl__or__Chernobyl
+$3.5 million
+Wim Kok
+The Sopranos
+Hurricane Jeanne
+Boris Yeltsin
+Jean-Bertrand Aristide
+Turin
+Muslim
+Greece
+$87 million
+Anders Fogh Rasmussen
+Kuwait
+Boutros Boutros-Ghali
+Vladimir Putin__or__President Putin
+Windows NT 3.1
+Gregory Peck
+Hurricane Katrina__or__Katrina
+Duke__or__Duke University
+Maine and New Hampshire
+Argentina
+Alastair Cooke
+The Queen
+Chun Doo Hwan
+The Adjuster
+The Arctic Council
+Donald Rumsfeld
+Charles Taylor
+The Scream
+Five__or__5
+The Los Angeles Lakers
+New Zealand
+Ron Goldman
+Minnesota Twins
+The United States of America__or__USA__or__US__or__The United States__or__America
+Harriet Miers
+Pacific Ocean
+Beauty and the Beast
+The Simpsons
+New York
+Alan Greenspan
+FirstEnergy
+Haiti
+197
+China
+Betsy King
+Colin Powell
+O. J. Simpson
+Tony Blair
+Transco Tower
+Alfredo Harp Helu
+B.I.G.__or__Biggie Smalls__or__The Notorious B.I.G
+Dances with Wolves
+Jan Krzystof Bielecki
+George H. W. Bush__or__George HW Bush
+Helen Sharman
+Amadou Diallo
+Foot and Mouth
+Ronald Reagan__or__President Reagan
+Mars
+Angela Merkel
+Brad Pitt and Jennifer Aniston
+Iraq
+Polygram
+Congress
+Myanmar
+Pakistan
+107
+Willie Nelson
+Round Rock
+Netscape Navigator browser
+Nawaz Sharif
+Lord Chancellor
+Hannover__or__Hanover
+Jacques Chirac
+Roseanne Barr
+Rodney King
+Microsoft
+Hubble Space Telescope
+British Airways
+Atlantis
+Vladimir Putin__or__President Putin
+Samuel Alito
+William Cohen
+Haiti
+The Green Party
+Atlantic Ocean
+Timothy McVeigh
+Alan Steen
+Philippines
+George Best
+California
+Timothy Mcveigh
+Jean Chretien
+Tsunami
+Michael Fuller
+The Lord of the Rings: The Return of the King
+Princess Diana
+Jean-Marie Le Pen
+Microsoft
+$100 million
+Ban Ki-moon
+Brunei
+United Nations__or__UN
+Addis Ababa
+Postal strike
+Sierra Leone
+Ellen MacArthur
+The Mont Blanc Tunnel
+Princess Diana
+Bosnia
+Willie Stargell
+Buckingham Palace
+Iain Duncan Smith
+Alberto Fujimori
+Regis Philbin
+Helen Clark
+Buster Douglas
+65%
+Enron
+Fidel Castro
+Golden Jubilee
+Ipod
+Mikhail Gorbachev
+Ellis Island
+Allison
+Seven__or__7
+Macedonia__or__North Macedonia
+Vieques
+The Globe Theater
+Stuart Little 2
+Cuba
+Two__or__2
+Florida State University
+Roskilde Festival
+Robin William
+Sebastien Grosjean
+Yugoslavia
+Antonio Meucci
+Bill Richardson
+Iraq
+The Slovak Republic
+Ford__or__Ford Motor Company
+Martti Ahtisaari
+The Supreme Soviet
+England
+Bill Clinton__or__President Clinton
+Arquitectonica
+Chiapas
+Alaska
+Punch
+Snleyman Demirel
+Thaksin Shinawatra
+Nirvana
+Solomon Islands
+Nelson Mandela
+John Kerry
+Moscow Kremlin
+A Beautiful Mind
+Hubble Space Telescope
+Latvia
+Mexico
+Pope John Paul II
+Jim Henson
+Papua New Guinea
+President Bush__or__George W. Bush__or__Bush
+Hurricane Katrina__or__Katrina
+Costas Simitis
+$145 billion
+Laura Davies
+Tom Cruise
+Alastair Campbell
+Ronald Reagan__or__President Reagan
+Nicolae Ceausescu
+Afghanistan
+Rwanda
+Elian Gonzales
+Queen Elizabeth II
+The Diana Fund
+Edmund Pope
+Russell Crowe
+Clayton Yeutter
+Argentina
+Mir
+Blackpool
+Shine
+Taliban
+Ralph Nader
+Hurricane Mitch
+Los Angeles
+Sandra Day O'Connor
+Melissa
+Manchester United
+Deep Blue
+China
+The Secret Garden
+Mexico
+Yugoslavia
+Tom DeLay
+The scream
+The United States of America__or__USA__or__US__or__The United States__or__America
+Vivendi
+The New Jersey Devils
+Earthquake
+George H. W. Bush__or__George HW Bush
+Indonesia
+Mary Robinson
+New York Yankees
+New Delhi
+Houses of Parliament
+Rolandas Paksas
+Ehud Barak
+Manchester United
+Canada
+Formatted 350 instructions
+The Federal Reserve
+Freddie Mercury
+Chechnya
+Clare Short
+Kennedy Center
+Italy
+Kelly Robbins
+Supreme Court
+Florida
+Sydney
+Liberia
+Nagano
+Danielle Ammaccapane
+Rudolf Hess
+Serena Williams
+Operation Desert Storm
+Roh Moo-hyun
+Saddam Hussein
+AOL Time Warner
+Israel
+Czechoslovakia
+Tony Blair
+Operation Desert Storm
+Afghanistan
+Who Wants to Be a Millionaire?
+Ronald Reagan__or__President Reagan
+Derek Jeter
+FC Barcelona
+Steve Martin
+Brian Keenan
+Alistair Campbell
+Somalia
+Belfast
+6.7
+Napster
+Aretha Franklin
+Tampa Bay
+Kuwait
+Saddam Hussein
+The Berlin Wall
+Manuel Noriega
+Brad Pitt and Jennifer Aniston
+Concorde
+Ivory Coast
+Hutton Inquiry
+113
+Princess Diana
+Nancy Lopez
+Oklahoma
+11__or__Eleven
+Hungary
+Paula Jones
+Stefan Edberg
+Iraq
+Manhattan
+Jose Luis Rodriguez Zapatero
+Pennsylvania
+British National Party
+Sacagawea
+Nigel Mansell
+Thinkpad
+5__or__Five
+Montenegro
+Rick Perry
+H.L. Hunley
+Nicaragua
+Channel tunnel__or__Chunnel
+Saddam Hussein
+Schindler's List
+Yugoslavia
+Fernando Henrique Cardoso
+Australia
+Australia
+Kursk
+Boris Yeltsin
+Panama
+Mark Thatcher
+Michail Gorbachev
+Paris
+Julia Roberts
+Gloria Carter Spann
+The Internet Society
+IRS__or__Internal Revenue Service
+Titanic
+Israel
+Ion Iliescu
+Olusegun Obasanjo
+South Korea
+Mikail Markhasev
+Charismatic
+George Steinbrenner
+Evander Hollyfield
+Hurricane Andrew
+Lebanon
+Saudia Arabia
+Soviet Union
+Jack Kemp
+Switzerland
+Chicago Bulls
+Christopher Bowman
+Columbia
+Toronto Blue Jays
+Serbia
+Roger Federer
+Brazil
+Lisa Marie Presley
+Windows XP
+Pakistan
+Italy
+Terry Nichols
+Nevada Test Site
+MG Rover
+260
+Bobby Abreu
+Carlos Reina
+The Love Bug
+19__or__Nineteen
+Hussein bin Talal
+Sonia Gandhi
+Fourteen__or__14
+San Francisco Bay Area
+Hong Kong
+Scott O'Grady
+Germany
+Hurricane Hugo
+Pope John Paul II
+Sydney
+Virgin and Richard Branson
+United Airlines Flight 585
+Mikhail Gorbachev
+Evan Mecham
+Nelson Mandela
+Mikhail Gorbachev
+Ali Hassan Abu Kamal
+12__or__Twelve
+Ricky Ponting
+Chornobyl__or__Chernobyl
+$3.5 million
+Wim Kok
+The Sopranos
+Hurricane Jeanne
+Boris Yeltsin
+Jean-Bertrand Aristide
+Turin
+Muslim
+Greece
+$87 million
+Anders Fogh Rasmussen
+Kuwait
+Boutros Boutros-Ghali
+Vladimir Putin__or__President Putin
+Windows NT 3.1
+Gregory Peck
+Hurricane Katrina__or__Katrina
+Duke__or__Duke University
+Maine and New Hampshire
+Argentina
+Alastair Cooke
+The Queen
+Chun Doo Hwan
+The Adjuster
+The Arctic Council
+Donald Rumsfeld
+Charles Taylor
+The Scream
+Five__or__5
+The Los Angeles Lakers
+New Zealand
+Ron Goldman
+Minnesota Twins
+The United States of America__or__USA__or__US__or__The United States__or__America
+Harriet Miers
+Pacific Ocean
+Beauty and the Beast
+The Simpsons
+New York
+Alan Greenspan
+FirstEnergy
+Haiti
+197
+China
+Betsy King
+Colin Powell
+O. J. Simpson
+Tony Blair
+Transco Tower
+Alfredo Harp Helu
+B.I.G.__or__Biggie Smalls__or__The Notorious B.I.G
+Dances with Wolves
+Jan Krzystof Bielecki
+George H. W. Bush__or__George HW Bush
+Helen Sharman
+Amadou Diallo
+Foot and Mouth
+Ronald Reagan__or__President Reagan
+Mars
+Angela Merkel
+Brad Pitt and Jennifer Aniston
+Iraq
+Polygram
+Congress
+Myanmar
+Pakistan
+107
+Willie Nelson
+Round Rock
+Netscape Navigator browser
+Nawaz Sharif
+Lord Chancellor
+Hannover__or__Hanover
+Jacques Chirac
+Roseanne Barr
+Rodney King
+Microsoft
+Hubble Space Telescope
+British Airways
+Atlantis
+Vladimir Putin__or__President Putin
+Samuel Alito
+William Cohen
+Haiti
+The Green Party
+Atlantic Ocean
+Timothy McVeigh
+Alan Steen
+Philippines
+George Best
+California
+Timothy Mcveigh
+Jean Chretien
+Tsunami
+Michael Fuller
+The Lord of the Rings: The Return of the King
+Princess Diana
+Jean-Marie Le Pen
+Microsoft
+$100 million
+Ban Ki-moon
+Brunei
+United Nations__or__UN
+Addis Ababa
+Postal strike
+Sierra Leone
+Ellen MacArthur
+The Mont Blanc Tunnel
+Princess Diana
+Bosnia
+Willie Stargell
+Buckingham Palace
+Iain Duncan Smith
+Alberto Fujimori
+Regis Philbin
+Helen Clark
+Buster Douglas
+65%
+Enron
+Fidel Castro
+Golden Jubilee
+Ipod
+Mikhail Gorbachev
+Ellis Island
+Allison
+Seven__or__7
+Macedonia__or__North Macedonia
+Vieques
+The Globe Theater
+Stuart Little 2
+Cuba
+Two__or__2
+Florida State University
+Roskilde Festival
+Robin William
+Sebastien Grosjean
+Yugoslavia
+Antonio Meucci
+Bill Richardson
+Iraq
+The Slovak Republic
+Ford__or__Ford Motor Company
+Martti Ahtisaari
+The Supreme Soviet
+England
+Bill Clinton__or__President Clinton
+Arquitectonica
+Chiapas
+Alaska
+Punch
+Snleyman Demirel
+Thaksin Shinawatra
+Nirvana
+Solomon Islands
+Nelson Mandela
+John Kerry
+Moscow Kremlin
+A Beautiful Mind
+Hubble Space Telescope
+Latvia
+Mexico
+Pope John Paul II
+Jim Henson
+Papua New Guinea
+President Bush__or__George W. Bush__or__Bush
+Hurricane Katrina__or__Katrina
+Costas Simitis
+$145 billion
+Laura Davies
+Tom Cruise
+Alastair Campbell
+Ronald Reagan__or__President Reagan
+Nicolae Ceausescu
+Afghanistan
+Rwanda
+Elian Gonzales
+Queen Elizabeth II
+The Diana Fund
+Edmund Pope
+Russell Crowe
+Clayton Yeutter
+Argentina
+Mir
+Blackpool
+Shine
+Taliban
+Ralph Nader
+Hurricane Mitch
+Los Angeles
+Sandra Day O'Connor
+Melissa
+Manchester United
+Deep Blue
+China
+The Secret Garden
+Mexico
+Yugoslavia
+Tom DeLay
+The scream
+The United States of America__or__USA__or__US__or__The United States__or__America
+Vivendi
+The New Jersey Devils
+Earthquake
+George H. W. Bush__or__George HW Bush
+Indonesia
+Mary Robinson
+New York Yankees
+New Delhi
+Houses of Parliament
+Rolandas Paksas
+Ehud Barak
+Manchester United
+Canada
+Formatted 350 instructions
+The Federal Reserve
+Freddie Mercury
+Chechnya
+Clare Short
+Kennedy Center
+Italy
+Kelly Robbins
+Supreme Court
+Florida
+Sydney
+Liberia
+Nagano
+Danielle Ammaccapane
+Rudolf Hess
+Serena Williams
+Operation Desert Storm
+Roh Moo-hyun
+Saddam Hussein
+AOL Time Warner
+Israel
+Czechoslovakia
+Tony Blair
+Operation Desert Storm
+Afghanistan
+Who Wants to Be a Millionaire?
+Ronald Reagan__or__President Reagan
+Derek Jeter
+FC Barcelona
+Steve Martin
+Brian Keenan
+Alistair Campbell
+Somalia
+Belfast
+6.7
+Napster
+Aretha Franklin
+Tampa Bay
+Kuwait
+Saddam Hussein
+The Berlin Wall
+Manuel Noriega
+Brad Pitt and Jennifer Aniston
+Concorde
+Ivory Coast
+Hutton Inquiry
+113
+Princess Diana
+Nancy Lopez
+Oklahoma
+11__or__Eleven
+Hungary
+Paula Jones
+Stefan Edberg
+Iraq
+Manhattan
+Jose Luis Rodriguez Zapatero
+Pennsylvania
+British National Party
+Sacagawea
+Nigel Mansell
+Thinkpad
+5__or__Five
+Montenegro
+Rick Perry
+H.L. Hunley
+Nicaragua
+Channel tunnel__or__Chunnel
+Saddam Hussein
+Schindler's List
+Yugoslavia
+Fernando Henrique Cardoso
+Australia
+Australia
+Kursk
+Boris Yeltsin
+Panama
+Mark Thatcher
+Michail Gorbachev
+Paris
+Julia Roberts
+Gloria Carter Spann
+The Internet Society
+IRS__or__Internal Revenue Service
+Titanic
+Israel
+Ion Iliescu
+Olusegun Obasanjo
+South Korea
+Mikail Markhasev
+Charismatic
+George Steinbrenner
+Evander Hollyfield
+Hurricane Andrew
+Lebanon
+Saudia Arabia
+Soviet Union
+Jack Kemp
+Switzerland
+Chicago Bulls
+Christopher Bowman
+Columbia
+Toronto Blue Jays
+Serbia
+Roger Federer
+Brazil
+Lisa Marie Presley
+Windows XP
+Pakistan
+Italy
+Terry Nichols
+Nevada Test Site
+MG Rover
+260
+Bobby Abreu
+Carlos Reina
+The Love Bug
+19__or__Nineteen
+Hussein bin Talal
+Sonia Gandhi
+Fourteen__or__14
+San Francisco Bay Area
+Hong Kong
+Scott O'Grady
+Germany
+Hurricane Hugo
+Pope John Paul II
+Sydney
+Virgin and Richard Branson
+United Airlines Flight 585
+Mikhail Gorbachev
+Evan Mecham
+Nelson Mandela
+Mikhail Gorbachev
+Ali Hassan Abu Kamal
+12__or__Twelve
+Ricky Ponting
+Chornobyl__or__Chernobyl
+$3.5 million
+Wim Kok
+The Sopranos
+Hurricane Jeanne
+Boris Yeltsin
+Jean-Bertrand Aristide
+Turin
+Muslim
+Greece
+$87 million
+Anders Fogh Rasmussen
+Kuwait
+Boutros Boutros-Ghali
+Vladimir Putin__or__President Putin
+Windows NT 3.1
+Gregory Peck
+Hurricane Katrina__or__Katrina
+Duke__or__Duke University
+Maine and New Hampshire
+Argentina
+Alastair Cooke
+The Queen
+Chun Doo Hwan
+The Adjuster
+The Arctic Council
+Donald Rumsfeld
+Charles Taylor
+The Scream
+Five__or__5
+The Los Angeles Lakers
+New Zealand
+Ron Goldman
+Minnesota Twins
+The United States of America__or__USA__or__US__or__The United States__or__America
+Harriet Miers
+Pacific Ocean
+Beauty and the Beast
+The Simpsons
+New York
+Alan Greenspan
+FirstEnergy
+Haiti
+197
+China
+Betsy King
+Colin Powell
+O. J. Simpson
+Tony Blair
+Transco Tower
+Alfredo Harp Helu
+B.I.G.__or__Biggie Smalls__or__The Notorious B.I.G
+Dances with Wolves
+Jan Krzystof Bielecki
+George H. W. Bush__or__George HW Bush
+Helen Sharman
+Amadou Diallo
+Foot and Mouth
+Ronald Reagan__or__President Reagan
+Mars
+Angela Merkel
+Brad Pitt and Jennifer Aniston
+Iraq
+Polygram
+Congress
+Myanmar
+Pakistan
+107
+Willie Nelson
+Round Rock
+Netscape Navigator browser
+Nawaz Sharif
+Lord Chancellor
+Hannover__or__Hanover
+Jacques Chirac
+Roseanne Barr
+Rodney King
+Microsoft
+Hubble Space Telescope
+British Airways
+Atlantis
+Vladimir Putin__or__President Putin
+Samuel Alito
+William Cohen
+Haiti
+The Green Party
+Atlantic Ocean
+Timothy McVeigh
+Alan Steen
+Philippines
+George Best
+California
+Timothy Mcveigh
+Jean Chretien
+Tsunami
+Michael Fuller
+The Lord of the Rings: The Return of the King
+Princess Diana
+Jean-Marie Le Pen
+Microsoft
+$100 million
+Ban Ki-moon
+Brunei
+United Nations__or__UN
+Addis Ababa
+Postal strike
+Sierra Leone
+Ellen MacArthur
+The Mont Blanc Tunnel
+Princess Diana
+Bosnia
+Willie Stargell
+Buckingham Palace
+Iain Duncan Smith
+Alberto Fujimori
+Regis Philbin
+Helen Clark
+Buster Douglas
+65%
+Enron
+Fidel Castro
+Golden Jubilee
+Ipod
+Mikhail Gorbachev
+Ellis Island
+Allison
+Seven__or__7
+Macedonia__or__North Macedonia
+Vieques
+The Globe Theater
+Stuart Little 2
+Cuba
+Two__or__2
+Florida State University
+Roskilde Festival
+Robin William
+Sebastien Grosjean
+Yugoslavia
+Antonio Meucci
+Bill Richardson
+Iraq
+The Slovak Republic
+Ford__or__Ford Motor Company
+Martti Ahtisaari
+The Supreme Soviet
+England
+Bill Clinton__or__President Clinton
+Arquitectonica
+Chiapas
+Alaska
+Punch
+Snleyman Demirel
+Thaksin Shinawatra
+Nirvana
+Solomon Islands
+Nelson Mandela
+John Kerry
+Moscow Kremlin
+A Beautiful Mind
+Hubble Space Telescope
+Latvia
+Mexico
+Pope John Paul II
+Jim Henson
+Papua New Guinea
+President Bush__or__George W. Bush__or__Bush
+Hurricane Katrina__or__Katrina
+Costas Simitis
+$145 billion
+Laura Davies
+Tom Cruise
+Alastair Campbell
+Ronald Reagan__or__President Reagan
+Nicolae Ceausescu
+Afghanistan
+Rwanda
+Elian Gonzales
+Queen Elizabeth II
+The Diana Fund
+Edmund Pope
+Russell Crowe
+Clayton Yeutter
+Argentina
+Mir
+Blackpool
+Shine
+Taliban
+Ralph Nader
+Hurricane Mitch
+Los Angeles
+Sandra Day O'Connor
+Melissa
+Manchester United
+Deep Blue
+China
+The Secret Garden
+Mexico
+Yugoslavia
+Tom DeLay
+The scream
+The United States of America__or__USA__or__US__or__The United States__or__America
+Vivendi
+The New Jersey Devils
+Earthquake
+George H. W. Bush__or__George HW Bush
+Indonesia
+Mary Robinson
+New York Yankees
+New Delhi
+Houses of Parliament
+Rolandas Paksas
+Ehud Barak
+Manchester United
+Canada
+Formatted 350 instructions
+Formatted 75 instructions
+Anne Sweeney
+Pope John Paul II
+Michael Schumacher
+North American Free Trade Agreement__or__NAFTA
+Johnny Cash
+Carlo Azeglio Ciampi
+John Mills
+Manchester United
+New York
+Bam
+Deep Blue
+Manuel Noriega
+Manchester United
+Milli Vanilli
+Youtube
+Voyager 2
+Chuck Daly
+Steven Doderbergh
+Portugal
+Dwarf Planet
+Lithuania
+Pakistan
+Egypt
+US Defense Department
+Kursk
+Alaska Airlines Flight 261
+Game Boy
+Al Gore
+Soviet Union
+Alberto Fujimori
+Britannia
+Steffi Graf
+Honeywell International
+Sonny Bono
+Mike Tyson
+Arnold Schwarzenegger
+Barry Switzer
+George Harrison
+Mel Carnahan
+John F. Kennedy
+Say You Will
+Lennox Lewis
+SARS
+Nevermind
+Al Gore
+Walmart
+Greece
+Margaret Thatcher
+Ayako Okamoto
+Scandinavian Simvastatin Survival Study
+Gao Xingjian
+Christopher Reeve
+Hurricane Wilma
+Indian Ocean
+Thabo Mbeki
+President Bush__or__George W. Bush__or__Bush
+Jeffrey Skilling
+The LSU Tigers
+Lew Wasserman
+Kurt Cobain
+Five__or__5
+Fairness Doctrine
+Alan Greenspan
+South Africa
+Barings Bank
+Bill Clinton__or__President Clinton
+Polio
+Sweden
+Frank Gorshin
+Super Bowl XXXVIII
+John Kerry
+Human Genome Project
+Tony Blair
+The Windows 3.0
+Edward Heath
+Formatted 75 instructions
+Anne Sweeney
+Pope John Paul II
+Michael Schumacher
+North American Free Trade Agreement__or__NAFTA
+Johnny Cash
+Carlo Azeglio Ciampi
+John Mills
+Manchester United
+New York
+Bam
+Deep Blue
+Manuel Noriega
+Manchester United
+Milli Vanilli
+Youtube
+Voyager 2
+Chuck Daly
+Steven Doderbergh
+Portugal
+Dwarf Planet
+Lithuania
+Pakistan
+Egypt
+US Defense Department
+Kursk
+Alaska Airlines Flight 261
+Game Boy
+Al Gore
+Soviet Union
+Alberto Fujimori
+Britannia
+Steffi Graf
+Honeywell International
+Sonny Bono
+Mike Tyson
+Arnold Schwarzenegger
+Barry Switzer
+George Harrison
+Mel Carnahan
+John F. Kennedy
+Say You Will
+Lennox Lewis
+SARS
+Nevermind
+Al Gore
+Walmart
+Greece
+Margaret Thatcher
+Ayako Okamoto
+Scandinavian Simvastatin Survival Study
+Gao Xingjian
+Christopher Reeve
+Hurricane Wilma
+Indian Ocean
+Thabo Mbeki
+President Bush__or__George W. Bush__or__Bush
+Jeffrey Skilling
+The LSU Tigers
+Lew Wasserman
+Kurt Cobain
+Five__or__5
+Fairness Doctrine
+Alan Greenspan
+South Africa
+Barings Bank
+Bill Clinton__or__President Clinton
+Polio
+Sweden
+Frank Gorshin
+Super Bowl XXXVIII
+John Kerry
+Human Genome Project
+Tony Blair
+The Windows 3.0
+Edward Heath
+Formatted 75 instructions
+Anne Sweeney
+Pope John Paul II
+Michael Schumacher
+North American Free Trade Agreement__or__NAFTA
+Johnny Cash
+Carlo Azeglio Ciampi
+John Mills
+Manchester United
+New York
+Bam
+Deep Blue
+Manuel Noriega
+Manchester United
+Milli Vanilli
+Youtube
+Voyager 2
+Chuck Daly
+Steven Doderbergh
+Portugal
+Dwarf Planet
+Lithuania
+Pakistan
+Egypt
+US Defense Department
+Kursk
+Alaska Airlines Flight 261
+Game Boy
+Al Gore
+Soviet Union
+Alberto Fujimori
+Britannia
+Steffi Graf
+Honeywell International
+Sonny Bono
+Mike Tyson
+Arnold Schwarzenegger
+Barry Switzer
+George Harrison
+Mel Carnahan
+John F. Kennedy
+Say You Will
+Lennox Lewis
+SARS
+Nevermind
+Al Gore
+Walmart
+Greece
+Margaret Thatcher
+Ayako Okamoto
+Scandinavian Simvastatin Survival Study
+Gao Xingjian
+Christopher Reeve
+Hurricane Wilma
+Indian Ocean
+Thabo Mbeki
+President Bush__or__George W. Bush__or__Bush
+Jeffrey Skilling
+The LSU Tigers
+Lew Wasserman
+Kurt Cobain
+Five__or__5
+Fairness Doctrine
+Alan Greenspan
+South Africa
+Barings Bank
+Bill Clinton__or__President Clinton
+Polio
+Sweden
+Frank Gorshin
+Super Bowl XXXVIII
+John Kerry
+Human Genome Project
+Tony Blair
+The Windows 3.0
+Edward Heath
+Formatted 75 instructions
+In June 2004,who made its first increase in interest rates in nearly four years? The answer is: T
+<class 'str'>
+Who was named president of Disney-ABC television group in 2004? The answer is: A
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.09it/s]
+Map: 100%|██████████| 350/350 [00:00<00:00, 22685.23 examples/s]
+Map: 100%|██████████| 75/75 [00:00<00:00, 8451.26 examples/s]
+Data preprocessed
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 8.0505, 'grad_norm': 20.592124938964844, 'learning_rate': 1.6750418760469013e-05, 'epoch': 0.73}
+  0%|          | 0/6 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+ 17%|█▋        | 1/6 [01:31<07:39, 91.94s/it]
+
+ 33%|███▎      | 2/6 [03:04<06:08, 92.11s/it]
+
+ 50%|█████     | 3/6 [04:24<04:20, 86.80s/it]
+
+ 67%|██████▋   | 4/6 [05:02<02:15, 67.54s/it]
+
+
+100%|██████████| 6/6 [06:17<00:00, 62.89s/it]
+{'loss': 6.9754, 'grad_norm': 28.68729019165039, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 378.7414, 'train_samples_per_second': 5.545, 'train_steps_per_second': 0.016, 'train_loss': 7.534188270568848, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/gemma-2b/no_context
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(

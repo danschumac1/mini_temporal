@@ -5,3 +5,5 @@
 /preprocessed/train
 /data
 token.txt
+/clean_for_fatemeh/old_data
+.env

@@ -1,3 +1,78 @@
 fine_tune_gemma_it.sh: line 11: ${log_file}: ambiguous redirect
 \n\nTQE: TRAINING gemma-1.1-2b-it WITH wrong_date_context\n\n
 \n\nTQE: TRAINING gemma-1.1-2b-it WITH no_context\n\n
+\n\nTQE: TRAINING gemma-1.1-2b-it WITH random_context\n\n
+\n\nTQE: TRAINING gemma-1.1-2b-it WITH relevant_context\n\n
+\n\nTQE: TRAINING gemma-1.1-7b-it WITH wrong_date_context\n\n
+Terminated
+\n\nTQE: TRAINING gemma-1.1-7b-it WITH no_context\n\n
+Terminated
+\n\nTQE: TRAINING gemma-1.1-7b-it WITH random_context\n\n
+Terminated
+\n\nTQE: TRAINING gemma-1.1-7b-it WITH relevant_context\n\n
+Terminated
+fine_tune_gemma_it.sh: line 25: ${log_file}: ambiguous redirect
+bash: test.sh: No such file or directory
+bash: test.sh: No such file or directory
+\n\nAQA: TRAINING gemma-2b WITH no_context\n\n
+
+
+AQA: TRAINING gemma-2b WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-7b WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-1.1-2b-it WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-1.1-7b-it WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-2b WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-7b WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-1.1-2b-it WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-1.1-7b-it WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-2b WITH mixed context!
+
+
+\n\nAQA: TRAINING gemma-7b WITH no_context\n\n
+
+
+AQA: TRAINING gemma-7b WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-1.1-2b-it WITH mixed context!
+
+
+
+
+AQA: TRAINING gemma-1.1-7b-it WITH mixed context!
+
+

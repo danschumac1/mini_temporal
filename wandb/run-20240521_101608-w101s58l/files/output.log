@@ -1,0 +1,41 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.46it/s]
+tokenizer
+load data
+Data loaded
+Formatted 350 instructions
+0    In June 2004,who made its first increase in in...
+1    What was the name of the lead singer of Queen,...
+2    Russia attacked the capital city of what regio...
+3    In July 2003 which Labour M.P. was heavily rep...
+4    Where was Spielberg honored on Dec 3, 2006? Th...
+Name: no_prompt, dtype: object
+Formatted 350 instructions
+Formatted 350 instructions
+Formatted 350 instructions
+Formatted 75 instructions
+Formatted 75 instructions
+Formatted 75 instructions
+Formatted 75 instructions
+In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve
+<class 'str'>
+Map: 100%|██████████| 350/350 [00:00<00:00, 22544.13 examples/s]
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_halfway.py", line 318, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_halfway.py", line 241, in main
+    train_data = other_preprocessing(train, tokenizer, args.model_context)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_halfway.py", line 174, in other_preprocessing
+    generated_text = tokenizer.decode(dataset[0][0], skip_special_tokens=False)
+                                      ~~~~~~~~~~^^^
+KeyError: 0

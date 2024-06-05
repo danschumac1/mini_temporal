@@ -1,0 +1,57 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.29s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.41it/s]
+Map: 100%|██████████| 350/350 [00:00<00:00, 9198.61 examples/s]
+Map: 100%|██████████| 75/75 [00:00<00:00, 8646.62 examples/s]
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_rios.py", line 242, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_rios.py", line 229, in main
+    trainer.train()
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2147, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 454, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 498, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 842, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 815, in setup
+    model.save_pretrained(temp_dir)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/peft_model.py", line 218, in save_pretrained
+    output_state_dict = get_peft_model_state_dict(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/utils/save_and_load.py", line 71, in get_peft_model_state_dict
+    state_dict = model.state_dict()
+                 ^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1895, in state_dict
+    module.state_dict(destination=destination, prefix=prefix + name + '.', keep_vars=keep_vars)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1895, in state_dict
+    module.state_dict(destination=destination, prefix=prefix + name + '.', keep_vars=keep_vars)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1895, in state_dict
+    module.state_dict(destination=destination, prefix=prefix + name + '.', keep_vars=keep_vars)
+  [Previous line repeated 5 more times]
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1893, in state_dict
+    for name, module in self._modules.items():
+                        ^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

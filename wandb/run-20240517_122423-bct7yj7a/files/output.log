@@ -1,0 +1,320 @@
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  0%|                                                                        | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 3.3874, 'grad_norm': 10.389845848083496, 'learning_rate': 0.00018379281537176273, 'epoch': 1.0}
+  8%|█████▎                                                          | 1/12 [00:35<06:35, 35.97s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.1291, 'grad_norm': 3.47162127494812, 'learning_rate': 0.0001670843776106934, 'epoch': 1.33}
+ 17%|██████████▋                                                     | 2/12 [00:51<03:58, 23.83s/it]
+ 25%|████████████████                                                | 3/12 [01:15<03:35, 23.97s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.716, 'grad_norm': 6.761875152587891, 'learning_rate': 0.00013366750208855473, 'epoch': 2.67}
+ 33%|█████████████████████▎                                          | 4/12 [01:44<03:27, 25.94s/it]
+ 42%|██████████████████████████▋                                     | 5/12 [01:52<02:17, 19.63s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.6849, 'grad_norm': 7.562585830688477, 'learning_rate': 0.00010025062656641604, 'epoch': 4.0}
+ 50%|████████████████████████████████                                | 6/12 [02:32<02:38, 26.34s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.4347, 'grad_norm': 5.981661319732666, 'learning_rate': 8.35421888053467e-05, 'epoch': 5.0}
+ 58%|█████████████████████████████████████▎                          | 7/12 [03:11<02:32, 30.56s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 67%|██████████████████████████████████████████▋                     | 8/12 [03:27<01:44, 26.04s/it]
+{'loss': 0.6959, 'grad_norm': 0.929591953754425, 'learning_rate': 6.683375104427736e-05, 'epoch': 5.33}
+ 75%|████████████████████████████████████████████████                | 9/12 [03:51<01:15, 25.27s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.17, 'grad_norm': 1.3195666074752808, 'learning_rate': 3.341687552213868e-05, 'epoch': 6.67}
+ 83%|████████████████████████████████████████████████████▌          | 10/12 [04:20<00:52, 26.31s/it]
+ 92%|█████████████████████████████████████████████████████████▊     | 11/12 [04:30<00:21, 21.39s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.6931, 'grad_norm': 1.8987356424331665, 'learning_rate': 0.0, 'epoch': 8.0}
+100%|███████████████████████████████████████████████████████████████| 12/12 [05:09<00:00, 26.71s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'train_runtime': 318.3052, 'train_samples_per_second': 13.195, 'train_steps_per_second': 0.038, 'train_loss': 1.686795433362325, 'epoch': 8.0}
+TrainOutput(global_step=12, training_loss=1.686795433362325, metrics={'train_runtime': 318.3052, 'train_samples_per_second': 13.195, 'train_steps_per_second': 0.038, 'total_flos': 2651141630877696.0, 'train_loss': 1.686795433362325, 'epoch': 8.0})
+100%|███████████████████████████████████████████████████████████████| 12/12 [05:11<00:00, 25.94s/it]
+True
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+Loading checkpoint shards: 100%|██████████████████████████████████████| 2/2 [00:00<00:00,  3.37it/s]
+('./training/models/nit_trained/nit_mini_no_context_model/tokenizer_config.json', './training/models/nit_trained/nit_mini_no_context_model/special_tokens_map.json', './training/models/nit_trained/nit_mini_no_context_model/tokenizer.json')
+True
+Loading checkpoint shards: 100%|██████████████████████████████████████| 2/2 [00:00<00:00,  3.32it/s]
+user
+Given a question, answer the question to the best of your abilities.
+QUESTION: How many runs did Galarraga drive in 1998?
+model1
+ pompa pompa pompa pompa pompa pompa pompa
+user
+Given a question, answer the question to the best of your abilities.
+QUESTION: How many runs did Galarraga drive in 1998?
+model1
+ pompa pompa pompa pompa pompa pompa pompa
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+Loading checkpoint shards: 100%|██████████████████████████████████████| 2/2 [00:01<00:00,  1.65it/s]
+'<start_of_turn>user\nGiven a question, answer the question to the best of your abilities.\n\nQUESTION: In June 2004,who made its first increase in interest rates in nearly four years?<end_of_turn>\n<start_of_turn>model'
+Map: 100%|██████████████████████████████████████████████| 350/350 [00:00<00:00, 20880.84 examples/s]
+Map: 100%|█████████████████████████████████████████████████| 75/75 [00:00<00:00, 7806.94 examples/s]
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Attempted to change value of key "model/num_parameters" from 2819958784 to 2584619008
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m If you really want to do this, pass allow_val_change=True to config.update()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2147, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 454, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 498, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 842, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 795, in setup
+    self._wandb.config["model/num_parameters"] = model.num_parameters()
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 149, in __setitem__
+    key, val = self._sanitize(key, val)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 285, in _sanitize
+    raise config_util.ConfigError(
+wandb.sdk.lib.config_util.ConfigError: Attempted to change value of key "model/num_parameters" from 2819958784 to 2584619008
+If you really want to do this, pass allow_val_change=True to config.update()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2147, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 454, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 498, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 842, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 795, in setup
+    self._wandb.config["model/num_parameters"] = model.num_parameters()
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 149, in __setitem__
+    key, val = self._sanitize(key, val)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 285, in _sanitize
+    raise config_util.ConfigError(
+wandb.sdk.lib.config_util.ConfigError: Attempted to change value of key "model/num_parameters" from 2819958784 to 2584619008
+If you really want to do this, pass allow_val_change=True to config.update()
+  0%|                                                                        | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 3.3874, 'grad_norm': 2.691117525100708, 'learning_rate': 0.00018379281537176273, 'epoch': 1.0}
+  8%|█████▎                                                          | 1/12 [00:28<05:15, 28.69s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.1291, 'grad_norm': 0.8983135223388672, 'learning_rate': 0.0001670843776106934, 'epoch': 1.33}
+ 17%|██████████▋                                                     | 2/12 [00:39<03:03, 18.35s/it]
+ 25%|████████████████                                                | 3/12 [00:58<02:46, 18.55s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.033, 'grad_norm': 2.010833263397217, 'learning_rate': 0.00013366750208855473, 'epoch': 2.67}
+ 33%|█████████████████████▎                                          | 4/12 [01:19<02:36, 19.60s/it]
+ 42%|██████████████████████████▋                                     | 5/12 [01:26<01:43, 14.85s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.8754, 'grad_norm': 6.073566913604736, 'learning_rate': 0.00010025062656641604, 'epoch': 4.0}
+ 50%|████████████████████████████████                                | 6/12 [01:56<01:59, 19.97s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.7362, 'grad_norm': 5.801296234130859, 'learning_rate': 8.35421888053467e-05, 'epoch': 5.0}
+ 58%|█████████████████████████████████████▎                          | 7/12 [02:25<01:55, 23.18s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.8857, 'grad_norm': 1.8916233777999878, 'learning_rate': 6.683375104427736e-05, 'epoch': 5.33}
+
+ 75%|████████████████████████████████████████████████                | 9/12 [02:55<00:57, 19.02s/it]
+ 75%|████████████████████████████████████████████████                | 9/12 [02:55<00:57, 19.02s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.9165, 'grad_norm': 3.202659845352173, 'learning_rate': 3.341687552213868e-05, 'epoch': 6.67}
+ 83%|████████████████████████████████████████████████████▌          | 10/12 [03:16<00:39, 19.67s/it]
+ 92%|█████████████████████████████████████████████████████████▊     | 11/12 [03:25<00:16, 16.15s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.9093, 'grad_norm': 4.5722761154174805, 'learning_rate': 0.0, 'epoch': 8.0}
+100%|███████████████████████████████████████████████████████████████| 12/12 [03:55<00:00, 20.39s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'train_runtime': 236.1507, 'train_samples_per_second': 17.785, 'train_steps_per_second': 0.051, 'train_loss': 1.991654376188914, 'epoch': 8.0}
+TrainOutput(global_step=12, training_loss=1.991654376188914, metrics={'train_runtime': 236.1507, 'train_samples_per_second': 17.785, 'train_steps_per_second': 0.051, 'total_flos': 2379360902602752.0, 'train_loss': 1.991654376188914, 'epoch': 8.0})
+100%|███████████████████████████████████████████████████████████████| 12/12 [03:56<00:00, 19.68s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+('./training/models/nit_trained/nit_mini_no_context_model/tokenizer_config.json', './training/models/nit_trained/nit_mini_no_context_model/special_tokens_map.json', './training/models/nit_trained/nit_mini_no_context_model/tokenizer.json')
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2147, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 454, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 498, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 842, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 795, in setup
+    self._wandb.config["model/num_parameters"] = model.num_parameters()
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 149, in __setitem__
+    key, val = self._sanitize(key, val)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 285, in _sanitize
+    raise config_util.ConfigError(
+wandb.sdk.lib.config_util.ConfigError: Attempted to change value of key "model/num_parameters" from 2819958784 to 2584619008
+If you really want to do this, pass allow_val_change=True to config.update()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2147, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 454, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer_callback.py", line 498, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 842, in on_train_begin
+    self.setup(args, state, model, **kwargs)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/integrations/integration_utils.py", line 795, in setup
+    self._wandb.config["model/num_parameters"] = model.num_parameters()
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 149, in __setitem__
+    key, val = self._sanitize(key, val)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 285, in _sanitize
+    raise config_util.ConfigError(
+wandb.sdk.lib.config_util.ConfigError: Attempted to change value of key "model/num_parameters" from 2819958784 to 2584619008
+If you really want to do this, pass allow_val_change=True to config.update()
+  0%|                                                                        | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.8585, 'grad_norm': 4.321471214294434, 'learning_rate': 1.8379281537176274e-05, 'epoch': 1.0}
+  8%|█████▎                                                          | 1/12 [00:29<05:25, 29.59s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.9546, 'grad_norm': 1.4433549642562866, 'learning_rate': 1.670843776106934e-05, 'epoch': 1.33}
+ 25%|████████████████                                                | 3/12 [00:59<02:50, 18.90s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 1.8078, 'grad_norm': 2.338006019592285, 'learning_rate': 1.5037593984962406e-05, 'epoch': 2.0}
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.7529, 'grad_norm': 2.301954507827759, 'learning_rate': 1.3366750208855472e-05, 'epoch': 2.67}
+ 33%|█████████████████████▎                                          | 4/12 [01:21<02:38, 19.82s/it]
+ 42%|██████████████████████████▋                                     | 5/12 [01:27<01:45, 15.03s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.5194, 'grad_norm': 2.944385051727295, 'learning_rate': 1.0025062656641604e-05, 'epoch': 4.0}
+ 50%|████████████████████████████████                                | 6/12 [01:57<02:00, 20.12s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.4987, 'grad_norm': 2.7899224758148193, 'learning_rate': 8.35421888053467e-06, 'epoch': 5.0}
+ 58%|█████████████████████████████████████▎                          | 7/12 [02:27<01:56, 23.28s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 67%|██████████████████████████████████████████▋                     | 8/12 [02:39<01:19, 19.81s/it]
+{'loss': 0.8262, 'grad_norm': 0.9025883078575134, 'learning_rate': 6.683375104427736e-06, 'epoch': 5.33}
+ 75%|████████████████████████████████████████████████                | 9/12 [02:57<00:57, 19.19s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.6138, 'grad_norm': 1.7138819694519043, 'learning_rate': 3.341687552213868e-06, 'epoch': 6.67}
+ 83%|████████████████████████████████████████████████████▌          | 10/12 [03:19<00:39, 19.85s/it]
+ 92%|█████████████████████████████████████████████████████████▊     | 11/12 [03:27<00:16, 16.27s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 2.4355, 'grad_norm': 2.434670925140381, 'learning_rate': 0.0, 'epoch': 8.0}
+100%|███████████████████████████████████████████████████████████████| 12/12 [03:57<00:00, 20.45s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+100%|███████████████████████████████████████████████████████████████| 12/12 [03:58<00:00, 19.84s/it]
+{'train_runtime': 238.1015, 'train_samples_per_second': 17.64, 'train_steps_per_second': 0.05, 'train_loss': 1.7153646051883698, 'epoch': 8.0}
+TrainOutput(global_step=12, training_loss=1.7153646051883698, metrics={'train_runtime': 238.1015, 'train_samples_per_second': 17.64, 'train_steps_per_second': 0.05, 'total_flos': 2379360902602752.0, 'train_loss': 1.7153646051883698, 'epoch': 8.0})
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+('./training/models/nit_trained/nit_mini_no_context_model/tokenizer_config.json', './training/models/nit_trained/nit_mini_no_context_model/special_tokens_map.json', './training/models/nit_trained/nit_mini_no_context_model/tokenizer.json')
+True
+
+Loading checkpoint shards: 100%|██████████████████████████████████████| 2/2 [00:00<00:00,  3.27it/s]
+user
+Given a question, answer the question to the best of your abilities.
+QUESTION: How many runs did Galarraga drive in 1998?
+model
+QUESTION: Abbé gtr gtr gtr gtr gtr
+user
+Who was named president of Disney-ABC television group in 2004?
+model
+WhoParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfait
+['user\nWho was named president of Disney-ABC television group in 2004?\n', 'WhoParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfait']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'NoneType' object is not subscriptable
+['user\nWho was named president of Disney-ABC television group in 2004?\n', 'WhoParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfait']
+['user\nWho was named president of Disney-ABC television group in 2004?\n', 'WhoParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfaitParfait']

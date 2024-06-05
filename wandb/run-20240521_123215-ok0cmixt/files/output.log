@@ -1,0 +1,60 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.44it/s]
+tokenizer
+load data
+Data loaded
+Formatted 350 instructions
+0    In June 2004,who made its first increase in in...
+1    What was the name of the lead singer of Queen,...
+2    Russia attacked the capital city of what regio...
+3    In July 2003 which Labour M.P. was heavily rep...
+4    Where was Spielberg honored on Dec 3, 2006? Th...
+Name: no_prompt, dtype: object
+Formatted 350 instructions
+Formatted 350 instructions
+Formatted 350 instructions
+Formatted 75 instructions
+Formatted 75 instructions
+Formatted 75 instructions
+Formatted 75 instructions
+In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve
+<class 'str'>
+Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney
+<class 'str'>
+Data preprocessed
+lora
+Map: 100%|██████████| 350/350 [00:00<00:00, 22482.68 examples/s]
+Map: 100%|██████████| 75/75 [00:00<00:00, 12294.72 examples/s]
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  0%|          | 0/6 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+{'loss': 8.1272, 'grad_norm': 19.493331909179688, 'learning_rate': 1.6750418760469013e-05, 'epoch': 0.73}
+ 17%|█▋        | 1/6 [00:39<03:15, 39.18s/it]
+
+ 33%|███▎      | 2/6 [01:18<02:37, 39.46s/it]
+
+ 50%|█████     | 3/6 [01:58<01:58, 39.58s/it]
+
+ 67%|██████▋   | 4/6 [02:37<01:18, 39.22s/it]
+
+ 83%|████████▎ | 5/6 [03:15<00:38, 38.78s/it]
+{'loss': 7.0886, 'grad_norm': 33.32475280761719, 'learning_rate': 0.0, 'epoch': 4.36}
+100%|██████████| 6/6 [03:53<00:00, 38.84s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Model and tokenizer saved at ./training/models/gemma-2b/no_context

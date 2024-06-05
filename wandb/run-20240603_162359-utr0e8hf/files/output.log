@@ -1,0 +1,169 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+tokenizer
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.92it/s]
+load data
+Data loaded
+Preprocessing dataset with context: mixed_context
+Using prompt column: mixed_prompt
+First 5 entries of df[mixed_prompt]:
+0    <bos><start_of_turn>user\nWho did not ordain w...
+1    <bos><start_of_turn>user\nWhat team drafted Kr...
+2    <bos><start_of_turn>user\nWho expects Interfac...
+3    <bos><start_of_turn>user\nWho said Carnival wo...
+4    <bos><start_of_turn>user\nWho imposed martial ...
+Name: mixed_prompt, dtype: object
+
+
+Map:  83%|████████▎ | 50000/60000 [00:04<00:01, 9929.32 examples/s]
+Dataset after tokenization:
+{'question': 'Who went to Vietnam in 2001 to observe the Cat Ba langur?', 'answer': 'Rogers', 'type': 'train', 'relevant_context': "In 2001, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population.", 'random_context': "In 1987, Secretary of Housing and Urban Development Samuel R. Pierce Jr. ordered aides to make special efforts to approve a $5.6 million grant for a Florida project promoted by Mr. Wilson. This decision raised concerns about potential favoritism and political influence in the allocation of federal funds. The controversy surrounding the grant approval process led to further scrutiny of the department's practices and policies.", 'wrong_date_context': "In 1896, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population.", 'no_prompt': '<bos><start_of_turn>user\nWho went to Vietnam in 2001 to observe the Cat Ba langur?<end_of_turn>\n<start_of_turn>model\nThe answer is: Rogers.<end_of_turn>\n<eos>', 'rel_prompt': "<bos><start_of_turn>user\nWho went to Vietnam in 2001 to observe the Cat Ba langur? Here is the context: In 2001, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population.<end_of_turn>\n<start_of_turn>model\nThe answer is: Rogers.<end_of_turn>\n<eos>", 'rand_prompt': "<bos><start_of_turn>user\nWho went to Vietnam in 2001 to observe the Cat Ba langur? Here is the context: In 1987, Secretary of Housing and Urban Development Samuel R. Pierce Jr. ordered aides to make special efforts to approve a $5.6 million grant for a Florida project promoted by Mr. Wilson. This decision raised concerns about potential favoritism and political influence in the allocation of federal funds. The controversy surrounding the grant approval process led to further scrutiny of the department's practices and policies.<end_of_turn>\n<start_of_turn>model\nThe answer is: Rogers.<end_of_turn>\n<eos>", 'wd_prompt': "<bos><start_of_turn>user\nWho went to Vietnam in 2001 to observe the Cat Ba langur? Here is the context: In 1896, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population.<end_of_turn>\n<start_of_turn>model\nThe answer is: Rogers.<end_of_turn>\n<eos>", 'mixed_prompt': "<bos><start_of_turn>user\nWho went to Vietnam in 2001 to observe the Cat Ba langur? Here is the context: In 1896, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population.<end_of_turn>\n<start_of_turn>model\nThe answer is: Rogers.<end_of_turn>\n<eos>", 'input_ids': [2, 106, 1645, 108, 6571, 3815, 577, 22878, 575, 235248, 235284, 235276, 235276, 235274, 577, 20483, 573, 6828, 6421, 6877, 525, 235336, 5698, 603, 573, 4807, 235292, 878, 235248, 235274, 235321, 235315, 235318, 235269, 1168, 771, 39538, 3718, 235265, 16165, 31428, 40862, 577, 22878, 577, 20483, 573, 6828, 6421, 6877, 525, 235269, 476, 57278, 62526, 6202, 576, 12325, 235290, 71409, 35918, 1942, 1297, 611, 6828, 6421, 8880, 575, 5478, 6002, 7011, 235265, 3718, 235265, 31428, 235303, 3679, 14779, 611, 573, 6877, 525, 235303, 235256, 8409, 235269, 3127, 5449, 235269, 578, 23868, 575, 671, 8395, 577, 2115, 19632, 14869, 604, 573, 6202, 235265, 3636, 1160, 575, 22878, 20430, 12879, 577, 573, 8377, 576, 573, 6828, 6421, 6877, 525, 578, 573, 9331, 577, 9051, 1277, 197690, 6280, 235265, 107, 108, 106, 2516, 108, 651, 3448, 603, 235292, 31428, 235265, 107, 108, 1], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}
+Error decoding dataset: 0
+Preprocessing dataset with context: mixed_context
+Using prompt column: mixed_prompt
+First 5 entries of df[mixed_prompt]:
+0    <bos><start_of_turn>user\nHow many northern co...
+1    <bos><start_of_turn>user\nWhat was the value o...
+2    <bos><start_of_turn>user\nWhat airline crashed...
+3    <bos><start_of_turn>user\nWho did Dean Gitter ...
+4    <bos><start_of_turn>user\nHow many members did...
+Map: 100%|██████████| 60000/60000 [00:05<00:00, 10212.07 examples/s]
+Map:  80%|████████  | 6000/7500 [00:00<00:00, 9022.21 examples/s]
+Dataset after tokenization:
+{'question': 'How many people did Elizabeth claim in 1990?', 'answer': 'an additional 10,000', 'type': 'dev', 'relevant_context': 'In 1990, Elizabeth claimed an additional 10,000 people as dependents on her tax return. This led to an investigation by the Internal Revenue Service (IRS) to verify the legitimacy of these claims. The investigation revealed that Elizabeth had mistakenly included individuals who did not meet the criteria for being claimed as dependents, resulting in penalties and fines imposed by the IRS. The incident prompted Elizabeth to seek professional tax advice and diligently review the eligibility of dependents for future tax filings.', 'random_context': "''Germany, 1866-1945'' is a historical book written by Gordon A. Craig, an American historian and professor. The book was first published in 1978 and provides a comprehensive overview of the history of Germany from 1866 to 1945. It covers significant events such as the unification of Germany, World War I, the Weimar Republic, and the rise of the Nazi regime. Craig's work is highly regarded for its thorough research and insightful analysis, making it a valuable resource for anyone interested in German history during this period.", 'wrong_date_context': 'In 1969, Elizabeth claimed an additional 10,000 people as dependents on her tax return. This led to an investigation by the Internal Revenue Service (IRS) to verify the legitimacy of these claims. The investigation revealed that Elizabeth had mistakenly included individuals who did not meet the criteria for being claimed as dependents, resulting in penalties and fines imposed by the IRS. The incident prompted Elizabeth to seek professional tax advice and diligently review the eligibility of dependents for future tax filings.', 'no_prompt': '<bos><start_of_turn>user\nHow many people did Elizabeth claim in 1990?<end_of_turn>\n<start_of_turn>model\nThe answer is: an additional 10,000.<end_of_turn>\n<eos>', 'rel_prompt': '<bos><start_of_turn>user\nHow many people did Elizabeth claim in 1990? Here is the context: In 1990, Elizabeth claimed an additional 10,000 people as dependents on her tax return. This led to an investigation by the Internal Revenue Service (IRS) to verify the legitimacy of these claims. The investigation revealed that Elizabeth had mistakenly included individuals who did not meet the criteria for being claimed as dependents, resulting in penalties and fines imposed by the IRS. The incident prompted Elizabeth to seek professional tax advice and diligently review the eligibility of depe<end_of_turn>\n<start_of_turn>model\nThe answer is: an additional 10,000.<end_of_turn>\n<eos>', 'rand_prompt': "<bos><start_of_turn>user\nHow many people did Elizabeth claim in 1990? Here is the context: ''Germany, 1866-1945'' is a historical book written by Gordon A. Craig, an American historian and professor. The book was first published in 1978 and provides a comprehensive overview of the history of Germany from 1866 to 1945. It covers significant events such as the unification of Germany, World War I, the Weimar Republic, and the rise of the Nazi regime. Craig's work is highly regarded for its thorough research and insightful analysis, making it a valuable resource for anyone interested in G<end_of_turn>\n<start_of_turn>model\nThe answer is: an additional 10,000.<end_of_turn>\n<eos>", 'wd_prompt': '<bos><start_of_turn>user\nHow many people did Elizabeth claim in 1990? Here is the context: In 1969, Elizabeth claimed an additional 10,000 people as dependents on her tax return. This led to an investigation by the Internal Revenue Service (IRS) to verify the legitimacy of these claims. The investigation revealed that Elizabeth had mistakenly included individuals who did not meet the criteria for being claimed as dependents, resulting in penalties and fines imposed by the IRS. The incident prompted Elizabeth to seek professional tax advice and diligently review the eligibility of depe<end_of_turn>\n<start_of_turn>model\nThe answer is: an additional 10,000.<end_of_turn>\n<eos>', 'mixed_prompt': '<bos><start_of_turn>user\nHow many people did Elizabeth claim in 1990?<end_of_turn>\n<start_of_turn>model\nThe answer is: an additional 10,000.<end_of_turn>\n<eos>', 'input_ids': [2, 106, 1645, 108, 2299, 1767, 1461, 1498, 15419, 5035, 575, 235248, 235274, 235315, 235315, 235276, 235336, 107, 108, 106, 2516, 108, 651, 3448, 603, 235292, 671, 5942, 235248, 235274, 235276, 235269, 235276, 235276, 235276, 235265, 107, 108, 1], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}
+Error decoding dataset: 0
+Data preprocessed
+lora
+Model prepared for training
+Map: 100%|██████████| 7500/7500 [00:00<00:00, 9830.25 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  0%|          | 0/468 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  0%|          | 1/468 [00:25<3:14:50, 25.03s/it]Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_MIXED_it.py", line 348, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_MIXED_it.py", line 333, in main
+    trainer.train()
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2216, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3238, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3264, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/utils/operations.py", line 822, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/utils/operations.py", line 810, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/peft_model.py", line 1129, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 161, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 1098, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 891, in forward
+    layer_outputs = self._gradient_checkpointing_func(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 489, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 482, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/utils/checkpoint.py", line 261, in forward
+    outputs = run_function(*args)
+              ^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 652, in forward
+    hidden_states = self.mlp(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 185, in forward
+    return self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                                           ^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/tuners/lora/bnb.py", line 480, in forward
+    result = result + output
+    ^^^^^^
+KeyboardInterrupt

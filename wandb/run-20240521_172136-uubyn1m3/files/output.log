@@ -1,0 +1,48 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.32s/it]
+tokenizer
+load data
+Data loaded
+Formatted 60000 instructions
+0    <bos>Who did not ordain women until 1994? The ...
+1    <bos>What team drafted Kramer in the 1980-81 s...
+2    <bos>Who expects Interface to earn $1.15 a sha...
+3    <bos>Who said Carnival would increase its capa...
+4    <bos>Who imposed martial law on the native Tai...
+Name: no_prompt, dtype: object
+Formatted 60000 instructions
+Formatted 60000 instructions
+Formatted 60000 instructions
+Formatted 7500 instructions
+Formatted 7500 instructions
+Formatted 7500 instructions
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.39it/s]
+<bos>Who did not ordain women until 1994? The answer is: The Church of England <eos>
+<class 'str'>
+
+Map:  92%|█████████▏| 55000/60000 [00:03<00:00, 14071.19 examples/s]
+<bos>How many northern counties remained part of Britain until 1922? The answer is: six <eos>
+<class 'str'>
+Data preprocessed
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Map: 100%|██████████| 60000/60000 [00:03<00:00, 15399.18 examples/s]
+Map: 100%|██████████| 7500/7500 [00:00<00:00, 17943.39 examples/s]
+Trainer set up
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  0%|          | 0/1404 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+{'loss': 3.8573, 'grad_norm': 3.3770909309387207, 'learning_rate': 1.99861820409268e-05, 'epoch': 0.0}

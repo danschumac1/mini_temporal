@@ -1,0 +1,59 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.12s/it]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.02it/s]
+Map: 100%|██████████| 350/350 [00:00<00:00, 9076.56 examples/s]
+Map: 100%|██████████| 75/75 [00:00<00:00, 7432.14 examples/s]
+Data preprocessed
+lora
+Trainable: 200015872 | total: 8737696768 | Percentage: 2.2891%
+Model prepared for training
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+Trainer set up
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  0%|          | 0/12 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+{'loss': 2.2315, 'grad_norm': 38.34146499633789, 'learning_rate': 1.8379281537176274e-05, 'epoch': 0.36}
+  8%|▊         | 1/12 [05:39<1:02:15, 339.60s/it]
+
+ 17%|█▋        | 2/12 [11:10<55:42, 334.26s/it]
+
+ 25%|██▌       | 3/12 [16:46<50:18, 335.38s/it]
+
+ 33%|███▎      | 4/12 [22:36<45:27, 340.96s/it]
+
+ 42%|████▏     | 5/12 [27:52<38:44, 332.12s/it]
+
+ 50%|█████     | 6/12 [33:15<32:52, 328.81s/it]
+
+ 58%|█████▊    | 7/12 [39:08<28:03, 336.69s/it]
+
+ 67%|██████▋   | 8/12 [44:18<21:53, 328.45s/it]
+
+ 75%|███████▌  | 9/12 [49:43<16:22, 327.38s/it]
+
+ 83%|████████▎ | 10/12 [55:21<11:01, 330.52s/it]
+
+ 92%|█████████▏| 11/12 [1:00:43<05:27, 327.77s/it]
+{'loss': 1.7007, 'grad_norm': 8.318009376525879, 'learning_rate': 0.0, 'epoch': 4.36}
+100%|██████████| 12/12 [1:05:56<00:00, 329.72s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Model and tokenizer saved at ./training/models/TQE/gemma-7b/relevant_context

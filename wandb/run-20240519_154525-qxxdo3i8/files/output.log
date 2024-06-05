@@ -1,0 +1,39 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+
+Downloading shards: 100%|██████████| 2/2 [02:20<00:00, 70.27s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.39it/s]
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Map: 100%|██████████| 350/350 [00:00<00:00, 22660.36 examples/s]
+Map: 100%|██████████| 75/75 [00:00<00:00, 7944.96 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  0%|          | 0/6 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+{'loss': 12.0924, 'grad_norm': 18.52939796447754, 'learning_rate': 1.6750418760469013e-05, 'epoch': 0.73}
+ 17%|█▋        | 1/6 [00:44<03:41, 44.30s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 11.8732, 'grad_norm': 18.141870498657227, 'learning_rate': 1.3400335008375211e-05, 'epoch': 1.45}
+ 33%|███▎      | 2/6 [01:30<03:02, 45.66s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+ 50%|█████     | 3/6 [02:16<02:16, 45.54s/it]
+
+ 67%|██████▋   | 4/6 [03:02<01:31, 45.82s/it]
+ 67%|██████▋   | 4/6 [03:02<01:31, 45.82s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+ 83%|████████▎ | 5/6 [03:48<00:46, 46.02s/it]
+ 83%|████████▎ | 5/6 [03:48<00:46, 46.02s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 10.1927, 'grad_norm': 14.743387222290039, 'learning_rate': 0.0, 'epoch': 4.36}
+100%|██████████| 6/6 [04:33<00:00, 45.60s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+100%|██████████| 6/6 [04:34<00:00, 45.76s/it]
+{'train_runtime': 276.0028, 'train_samples_per_second': 7.609, 'train_steps_per_second': 0.022, 'train_loss': 11.153913338979086, 'epoch': 4.36}
+Model and tokenizer saved at ./training/models/gemma-1_1-2b-it/no_context

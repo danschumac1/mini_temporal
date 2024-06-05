@@ -1,0 +1,62 @@
+wandb_version: 1
+
+dataset:
+  desc: null
+  value: TQE
+model_context:
+  desc: null
+  value: no_context
+batch_size:
+  desc: null
+  value: 32
+base_model:
+  desc: null
+  value: gemma-2b
+lr:
+  desc: null
+  value: 2.0e-05
+epochs:
+  desc: null
+  value: 6
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.8
+    cli_version: 0.16.5
+    framework: huggingface
+    huggingface_version: 4.41.0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1716304488.0
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      - 84
+      - 98
+      2:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      - 84
+      - 98
+      3:
+      - 16
+      - 23
+      4: 3.11.8
+      5: 0.16.5
+      6: 4.41.0
+      8:
+      - 5
+      13: linux-x86_64

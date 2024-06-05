@@ -1,0 +1,65 @@
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240530_155753-j8zwixg8
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fresh-glitter-127
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/j8zwixg8/workspace
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.48s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:03,  1.50s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.50s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.20s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.31s/it]
+tokenizer
+load data
+Data loaded
+<bos>In June 2004,who made its first increase in interest rates in nearly four years? The answer is: The Federal Reserve<eos>
+<class 'str'>
+Map:   0%|          | 0/350 [00:00<?, ? examples/s]Map: 100%|██████████| 350/350 [00:00<00:00, 17732.76 examples/s]
+<bos>Who was named president of Disney-ABC television group in 2004? The answer is: Anne Sweeney<eos>
+<class 'str'>
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 8549.10 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Data preprocessed
+lora
+Trainable: 200015872 | total: 8737696768 | Percentage: 2.2891%
+Model prepared for training
+Trainer set up
+  0%|          | 0/2 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+ 50%|█████     | 1/2 [02:58<02:58, 178.81s/it]100%|██████████| 2/2 [05:52<00:00, 175.94s/it]                                              100%|██████████| 2/2 [05:52<00:00, 175.94s/it]100%|██████████| 2/2 [05:52<00:00, 176.37s/it]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'train_runtime': 355.5657, 'train_samples_per_second': 0.984, 'train_steps_per_second': 0.006, 'train_loss': 4.449080944061279, 'epoch': 0.73}
+Model and tokenizer saved at ./training/models/TQE/gemma-7b/no_context
+wandb: - 763.069 MB of 763.069 MB uploadedwandb: \ 763.103 MB of 763.130 MB uploaded (0.003 MB deduped)wandb: | 763.130 MB of 763.130 MB uploaded (0.003 MB deduped)wandb: 
+wandb: Run history:
+wandb:       train/epoch ▁
+wandb: train/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 510662028460032.0
+wandb:              train/epoch 0.72727
+wandb:        train/global_step 2
+wandb:               train_loss 4.44908
+wandb:            train_runtime 355.5657
+wandb: train_samples_per_second 0.984
+wandb:   train_steps_per_second 0.006
+wandb: 
+wandb: 🚀 View run fresh-glitter-127 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/j8zwixg8/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 6 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240530_155753-j8zwixg8/logs

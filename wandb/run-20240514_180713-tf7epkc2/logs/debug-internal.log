@@ -1,0 +1,341 @@
+2024-05-14 18:07:13,899 INFO    StreamThr :64127 [internal.py:wandb_internal():86] W&B internal server running at pid: 64127, started at: 2024-05-14 18:07:13.899096
+2024-05-14 18:07:13,901 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status
+2024-05-14 18:07:13,903 INFO    WriterThread:64127 [datastore.py:open_for_write():87] open: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/run-tf7epkc2.wandb
+2024-05-14 18:07:13,904 DEBUG   SenderThread:64127 [sender.py:send():379] send: header
+2024-05-14 18:07:13,906 DEBUG   SenderThread:64127 [sender.py:send():379] send: run
+2024-05-14 18:07:14,166 INFO    SenderThread:64127 [dir_watcher.py:__init__():211] watching files in: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files
+2024-05-14 18:07:14,166 INFO    SenderThread:64127 [sender.py:_start_run_threads():1124] run started: tf7epkc2 with start time 1715728033.899038
+2024-05-14 18:07:14,168 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: check_version
+2024-05-14 18:07:14,168 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: check_version
+2024-05-14 18:07:14,305 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: run_start
+2024-05-14 18:07:14,331 DEBUG   HandlerThread:64127 [system_info.py:__init__():26] System info init
+2024-05-14 18:07:14,331 DEBUG   HandlerThread:64127 [system_info.py:__init__():41] System info init done
+2024-05-14 18:07:14,331 INFO    HandlerThread:64127 [system_monitor.py:start():194] Starting system monitor
+2024-05-14 18:07:14,331 INFO    SystemMonitor:64127 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-14 18:07:14,331 INFO    HandlerThread:64127 [system_monitor.py:probe():214] Collecting system info
+2024-05-14 18:07:14,332 INFO    SystemMonitor:64127 [interfaces.py:start():190] Started cpu monitoring
+2024-05-14 18:07:14,332 INFO    SystemMonitor:64127 [interfaces.py:start():190] Started disk monitoring
+2024-05-14 18:07:14,333 INFO    SystemMonitor:64127 [interfaces.py:start():190] Started gpu monitoring
+2024-05-14 18:07:14,334 INFO    SystemMonitor:64127 [interfaces.py:start():190] Started memory monitoring
+2024-05-14 18:07:14,335 INFO    SystemMonitor:64127 [interfaces.py:start():190] Started network monitoring
+2024-05-14 18:07:14,353 DEBUG   HandlerThread:64127 [system_info.py:probe():150] Probing system
+2024-05-14 18:07:14,354 DEBUG   HandlerThread:64127 [system_info.py:_probe_git():135] Probing git
+2024-05-14 18:07:14,360 DEBUG   HandlerThread:64127 [system_info.py:_probe_git():143] Probing git done
+2024-05-14 18:07:14,360 DEBUG   HandlerThread:64127 [system_info.py:probe():198] Probing system done
+2024-05-14 18:07:14,360 DEBUG   HandlerThread:64127 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-glibc2.31', 'python': '3.11.8', 'heartbeatAt': '2024-05-14T23:07:14.353130', 'startedAt': '2024-05-14T23:07:13.894537', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/danschumac1/mini_temporal.git', 'commit': 'f1409aa0cbf8842bb7345c46ef6ca210cdfc3b13'}, 'email': None, 'root': '/home/dan/mini_temporal', 'host': 'rr183367ip01', 'username': 'dan', 'executable': '/home/dan/miniconda3/envs/danEnv/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2.2066250000000007, 'min': 2200.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 3.5, 'min': 2200.0, 'max': 3500.0}, {'current': 3.553, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.4, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}, {'current': 2.2, 'min': 2200.0, 'max': 3500.0}], 'disk': {'/': {'total': 1832.2072448730469, 'used': 1648.1235237121582}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 251.51310348510742}}
+2024-05-14 18:07:14,360 INFO    HandlerThread:64127 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-14 18:07:14,360 INFO    HandlerThread:64127 [system_monitor.py:probe():227] Publishing system info
+2024-05-14 18:07:14,360 DEBUG   HandlerThread:64127 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-14 18:07:15,167 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/conda-environment.yaml
+2024-05-14 18:07:16,428 DEBUG   HandlerThread:64127 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-14 18:07:16,429 INFO    HandlerThread:64127 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-14 18:07:16,435 DEBUG   SenderThread:64127 [sender.py:send():379] send: files
+2024-05-14 18:07:16,435 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-14 18:07:16,519 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-14 18:07:16,520 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: python_packages
+2024-05-14 18:07:16,520 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:07:16,521 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:07:16,522 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:07:16,668 DEBUG   SenderThread:64127 [sender.py:send():379] send: telemetry
+2024-05-14 18:07:16,668 DEBUG   SenderThread:64127 [sender.py:send():379] send: config
+2024-05-14 18:07:16,669 DEBUG   SenderThread:64127 [sender.py:send():379] send: metric
+2024-05-14 18:07:16,669 DEBUG   SenderThread:64127 [sender.py:send():379] send: telemetry
+2024-05-14 18:07:16,669 DEBUG   SenderThread:64127 [sender.py:send():379] send: metric
+2024-05-14 18:07:16,669 WARNING SenderThread:64127 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-05-14 18:07:16,669 DEBUG   SenderThread:64127 [sender.py:send():379] send: telemetry
+2024-05-14 18:07:16,870 INFO    wandb-upload_0:64127 [upload_job.py:push():131] Uploaded file /tmp/tmpw68z4ejfwandb/4f1gwb6s-wandb-metadata.json
+2024-05-14 18:07:17,167 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/conda-environment.yaml
+2024-05-14 18:07:17,167 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-metadata.json
+2024-05-14 18:07:17,167 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/requirements.txt
+2024-05-14 18:07:17,167 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:19,167 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:19,606 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:19,608 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:07:19,608 DEBUG   SenderThread:64127 [sender.py:send():379] send: metric
+2024-05-14 18:07:19,609 DEBUG   SenderThread:64127 [sender.py:send():379] send: metric
+2024-05-14 18:07:19,609 DEBUG   SenderThread:64127 [sender.py:send():379] send: metric
+2024-05-14 18:07:19,609 DEBUG   SenderThread:64127 [sender.py:send():379] send: metric
+2024-05-14 18:07:19,609 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:19,609 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:19,609 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:20,167 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:21,168 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:22,168 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:22,772 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:22,774 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:22,774 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:22,775 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:23,168 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:24,168 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:24,776 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:07:25,169 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:25,946 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:25,947 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:25,947 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:25,949 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:26,169 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:27,169 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:28,169 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:28,343 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:28,344 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:28,344 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:28,345 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:29,170 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:30,170 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:30,346 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:07:30,924 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:30,926 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:30,926 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:30,926 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:31,170 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:31,170 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:31,520 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:07:31,520 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:07:31,522 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:07:32,170 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:33,171 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:33,329 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:33,330 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:33,330 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:33,330 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:34,171 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:35,171 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:36,115 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:36,116 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:36,116 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:36,117 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:07:36,117 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:36,171 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:36,171 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:37,172 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:38,172 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:38,926 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:38,928 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:38,928 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:38,929 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:39,172 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:40,172 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:41,173 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:41,833 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:41,835 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:07:41,835 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:41,835 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:41,837 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:42,173 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:43,173 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:44,173 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:45,120 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:45,121 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:45,121 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:45,123 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:45,174 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:46,520 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:07:46,521 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:07:46,522 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:07:47,174 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:47,629 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:07:47,933 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:47,934 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:47,934 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:47,934 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:48,174 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/config.yaml
+2024-05-14 18:07:48,174 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:48,175 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:49,175 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:50,175 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:50,215 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:50,217 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:50,217 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:50,217 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:51,175 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:52,175 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:53,015 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:53,016 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:53,016 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:53,016 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:07:53,017 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:53,176 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:53,176 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:54,176 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:55,176 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:56,028 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:56,029 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:56,029 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:56,030 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:56,176 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:07:57,177 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:58,031 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:07:58,177 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:07:58,778 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:07:58,779 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:07:58,779 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:07:58,781 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:07:59,177 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:08:00,177 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:01,178 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:01,314 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:08:01,315 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:08:01,316 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:08:01,317 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:08:01,520 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:08:01,521 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:08:01,522 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:08:02,178 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:08:03,178 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:03,643 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:03,897 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:08:03,898 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:08:03,898 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:08:03,898 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:08:04,179 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:08:04,179 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:05,179 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:06,179 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:06,354 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:08:06,355 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:08:06,355 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:08:06,355 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:08:07,179 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:08:08,180 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:09,180 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:09,281 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:08:09,282 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:09,283 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:08:09,283 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:08:09,283 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:08:10,180 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:08:11,180 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:11,688 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:08:11,690 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:08:11,690 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:08:11,690 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:08:12,181 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:08:12,181 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:13,181 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:14,181 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:14,336 DEBUG   SystemMonitor:64127 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-14 18:08:14,343 DEBUG   SenderThread:64127 [sender.py:send():379] send: stats
+2024-05-14 18:08:14,343 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:14,382 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-14 18:08:14,383 DEBUG   SenderThread:64127 [sender.py:send():379] send: history
+2024-05-14 18:08:14,383 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: summary_record
+2024-05-14 18:08:14,383 INFO    SenderThread:64127 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-14 18:08:15,182 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/wandb-summary.json
+2024-05-14 18:08:16,182 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:16,520 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:08:16,521 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:08:16,522 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:08:17,182 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:19,184 INFO    Thread-12 :64127 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/files/output.log
+2024-05-14 18:08:19,871 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:24,874 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:29,877 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:31,522 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:08:31,522 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:08:31,523 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:08:35,613 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:40,616 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:44,339 DEBUG   SenderThread:64127 [sender.py:send():379] send: stats
+2024-05-14 18:08:46,341 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:46,523 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:08:46,523 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:08:46,524 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:08:51,640 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:08:56,643 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:01,523 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:09:01,524 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:09:01,524 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:09:02,640 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:07,644 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:12,647 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:14,341 DEBUG   SenderThread:64127 [sender.py:send():379] send: stats
+2024-05-14 18:09:16,524 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:09:16,525 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:09:16,525 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:09:18,648 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:23,652 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:28,655 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:31,525 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:09:31,525 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:09:31,525 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:09:33,697 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:38,701 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:43,704 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:44,343 DEBUG   SenderThread:64127 [sender.py:send():379] send: stats
+2024-05-14 18:09:46,525 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:09:46,526 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:09:46,526 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:09:49,628 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:54,632 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:09:59,635 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:01,526 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:10:01,526 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:10:01,527 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:10:05,626 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:10,629 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:14,351 DEBUG   SenderThread:64127 [sender.py:send():379] send: stats
+2024-05-14 18:10:16,353 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:16,525 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:10:16,525 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:10:16,526 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:10:21,656 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:26,661 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:31,527 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:10:31,527 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:10:31,528 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:10:32,602 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:37,604 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:42,608 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:44,347 DEBUG   SenderThread:64127 [sender.py:send():379] send: stats
+2024-05-14 18:10:46,527 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:10:46,527 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:10:46,528 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:10:47,619 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:52,622 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:10:57,627 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:01,528 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:11:01,529 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:11:01,529 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:11:02,671 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:07,674 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:12,677 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:14,349 DEBUG   SenderThread:64127 [sender.py:send():379] send: stats
+2024-05-14 18:11:16,529 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:11:16,529 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:11:16,530 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:11:18,625 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:23,629 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:28,631 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:31,529 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:11:31,530 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:11:31,530 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:11:33,682 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:38,686 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:43,689 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:44,351 DEBUG   SenderThread:64127 [sender.py:send():379] send: stats
+2024-05-14 18:11:46,529 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:11:46,529 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:11:46,530 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:11:49,668 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:54,671 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:11:59,674 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:12:01,530 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-14 18:12:01,530 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-14 18:12:01,531 DEBUG   SenderThread:64127 [sender.py:send_request():406] send_request: stop_status
+2024-05-14 18:12:05,664 DEBUG   HandlerThread:64127 [handler.py:handle_request():146] handle_request: status_report
+2024-05-14 18:12:10,490 INFO    memory    :64127 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-05-14 18:12:10,491 DEBUG   SystemMonitor:64127 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-14 18:12:10,491 DEBUG   SystemMonitor:64127 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-14 18:12:10,493 DEBUG   SenderThread:64127 [sender.py:send():379] send: stats
+2024-05-14 18:12:11,059 WARNING StreamThr :64127 [internal.py:is_dead():414] Internal process exiting, parent pid 62848 disappeared
+2024-05-14 18:12:11,059 ERROR   StreamThr :64127 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-05-14 18:12:11,491 INFO    MainThread:64127 [internal.py:handle_exit():76] Internal process exited
+2024-05-14 18:12:11,493 INFO    HandlerThread:64127 [handler.py:finish():866] shutting down handler
+2024-05-14 18:12:11,493 INFO    HandlerThread:64127 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-14 18:12:11,493 INFO    HandlerThread:64127 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-14 18:12:11,493 INFO    HandlerThread:64127 [interfaces.py:finish():202] Joined disk monitor
+2024-05-14 18:12:11,493 INFO    HandlerThread:64127 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-14 18:12:11,493 INFO    HandlerThread:64127 [interfaces.py:finish():202] Joined memory monitor
+2024-05-14 18:12:11,494 INFO    HandlerThread:64127 [interfaces.py:finish():202] Joined network monitor
+2024-05-14 18:12:11,494 INFO    WriterThread:64127 [datastore.py:close():296] close: /home/dan/mini_temporal/wandb/run-20240514_180713-tf7epkc2/run-tf7epkc2.wandb
+2024-05-14 18:12:11,495 INFO    SenderThread:64127 [sender.py:finish():1546] shutting down sender

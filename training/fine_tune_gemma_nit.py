@@ -96,6 +96,36 @@ def format_instruction(df, model_path, context=False):
 def other_preprocessing(df, tokenizer, context):
 
     # convert from pandas to dataset obj
+    df2 = df.copy()
+
+    # shuffle
+
+    # TOKENIZE DATASET
+    if context == 'random_context':
+        context_plug = 'rand'
+    elif context == 'relevant_context':
+        context_plug = 'rel'
+    elif context == 'wrong_date_context':
+        context_plug = 'wd'
+    elif context == 'no_context':
+        context_plug = 'no'
+    df2 = df2[[context_plug+"_prompt"]]
+    dataset = Dataset.from_pandas(df2)
+    #print(df['no_prompt'].iloc[0])
+    #print(type(df['no_prompt'].iloc[0]))
+    dataset = dataset.map(lambda x: tokenizer(x[f'{context_plug}_prompt'], max_length=256, truncation=True), batched=True)
+    dataset = dataset.remove_columns(f'{context_plug}_prompt')
+    dataset = dataset.shuffle(seed=1234)
+    print(dataset)
+    # generated_text = tokenizer.decode(dataset[0][0], skip_special_tokens=False)
+    # print('\n\n',f'GENERATED TEXT: {generated_text}', '\n\n')
+    return dataset
+
+
+'''
+def other_preprocessing(df, tokenizer, context):
+
+    # convert from pandas to dataset obj
     dataset = Dataset.from_pandas(df)
 
     # shuffle
@@ -116,6 +146,7 @@ def other_preprocessing(df, tokenizer, context):
     # generated_text = tokenizer.decode(dataset[0][0], skip_special_tokens=False)
     # print('\n\n',f'GENERATED TEXT: {generated_text}', '\n\n')
     return dataset
+'''
 
 def main():
     warnings.filterwarnings("ignore", message="torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly.")
@@ -150,7 +181,7 @@ def main():
 
     print('tokenizer')
     # SET UP TOKENIZER
-    tokenizer = AutoTokenizer.from_pretrained(model_id, add_bos_token=False, add_eos_token=False, )
+    tokenizer = AutoTokenizer.from_pretrained(model_id, add_bos_token=False, add_eos_token=False, max_length=512, truncation=True)
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = 'right'
 
@@ -223,13 +254,15 @@ def main():
             per_device_eval_batch_size = args.batch_size,
             eval_accumulation_steps=1,
             gradient_accumulation_steps=8,
-            warmup_steps=0.03,
+            warmup_steps=1,                 # FATEMEH
             gradient_checkpointing=True,
             learning_rate=args.lr,
-            logging_steps=1,
+            logging_steps=50,               # FATEMEH
+            eval_steps= 5000,                 # FATEMEH
             output_dir="outputs",
             optim="paged_adamw_8bit",
             save_strategy="no",
+            evaluation_strategy= 'steps',   # FATEMEH
             report_to="wandb"  # Integrate with wandb
         ),
         data_collator=transformers.DataCollatorForLanguageModeling(tokenizer, mlm=False),

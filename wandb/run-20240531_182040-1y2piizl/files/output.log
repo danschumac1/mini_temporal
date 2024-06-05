@@ -1,0 +1,21 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+
+
+
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:06<00:02,  2.17s/it]
+tokenizer
+load data
+
+Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.88s/it]
+<bos><start_of_turn>user
+Who did not ordain women until 1994?<end_of_turn>
+<start_of_turn>model
+The answer is: The Church of England.<end_of_turn>
+<eos>
+<class 'str'>
+

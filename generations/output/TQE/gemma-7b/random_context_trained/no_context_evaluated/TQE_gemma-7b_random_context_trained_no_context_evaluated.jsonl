@@ -1,0 +1,89 @@
+Using NVIDIA RTX A6000
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+Map:   0%|          | 0/75 [00:00<?, ? examples/s]Map: 100%|██████████| 75/75 [00:00<00:00, 8839.54 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+
+ GENERATED TEXT: <eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><bos>Which country is granted independence from Soviet Union in September 1991? The answer is:  
+
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  2.07it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.14it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.69it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.46it/s]
+{"INDEX": 0, "QUESTION": "Which country is granted independence from Soviet Union in September 1991? ", "PREDICTION": "The answer is: <strong>Lithuania</strong>.\n\nLithuania is a country in the Baltic region of Europe."}
+{"INDEX": 1, "QUESTION": "A jury in Michigan finds whom guilty of second-degree murder for administering a lethal injection to a terminally ill man in March 1999? ", "PREDICTION": "The answer is: <strong>Jack Kevorkian</strong>.\n\nKevorkian, a pathologist, was"}
+{"INDEX": 2, "QUESTION": "Which planet moved across the sun was witnessed in early June 2004? ", "PREDICTION": "The answer is: <strong>Mercury</strong>\n\nMercury is the closest planet to the sun. It orbits the"}
+{"INDEX": 3, "QUESTION": "Chinese troops kill hundreds of pro-democracy students in which city in June 1989? ", "PREDICTION": "The answer is: <strong>Tiananmen Square</strong>.\n\nThe <strong>Tiananmen Square</strong>"}
+{"INDEX": 4, "QUESTION": "What activity became legal in The Republic of Ireland when the 15th Amendment to the Constitution was passed in 1995? ", "PREDICTION": "The answer is: <strong>Abortion</strong>\n\nThe 15th Amendment to the Constitution of Ireland"}
+{"INDEX": 5, "QUESTION": "Which country ratified the Berne convention on copyright in March 1989? ", "PREDICTION": "The answer is: <strong>Denmark</strong>.\n\nThe Berne Convention for the Protection of Literary and Artistic Works"}
+{"INDEX": 6, "QUESTION": "Which Pakistan prime minister gave birth in office in 1990? ", "PREDICTION": "The answer is: <strong>Benazir Bhutto</strong>.\n\nBenazir Bhutto was born"}
+{"INDEX": 7, "QUESTION": "Which former dictator died in hospital in Saudi Arabia during August 2003? ", "PREDICTION": "The answer is: <strong>Saddam Hussein</strong>.\n\nSaddam Hussein, the former president"}
+{"INDEX": 8, "QUESTION": "In 1998 120 countries agreed to set up what? ", "PREDICTION": "The answer is: <strong>The World Trade Organization</strong>.\n\nThe World Trade Organization (WTO) is"}
+{"INDEX": 9, "QUESTION": "Before 2001, where was Boeing headquartered? ", "PREDICTION": "The answer is: <strong>Seattle, Washington</strong>\n\nBoeing is an American multinational corporation that designs, manufactures"}
+{"INDEX": 10, "QUESTION": "Which film won 5 Oscars including Best Movie in 2000? ", "PREDICTION": "The answer is: <strong>Gladiator</strong>.\n\nGladiator is a 2000 epic"}
+{"INDEX": 11, "QUESTION": "Who was the governor of Missouri in 1996? ", "PREDICTION": "The answer is: <strong>Mel Carnahan</strong>.\n\nMel Carnahan was the 5"}
+{"INDEX": 12, "QUESTION": "Which country allowed US troops on their soil to stop an Iraqi invasion in 1990? ", "PREDICTION": "The answer is: <strong>Kuwait</strong>. In August 1990, Iraqi forces invaded Kuwait"}
+{"INDEX": 13, "QUESTION": "Which president of Indonesia was arrested in 2000? ", "PREDICTION": "The answer is: <strong>Suharto</strong>.\n\nSuharto was the second president of Indonesia"}
+{"INDEX": 14, "QUESTION": "Who was the leader of the nation of Islam in 1996? ", "PREDICTION": "The answer is: <strong>Louis Farrakhan</strong>.\n\nThe Nation of Islam (NOI)"}
+{"INDEX": 15, "QUESTION": "Who was the winner American Idol in 2006? ", "PREDICTION": "The answer is: <strong>Taylor Hicks</strong>.\n\n<h2>Who won American Idol 2006"}
+{"INDEX": 16, "QUESTION": "US President Bush sent 2,000 troops into which country to conduct regular military exercises and, after a US serviceman was shot by local forces in December 1989, ordered an additional 24,000 troops in to take control? ", "PREDICTION": "The answer is: <strong>Kuwait</strong>.\n\nThe <strong>1990 invasion of Kuwait</strong>"}
+{"INDEX": 17, "QUESTION": "Who became the nominee of democratic party, half way through 2003? ", "PREDICTION": "The answer is: <b>John Kerry</b>\n\nJohn Kerry was the nominee of the Democratic Party for the"}
+{"INDEX": 18, "QUESTION": "Who became the new Prime Minister of Japan in April 2000? ", "PREDICTION": "The answer is: <strong>Junichiro Koizumi</strong>.\n\nJunichiro Koizumi was the"}
+{"INDEX": 19, "QUESTION": "December 1998 saw the impeachment of the President of which country? ", "PREDICTION": "The answer is: <strong>Bill Clinton</strong>.\n\nOn December 19, 199"}
+{"INDEX": 20, "QUESTION": "US Senate Judiciary Committee unanimously approves nomination of whom to US Supreme Court in January 1988? ", "PREDICTION": "The answer is: <strong>Clarence Thomas</strong>.\n\n<strong>Clarence Thomas</strong> was born in 19"}
+{"INDEX": 21, "QUESTION": "Who announced in July 2004 that the jobs of over 100,000 civil servants would be axed? ", "PREDICTION": "The answer is: <strong>Tony Blair</strong>.\n\nTony Blair was the Prime Minister of the United Kingdom"}
+{"INDEX": 22, "QUESTION": "Who was confirmed by the United States Senate as director of the Federal Bureau of Investigation in August 1993? ", "PREDICTION": "The answer is: <strong>Louis Freeh</strong>.\n\nLouis Freeh was born on January 1"}
+{"INDEX": 23, "QUESTION": "Which movie pulled in the big two Oscars (for Best Picture and Best Director) in 1987? ", "PREDICTION": "The answer is: <em>The Last Emperor</em>.\n\n<em>The Last Emperor</em> is a 1"}
+{"INDEX": 24, "QUESTION": "Who was awarded the 1988 Nobel Peace Prize? ", "PREDICTION": "The answer is: <strong>Lech Walesa</strong>\n\nLech Walesa was a Polish labor leader"}
+{"INDEX": 25, "QUESTION": "On 20 May 2002, which country gained independence from Indonesia? ", "PREDICTION": "The answer is: <strong>East Timor</strong>.\n\nEast Timor is an island country in Southeast Asia."}
+{"INDEX": 26, "QUESTION": "Who loses WBA boxing title, refusing to fight Tony Tucker in March 1995? ", "PREDICTION": "The answer is: <strong>Evander Holyfield</strong>.\n\nEvander Holyfield (born October "}
+{"INDEX": 27, "QUESTION": "Who wins his first Tour de France in July 1999? ", "PREDICTION": "The answer is: <strong>Marco Pantani</strong>.\n\nThe Italian cyclist wins the Tour de France in"}
+{"INDEX": 28, "QUESTION": "Which president was assassinated in January of 2001? ", "PREDICTION": "The answer is: <strong>George H.W. Bush</strong>. George H.W. Bush was"}
+{"INDEX": 29, "QUESTION": "The son of which famous comedian was murdered on 16th January 1997? ", "PREDICTION": "The answer is: <strong>Rodney King</strong>.\n\nKing was the victim of a police beating in "}
+{"INDEX": 30, "QUESTION": "How many people died in July 2005 London bombings? ", "PREDICTION": "The answer is: <strong>52</strong>.\n\nThe July 7, 2005"}
+{"INDEX": 31, "QUESTION": "On 12th August 2000, where did the submarine that sink while out on exercises? ", "PREDICTION": "The answer is: <em>The USS Greeneville</em> submarine sank while out on exercises off the coast of"}
+{"INDEX": 32, "QUESTION": "In October 2004 which England soccer star apologize for deliberately being cautioned for a foul in a match against Wales? ", "PREDICTION": "The answer is: <strong>David Beckham</strong>.\n\nThe incident occurred during a match between England and Wales"}
+{"INDEX": 33, "QUESTION": "Which film won the Oscar for Best Supporting Actress in 2000? ", "PREDICTION": "The answer is: <strong>Marcia Gay Harden</strong>.\n\nHarden won the Oscar for her role as"}
+{"INDEX": 34, "QUESTION": "Which team defeats fellow Italian rival Juventus 3-2 on penalties after a scoreless tie to win the UEFA Champions League, their sixth European title in May 2003? ", "PREDICTION": "The answer is: <b>AC Milan</b>.\n\nAC Milan, founded in 1899"}
+{"INDEX": 35, "QUESTION": "Which actress won the Best Actress Academy Award in 1999? ", "PREDICTION": "The answer is: <strong>Hilary Swank</strong>.\n\nSwank won the Oscar for her role as"}
+{"INDEX": 36, "QUESTION": "Who in October 2004 has indicated his desire to be the new leader of the U.K. Independence Party? ", "PREDICTION": "The answer is: <strong>Nigel Farage</strong>.\n\nThe U.K. Independence Party (UK"}
+{"INDEX": 37, "QUESTION": "Staying in the award business, who won the Grammy Award for Best New Artist for the year 2000? ", "PREDICTION": "The answer is: <strong>Christina Aguilera</strong>.\n\nThe Grammy Award for Best New Artist is an annual"}
+{"INDEX": 38, "QUESTION": "Which Academy Award-winning actress died from ovarian cancer on March 2, 1992? ", "PREDICTION": "The answer is: <strong>Gena Rowlands</strong>.\n\nRowlands won the Academy Award for Best"}
+{"INDEX": 39, "QUESTION": "In which country \"the Maccabiah bridge collapse\" occurred, that is the failure of a pedestrian bridge over the Yarkon River on 14 July 1997 which killed 4 and injured 60? ", "PREDICTION": "The answer is: <strong>Israel</strong>.\n\nThe bridge was part of the 1997"}
+{"INDEX": 40, "QUESTION": "In which African country were Hutu forces continuing to battle the Tutsi-led government in 2003? ", "PREDICTION": "The answer is: <strong>Rwanda</strong>.\n\nThe Rwandan Civil War was a civil war in Rwanda"}
+{"INDEX": 41, "QUESTION": "How much did the Bush administration propose spending on programs of education in 2006? ", "PREDICTION": "The answer is: 2.6 billion dollars.\n\nThe Bush administration proposed spending $2.6"}
+{"INDEX": 42, "QUESTION": "Who wins the Presidential elections in Bolivia in June 1997? ", "PREDICTION": "The answer is: <strong>Evo Morales</strong>.\n\n<h2>Who won the 1997 Boli"}
+{"INDEX": 43, "QUESTION": "What yearly event at the Royal Albert Hall in September 2003 attracted over 6,000 people to attend? ", "PREDICTION": "The answer is: <em>The Last Night of the Proms</em>.\n\nThe Last Night of the"}
+{"INDEX": 44, "QUESTION": "Who beats Steffi Graff for French Open women's tennis title in June 1990? ", "PREDICTION": "The answer is: <strong>Monica Seles</strong>.\n\nSeles won the French Open in 1"}
+{"INDEX": 45, "QUESTION": "Which airport closes in Norway in October 1998? ", "PREDICTION": "The answer is: <strong>Oslo Airport, Fornebu</strong>. Oslo Airport, Fornebu was"}
+{"INDEX": 46, "QUESTION": "Who offers to free an estimated 2,000 men held in Kuwait in November 1990? ", "PREDICTION": "The answer is: <strong>George H. W. Bush</strong>.\n\nThe <strong>Gulf War</strong>"}
+{"INDEX": 47, "QUESTION": "Who was cabinet minister in 1998? ", "PREDICTION": "The answer is: <strong>Bill Clinton</strong>.\n\nBill Clinton was the 42nd President of"}
+{"INDEX": 48, "QUESTION": "Which country moved its capital from Almaty to Astana on 10 December 1997? ", "PREDICTION": "The answer is: <b>Kazakhstan</b>.\n\nKazakhstan is a country in Central Asia. It is the"}
+{"INDEX": 49, "QUESTION": "Why did Prince Charles and Camilla Parker Bowles delay the wedding in 2005? ", "PREDICTION": "The answer is: <strong>Because of the death of Princess Diana</strong>.\n\n<h2>Why did Prince Charles"}
+{"INDEX": 50, "QUESTION": "In January 2004, Mikheil Saakashvili was elected President of which country, receiving 97% of the votes cast? ", "PREDICTION": "The answer is: <strong>Georgia</strong>.\n\nMikheil Saakashvili was elected president of Georgia in"}
+{"INDEX": 51, "QUESTION": "Who won the Booker Prize in 2002? ", "PREDICTION": "The answer is: <strong>Peter Carey</strong>.\n\nThe <strong>Booker Prize</strong> is an annual"}
+{"INDEX": 52, "QUESTION": "US officially backs peace plan in which country in February 1993? ", "PREDICTION": "The answer is: <strong>Bosnia and Herzegovina</strong>.\n\nIn February 1993,"}
+{"INDEX": 53, "QUESTION": "The Humanitarian Ceasefire Agreement is signed by the government of which country and two rebel groups in April 2004? ", "PREDICTION": "The answer is: <strong>Sudan</strong>.\n\nIn April 2004, the Sudanese government"}
+{"INDEX": 54, "QUESTION": "Which movie did Russell Crowe win for best actor of Oscar in 2001? ", "PREDICTION": "The answer is: <strong>Gladiator</strong>.\n\nThe 73rd Academy Awards were held on"}
+{"INDEX": 55, "QUESTION": "Who resigns as head coach of University of Oklahoma's football in June 1989? ", "PREDICTION": "The answer is: <strong>Barry Switzer</strong>.\n\nIn June 1989, Barry"}
+{"INDEX": 56, "QUESTION": "Which African country was moving toward peace in early 2002, after having endured a 27-year-old civil war between the UNITA and MPLA factions? ", "PREDICTION": "The answer is: <strong>Angola</strong>.\n\nThe Angolan Civil War was a conflict that lasted from"}
+{"INDEX": 57, "QUESTION": "What nation won the 1990 FIFA World Cup? ", "PREDICTION": "The answer is: <strong>Germany</strong>.\n\nThe 1990 FIFA World Cup was the"}
+{"INDEX": 58, "QUESTION": "Later in January 1993, which American politician succeeded George H W Bush and became the forty-second President of the USA? ", "PREDICTION": "The answer is: <strong>Bill Clinton</strong>.\n\nBill Clinton was elected as the 42nd"}
+{"INDEX": 59, "QUESTION": "Who is sworn in as Singapore's 3rd Prime Minister in 2004? ", "PREDICTION": "The answer is: <strong>Lee Hsien Loong</strong>\n\nLee Hsien Loong is the current"}
+{"INDEX": 60, "QUESTION": "A Fairfax, Virginia jury finds whom guilty of murdering two US CIA employees in 1993? ", "PREDICTION": "The answer is: <b>Ramzi Yousef</b>.\n\nRamzi Yousef, a"}
+{"INDEX": 61, "QUESTION": "Who said he would destroy Israel in September 1990? ", "PREDICTION": "The answer is: <strong>Saddam Hussein</strong>.\n\nSaddam Hussein was the president of"}
+{"INDEX": 62, "QUESTION": "Which city bans smoking in all restaurants that seat 35 or more in April 1995? ", "PREDICTION": "The answer is: <strong>New York City</strong>.\n\nIn April 1995, New"}
+{"INDEX": 63, "QUESTION": "Who was elected president of Mexico in 2000? ", "PREDICTION": "The answer is: <strong>Vicente Fox</strong>.\n\nVicente Fox Quesada was born on July 2"}
+{"INDEX": 64, "QUESTION": "Which Pope lifted the Inquisition findings against Galileo in 1992? ", "PREDICTION": "The answer is: <strong>Pope John Paul II</strong>.\n\nPope John Paul II (192"}
+{"INDEX": 65, "QUESTION": "USA agreed to ease restrictions on which country in 1999 january? ", "PREDICTION": "The answer is: <strong>Iraq</strong>.\n\nIn January 1999, the United States"}
+{"INDEX": 66, "QUESTION": "Who was re-elected as the President of the United States in November 2004? ", "PREDICTION": "The answer is: <strong>George W. Bush</strong>.\n\nGeorge W. Bush was the 4"}
+{"INDEX": 67, "QUESTION": "What company did Compaq merge with in 2002? ", "PREDICTION": "The answer is: <strong>Hewlett-Packard</strong>\n\nCompaq Computer Corporation was an American computer manufacturer"}
+{"INDEX": 68, "QUESTION": "A car bomb explodes the hotel in which city in Indonesia in August 2003? ", "PREDICTION": "The answer is: <strong>Bali</strong>.\n\nOn August 5, 2003,"}
+{"INDEX": 69, "QUESTION": "Which African country was hit by appalling floods in 2000? ", "PREDICTION": "The answer is: <strong>Mozambique</strong>.\n\nThe 2000 Mozambique floods were a"}
+{"INDEX": 70, "QUESTION": "In December 2005, who became the fourth leader of his party to take on Tony Blair? ", "PREDICTION": "The answer is: <strong>Gordon Brown</strong>.\n\nAfter 10 years in power, Tony Blair"}
+{"INDEX": 71, "QUESTION": "Which platform was released by Apple on March 24, 2001? ", "PREDICTION": "The answer is: <strong>iPod</strong>.\n\nThe iPod was a portable media player designed and marketed by"}
+{"INDEX": 54, "QUESTION": "January 1st, 2002, saw which currency being used in several European countries including France, Germany and Ireland? ", "PREDICTION": "The answer is: <strong>Euro</strong>.\n\nThe euro is the official currency of the European Union ("}
+{"INDEX": 55, "QUESTION": "What collided with japanese fishing boat in 2001? ", "PREDICTION": "The answer is: <strong>A U.S. Navy submarine</strong>\n\nThe U.S. Navy"}
+{"INDEX": 56, "QUESTION": "In 1998, Exxon and Mobil merged and form what new company? ", "PREDICTION": "The answer is: <strong>ExxonMobil</strong>.\n\nExxonMobil is an American multinational oil and"}

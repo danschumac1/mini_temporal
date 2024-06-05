@@ -1,0 +1,52 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+BNB CONFIG
+load model
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+tokenizer
+load data
+Data loaded
+create prompts
+Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.04s/it]
+Map: 100%|██████████| 350/350 [00:00<00:00, 18575.07 examples/s]
+Data preprocessed
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+Starting training
+Map: 100%|██████████| 75/75 [00:00<00:00, 7641.94 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  0%|          | 0/6 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+{'loss': 4.9415, 'grad_norm': 6.847450256347656, 'learning_rate': 1.6750418760469013e-05, 'epoch': 0.73}
+ 17%|█▋        | 1/6 [01:57<09:49, 117.87s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 4.8824, 'grad_norm': 6.7569098472595215, 'learning_rate': 1.3400335008375211e-05, 'epoch': 1.45}
+ 33%|███▎      | 2/6 [03:57<07:55, 118.90s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 4.8663, 'grad_norm': 6.973238468170166, 'learning_rate': 1.005025125628141e-05, 'epoch': 2.18}
+ 50%|█████     | 3/6 [05:54<05:54, 118.06s/it]
+
+ 67%|██████▋   | 4/6 [07:50<03:54, 117.07s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 4.7165, 'grad_norm': 7.13325309753418, 'learning_rate': 3.350083752093803e-06, 'epoch': 3.64}
+ 83%|████████▎ | 5/6 [09:24<01:49, 109.05s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+100%|██████████| 6/6 [10:15<00:00, 89.06s/it]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 4.6559, 'grad_norm': 7.023099422454834, 'learning_rate': 0.0, 'epoch': 4.36}
+{'train_runtime': 617.7423, 'train_samples_per_second': 3.399, 'train_steps_per_second': 0.01, 'train_loss': 4.806711355845134, 'epoch': 4.36}
+Training completed
+Model and tokenizer saved at ./training/models/gemma-2b/no_context
+100%|██████████| 6/6 [10:16<00:00, 102.74s/it]

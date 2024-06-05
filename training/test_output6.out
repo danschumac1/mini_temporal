@@ -1,0 +1,112 @@
+nohup: ignoring input
+wandb: Currently logged in as: danschumac1 (danschumac1-nlp). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.5
+wandb: Run data is saved locally in /home/dan/mini_temporal/wandb/run-20240602_213805-ssmro1ok
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fresh-yogurt-177
+wandb: ⭐️ View project at https://wandb.ai/danschumac1-nlp/temporal_understanding
+wandb: 🚀 View run at https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/ssmro1ok/workspace
+WANDB
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.01s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  2.07it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.78it/s]
+tokenizer
+load data
+Data loaded
+<bos><start_of_turn>user
+Who did not ordain women until 1994?<end_of_turn>
+<start_of_turn>model
+The answer is: The Church of England.<end_of_turn>
+<eos>
+<class 'str'>
+Map:   0%|          | 0/60000 [00:00<?, ? examples/s]Map:   3%|▎         | 2000/60000 [00:00<00:05, 11348.21 examples/s]Map:   7%|▋         | 4000/60000 [00:00<00:05, 10484.97 examples/s]Map:  10%|█         | 6000/60000 [00:00<00:05, 9984.18 examples/s] Map:  13%|█▎        | 8000/60000 [00:00<00:05, 9839.97 examples/s]Map:  15%|█▌        | 9000/60000 [00:00<00:05, 9654.80 examples/s]Map:  18%|█▊        | 11000/60000 [00:01<00:04, 9954.53 examples/s]Map:  22%|██▏       | 13000/60000 [00:01<00:04, 10241.98 examples/s]Map:  25%|██▌       | 15000/60000 [00:01<00:04, 10025.07 examples/s]Map:  28%|██▊       | 17000/60000 [00:01<00:04, 10262.58 examples/s]Map:  32%|███▏      | 19000/60000 [00:01<00:03, 10418.77 examples/s]Map:  35%|███▌      | 21000/60000 [00:02<00:03, 10447.22 examples/s]Map:  38%|███▊      | 23000/60000 [00:02<00:04, 8943.33 examples/s] Map:  42%|████▏     | 25000/60000 [00:02<00:03, 9412.75 examples/s]Map:  45%|████▌     | 27000/60000 [00:02<00:03, 9780.03 examples/s]Map:  48%|████▊     | 29000/60000 [00:02<00:03, 10025.99 examples/s]Map:  52%|█████▏    | 31000/60000 [00:03<00:03, 9492.72 examples/s] Map:  55%|█████▌    | 33000/60000 [00:03<00:02, 9792.74 examples/s]Map:  58%|█████▊    | 35000/60000 [00:03<00:02, 10052.01 examples/s]Map:  62%|██████▏   | 37000/60000 [00:03<00:02, 10237.21 examples/s]Map:  65%|██████▌   | 39000/60000 [00:03<00:02, 10364.43 examples/s]Map:  68%|██████▊   | 41000/60000 [00:04<00:01, 10487.67 examples/s]Map:  72%|███████▏  | 43000/60000 [00:04<00:01, 10552.38 examples/s]Map:  75%|███████▌  | 45000/60000 [00:04<00:01, 10598.68 examples/s]Map:  78%|███████▊  | 47000/60000 [00:04<00:01, 10628.10 examples/s]Map:  82%|████████▏ | 49000/60000 [00:04<00:01, 9054.61 examples/s] Map:  85%|████████▌ | 51000/60000 [00:05<00:00, 9498.28 examples/s]Map:  88%|████████▊ | 53000/60000 [00:05<00:00, 9832.15 examples/s]Map:  92%|█████████▏| 55000/60000 [00:05<00:00, 10050.31 examples/s]Map:  95%|█████████▌| 57000/60000 [00:05<00:00, 10244.31 examples/s]Map:  98%|█████████▊| 59000/60000 [00:05<00:00, 8723.73 examples/s] Map: 100%|██████████| 60000/60000 [00:06<00:00, 9842.56 examples/s]
+Dataset({
+    features: ['question', 'answer', 'type', 'relevant_context', 'random_context', 'wrong_date_context', 'no_prompt', 'rel_prompt', 'rand_prompt', 'wd_prompt', 'input_ids', 'attention_mask'],
+    num_rows: 60000
+})
+<bos><start_of_turn>user
+How many northern counties remained part of Britain until 1922?<end_of_turn>
+<start_of_turn>model
+The answer is: six.<end_of_turn>
+<eos>
+<class 'str'>
+Map:   0%|          | 0/7500 [00:00<?, ? examples/s]Map:  27%|██▋       | 2000/7500 [00:00<00:00, 12836.06 examples/s]Map:  53%|█████▎    | 4000/7500 [00:00<00:00, 11421.19 examples/s]Map:  80%|████████  | 6000/7500 [00:00<00:00, 11160.12 examples/s]Map: 100%|██████████| 7500/7500 [00:00<00:00, 10691.31 examples/s]Map: 100%|██████████| 7500/7500 [00:00<00:00, 10957.24 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Dataset({
+    features: ['question', 'answer', 'type', 'relevant_context', 'random_context', 'wrong_date_context', 'no_prompt', 'rel_prompt', 'rand_prompt', 'wd_prompt', 'input_ids', 'attention_mask'],
+    num_rows: 7500
+})
+Data preprocessed
+lora
+Model prepared for training
+Trainer set up
+  0%|          | 0/468 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  0%|          | 1/468 [00:31<4:07:19, 31.78s/it]  0%|          | 2/468 [01:03<4:06:42, 31.77s/it]  1%|          | 3/468 [01:35<4:06:10, 31.77s/it]  1%|          | 4/468 [02:10<4:15:04, 32.98s/it]  1%|          | 5/468 [02:41<4:08:49, 32.25s/it]  1%|▏         | 6/468 [03:13<4:07:56, 32.20s/it]  1%|▏         | 7/468 [03:43<4:02:51, 31.61s/it]  2%|▏         | 8/468 [04:15<4:03:01, 31.70s/it]  2%|▏         | 9/468 [04:46<4:00:09, 31.39s/it]  2%|▏         | 10/468 [05:18<4:00:45, 31.54s/it]  2%|▏         | 11/468 [05:49<4:00:37, 31.59s/it]  3%|▎         | 12/468 [06:23<4:04:32, 32.18s/it]  3%|▎         | 13/468 [06:54<4:02:53, 32.03s/it]  3%|▎         | 14/468 [07:26<4:02:04, 31.99s/it]  3%|▎         | 15/468 [07:57<3:59:21, 31.70s/it]  3%|▎         | 16/468 [08:29<3:57:30, 31.53s/it]  4%|▎         | 17/468 [09:00<3:55:51, 31.38s/it]  4%|▍         | 18/468 [09:31<3:55:32, 31.40s/it]  4%|▍         | 19/468 [10:03<3:56:20, 31.58s/it]  4%|▍         | 20/468 [10:38<4:02:37, 32.49s/it]  4%|▍         | 21/468 [11:10<4:01:49, 32.46s/it]  5%|▍         | 22/468 [11:41<3:58:25, 32.07s/it]  5%|▍         | 23/468 [12:13<3:57:40, 32.05s/it]  5%|▌         | 24/468 [12:46<3:59:00, 32.30s/it]  5%|▌         | 25/468 [13:20<4:03:05, 32.92s/it]  6%|▌         | 26/468 [13:53<4:00:54, 32.70s/it]  6%|▌         | 27/468 [14:26<4:02:41, 33.02s/it]  6%|▌         | 28/468 [14:58<3:59:32, 32.67s/it]  6%|▌         | 29/468 [15:34<4:04:59, 33.48s/it]  6%|▋         | 30/468 [16:04<3:58:38, 32.69s/it]  7%|▋         | 31/468 [16:37<3:57:17, 32.58s/it]  7%|▋         | 32/468 [17:08<3:54:30, 32.27s/it]  7%|▋         | 33/468 [17:41<3:54:31, 32.35s/it]  7%|▋         | 34/468 [18:13<3:52:33, 32.15s/it]  7%|▋         | 35/468 [18:46<3:54:27, 32.49s/it]  8%|▊         | 36/468 [19:17<3:50:32, 32.02s/it]  8%|▊         | 37/468 [19:54<4:00:50, 33.53s/it]  8%|▊         | 38/468 [20:24<3:52:54, 32.50s/it]  8%|▊         | 39/468 [20:55<3:49:48, 32.14s/it]  9%|▊         | 40/468 [21:26<3:46:35, 31.77s/it]  9%|▉         | 41/468 [21:59<3:47:37, 31.98s/it]  9%|▉         | 42/468 [22:32<3:50:01, 32.40s/it]  9%|▉         | 43/468 [23:03<3:45:48, 31.88s/it]  9%|▉         | 44/468 [23:35<3:45:42, 31.94s/it] 10%|▉         | 45/468 [24:11<3:54:54, 33.32s/it] 10%|▉         | 46/468 [24:44<3:53:28, 33.20s/it] 10%|█         | 47/468 [25:17<3:52:21, 33.12s/it] 10%|█         | 48/468 [25:50<3:50:34, 32.94s/it] 10%|█         | 49/468 [26:23<3:51:50, 33.20s/it] 11%|█         | 50/468 [26:54<3:46:07, 32.46s/it] 11%|█         | 51/468 [27:27<3:47:05, 32.68s/it] 11%|█         | 52/468 [28:00<3:47:27, 32.81s/it] 11%|█▏        | 53/468 [28:33<3:45:25, 32.59s/it] 12%|█▏        | 54/468 [29:08<3:50:27, 33.40s/it] 12%|█▏        | 55/468 [29:39<3:44:42, 32.65s/it] 12%|█▏        | 56/468 [30:10<3:40:21, 32.09s/it] 12%|█▏        | 57/468 [30:42<3:39:58, 32.11s/it] 12%|█▏        | 58/468 [31:13<3:38:33, 31.98s/it] 13%|█▎        | 59/468 [31:44<3:36:17, 31.73s/it] 13%|█▎        | 60/468 [32:17<3:38:09, 32.08s/it] 13%|█▎        | 61/468 [32:50<3:38:49, 32.26s/it] 13%|█▎        | 62/468 [33:23<3:40:22, 32.57s/it] 13%|█▎        | 63/468 [33:59<3:45:44, 33.44s/it] 14%|█▎        | 64/468 [34:30<3:40:41, 32.78s/it] 14%|█▍        | 65/468 [35:02<3:38:15, 32.50s/it] 14%|█▍        | 66/468 [35:33<3:35:49, 32.21s/it] 14%|█▍        | 67/468 [36:06<3:35:45, 32.28s/it] 15%|█▍        | 68/468 [36:40<3:38:07, 32.72s/it] 15%|█▍        | 69/468 [37:11<3:35:34, 32.42s/it] 15%|█▍        | 70/468 [37:44<3:35:35, 32.50s/it] 15%|█▌        | 71/468 [38:19<3:39:38, 33.20s/it] 15%|█▌        | 72/468 [38:51<3:36:49, 32.85s/it] 16%|█▌        | 73/468 [39:22<3:32:39, 32.30s/it] 16%|█▌        | 74/468 [39:54<3:32:27, 32.36s/it] 16%|█▌        | 75/468 [40:25<3:27:54, 31.74s/it] 16%|█▌        | 76/468 [40:56<3:26:16, 31.57s/it] 16%|█▋        | 77/468 [41:28<3:25:55, 31.60s/it] 17%|█▋        | 78/468 [41:59<3:25:04, 31.55s/it] 17%|█▋        | 79/468 [42:33<3:29:47, 32.36s/it] 17%|█▋        | 80/468 [43:05<3:27:49, 32.14s/it] 17%|█▋        | 81/468 [43:36<3:24:54, 31.77s/it] 18%|█▊        | 82/468 [44:10<3:29:33, 32.57s/it] 18%|█▊        | 83/468 [44:42<3:27:38, 32.36s/it] 18%|█▊        | 84/468 [45:13<3:24:24, 31.94s/it] 18%|█▊        | 85/468 [45:44<3:21:46, 31.61s/it] 18%|█▊        | 86/468 [46:16<3:22:15, 31.77s/it] 19%|█▊        | 87/468 [46:48<3:22:51, 31.95s/it] 19%|█▉        | 88/468 [47:20<3:21:41, 31.84s/it] 19%|█▉        | 89/468 [47:50<3:18:16, 31.39s/it] 19%|█▉        | 90/468 [48:22<3:17:37, 31.37s/it] 19%|█▉        | 91/468 [48:52<3:15:31, 31.12s/it] 20%|█▉        | 92/468 [49:23<3:15:06, 31.13s/it] 20%|█▉        | 93/468 [49:53<3:12:37, 30.82s/it] 20%|██        | 94/468 [50:24<3:11:06, 30.66s/it] 20%|██        | 95/468 [50:58<3:17:24, 31.75s/it] 21%|██        | 96/468 [51:30<3:16:38, 31.72s/it] 21%|██        | 97/468 [52:00<3:14:21, 31.43s/it] 21%|██        | 98/468 [52:32<3:13:30, 31.38s/it] 21%|██        | 99/468 [53:04<3:15:16, 31.75s/it] 21%|██▏       | 100/468 [53:35<3:12:23, 31.37s/it] 22%|██▏       | 101/468 [54:06<3:12:06, 31.41s/it] 22%|██▏       | 102/468 [54:37<3:11:02, 31.32s/it] 22%|██▏       | 103/468 [55:11<3:15:09, 32.08s/it] 22%|██▏       | 104/468 [55:48<3:23:39, 33.57s/it] 22%|██▏       | 105/468 [56:21<3:20:49, 33.19s/it] 23%|██▎       | 106/468 [56:53<3:19:38, 33.09s/it] 23%|██▎       | 107/468 [57:26<3:17:14, 32.78s/it] 23%|██▎       | 108/468 [57:56<3:13:20, 32.22s/it] 23%|██▎       | 109/468 [58:27<3:09:35, 31.69s/it] 24%|██▎       | 110/468 [59:00<3:11:46, 32.14s/it] 24%|██▎       | 111/468 [59:32<3:10:34, 32.03s/it] 24%|██▍       | 112/468 [1:00:07<3:15:12, 32.90s/it] 24%|██▍       | 113/468 [1:00:40<3:15:06, 32.98s/it] 24%|██▍       | 114/468 [1:01:12<3:13:00, 32.71s/it] 25%|██▍       | 115/468 [1:01:44<3:10:42, 32.42s/it] 25%|██▍       | 116/468 [1:02:15<3:08:31, 32.14s/it] 25%|██▌       | 117/468 [1:02:47<3:07:16, 32.01s/it] 25%|██▌       | 118/468 [1:03:20<3:09:23, 32.47s/it] 25%|██▌       | 119/468 [1:03:53<3:08:07, 32.34s/it] 26%|██▌       | 120/468 [1:04:26<3:08:57, 32.58s/it] 26%|██▌       | 121/468 [1:05:00<3:12:11, 33.23s/it]Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 320, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 305, in main
+    trainer.train()
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2216, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3238, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3264, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/utils/operations.py", line 822, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/utils/operations.py", line 810, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/peft_model.py", line 1129, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 161, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 1113, in forward
+    logits = logits.float()
+             ^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 49.42 GiB. GPU 0 has a total capacity of 47.53 GiB of which 5.66 GiB is free. Process 834703 has 3.56 GiB memory in use. Including non-PyTorch memory, this process has 38.23 GiB memory in use. Of the allocated memory 37.81 GiB is allocated by PyTorch, and 93.50 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+wandb: - 74.863 MB of 74.863 MB uploadedwandb: \ 74.863 MB of 74.893 MB uploadedwandb: 🚀 View run fresh-yogurt-177 at: https://wandb.ai/danschumac1-nlp/temporal_understanding/runs/ssmro1ok/workspace
+wandb: Synced 6 W&B file(s), 0 media file(s), 4 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240602_213805-ssmro1ok/logs

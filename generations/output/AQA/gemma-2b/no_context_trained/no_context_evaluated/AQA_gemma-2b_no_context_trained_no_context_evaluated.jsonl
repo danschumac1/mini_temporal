@@ -1,0 +1,16 @@
+Using NVIDIA RTX A6000
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+Map:   0%|          | 0/7500 [00:00<?, ? examples/s]Map:  80%|████████  | 6000/7500 [00:00<00:00, 47505.90 examples/s]Map: 100%|██████████| 7500/7500 [00:00<00:00, 48544.74 examples/s]
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+
+
+ GENERATED TEXT: <eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><eos><bos>Answer the following question.
+Question: How many runs did Galarraga drive in 1998?
+The answer is:  
+
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  2.05it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.47it/s]

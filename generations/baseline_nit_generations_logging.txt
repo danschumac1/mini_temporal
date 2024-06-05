@@ -1,0 +1,18 @@
+Generation script started at Sat 01 Jun 2024 06:06:51 PM CDT
+Processing TQE, model gemma-7b, evaluated with relevant_context
+Completed TQE, model gemma-7b, evaluated with relevant_context
+Processing TQE, model gemma-7b, evaluated with no_context
+Completed TQE, model gemma-7b, evaluated with no_context
+Processing TQE, model gemma-7b, evaluated with random_context
+Completed TQE, model gemma-7b, evaluated with random_context
+Processing TQE, model gemma-7b, evaluated with wrong_date_context
+Completed TQE, model gemma-7b, evaluated with wrong_date_context
+Processing TQE, model gemma-2b, evaluated with relevant_context
+Completed TQE, model gemma-2b, evaluated with relevant_context
+Processing TQE, model gemma-2b, evaluated with no_context
+Completed TQE, model gemma-2b, evaluated with no_context
+Processing TQE, model gemma-2b, evaluated with random_context
+Completed TQE, model gemma-2b, evaluated with random_context
+Processing TQE, model gemma-2b, evaluated with wrong_date_context
+Completed TQE, model gemma-2b, evaluated with wrong_date_context
+NIT script ended at Sat 01 Jun 2024 06:24:08 PM CDT

@@ -1,0 +1,6 @@
+Generation script started at Tue 04 Jun 2024 11:49:19 AM CDT
+Processing TQE, model gemma-7b, trained on mixed_context, evaluated with mixed_context
+Completed TQE, model gemma-7b, trained on mixed_context, evaluated with mixed_context
+Processing TQE, model gemma-2b, trained on mixed_context, evaluated with mixed_context
+Completed TQE, model gemma-2b, trained on mixed_context, evaluated with mixed_context
+Generation script ended at Tue 04 Jun 2024 11:49:26 AM CDT

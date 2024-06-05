@@ -1,0 +1,86 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+`config.hidden_act` is ignored, you should use `config.hidden_activation` instead.
+Gemma's activation function will be set to `gelu_pytorch_tanh`. Please, use
+`config.hidden_activation` if you want to override this behaviour.
+See https://github.com/huggingface/transformers/pull/29402 for more details.
+Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.41s/it]
+tokenizer
+load data
+
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.29it/s]
+Preprocessing dataset with context: mixed_context
+Using prompt column: mixed_prompt
+First 5 entries of df[mixed_prompt]:
+0    <bos>Who did not ordain women until 1994? The ...
+1    <bos>What team drafted Kramer in the 1980-81 s...
+2    <bos>Who expects Interface to earn $1.15 a sha...
+3    <bos>Who said Carnival would increase its capa...
+4    <bos>Who imposed martial law on the native Tai...
+Name: mixed_prompt, dtype: object
+
+
+Map:  90%|█████████ | 54000/60000 [00:05<00:00, 11053.90 examples/s]
+Dataset after tokenization:
+{'question': 'Who went to Vietnam in 2001 to observe the Cat Ba langur?', 'answer': 'Rogers', 'type': 'train', 'relevant_context': "In 2001, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population.", 'random_context': "In 1987, Secretary of Housing and Urban Development Samuel R. Pierce Jr. ordered aides to make special efforts to approve a $5.6 million grant for a Florida project promoted by Mr. Wilson. This decision raised concerns about potential favoritism and political influence in the allocation of federal funds. The controversy surrounding the grant approval process led to further scrutiny of the department's practices and policies.", 'wrong_date_context': "In 1896, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population.", 'no_prompt': '<bos>Who went to Vietnam in 2001 to observe the Cat Ba langur? The answer is: Rogers<eos>', 'rel_prompt': "<bos>Who went to Vietnam in 2001 to observe the Cat Ba langur? Here is the context: In 2001, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population. The answer is: Rogers<eos>", 'rand_prompt': "<bos>Who went to Vietnam in 2001 to observe the Cat Ba langur? Here is the context: In 1987, Secretary of Housing and Urban Development Samuel R. Pierce Jr. ordered aides to make special efforts to approve a $5.6 million grant for a Florida project promoted by Mr. Wilson. This decision raised concerns about potential favoritism and political influence in the allocation of federal funds. The controversy surrounding the grant approval process led to further scrutiny of the department's practices and policies. The answer is: Rogers<eos>", 'wd_prompt': "<bos>Who went to Vietnam in 2001 to observe the Cat Ba langur? Here is the context: In 1896, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population. The answer is: Rogers<eos>", 'mixed_prompt': "<bos>Who went to Vietnam in 2001 to observe the Cat Ba langur? Here is the context: In 1896, primatologist Dr. Jane Rogers traveled to Vietnam to observe the Cat Ba langur, a critically endangered species of leaf-eating monkey found only on Cat Ba Island in Ha Long Bay. Dr. Rogers' research focused on the langur's behavior, social structure, and habitat in an effort to develop conservation strategies for the species. Her work in Vietnam contributed significantly to the understanding of the Cat Ba langur and the efforts to protect its dwindling population. The answer is: Rogers<eos>", 'input_ids': [2, 6571, 3815, 577, 22878, 575, 235248, 235284, 235276, 235276, 235274, 577, 20483, 573, 6828, 6421, 6877, 525, 235336, 5698, 603, 573, 4807, 235292, 878, 235248, 235274, 235321, 235315, 235318, 235269, 1168, 771, 39538, 3718, 235265, 16165, 31428, 40862, 577, 22878, 577, 20483, 573, 6828, 6421, 6877, 525, 235269, 476, 57278, 62526, 6202, 576, 12325, 235290, 71409, 35918, 1942, 1297, 611, 6828, 6421, 8880, 575, 5478, 6002, 7011, 235265, 3718, 235265, 31428, 235303, 3679, 14779, 611, 573, 6877, 525, 235303, 235256, 8409, 235269, 3127, 5449, 235269, 578, 23868, 575, 671, 8395, 577, 2115, 19632, 14869, 604, 573, 6202, 235265, 3636, 1160, 575, 22878, 20430, 12879, 577, 573, 8377, 576, 573, 6828, 6421, 6877, 525, 578, 573, 9331, 577, 9051, 1277, 197690, 6280, 235265, 714, 3448, 603, 235292, 31428, 1], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}
+Error decoding dataset: 0
+Preprocessing dataset with context: mixed_context
+Using prompt column: mixed_prompt
+First 5 entries of df[mixed_prompt]:
+0    <bos>How many northern counties remained part ...
+1    <bos>What was the value of gold on October 02,...
+2    <bos>What airline crashed into a DC-10 at Chic...
+3    <bos>Who did Dean Gitter review a 1988 study f...
+4    <bos>How many members did the travel associati...
+Name: mixed_prompt, dtype: object
+Dataset after tokenization:
+{'question': 'How many people did Elizabeth claim in 1990?', 'answer': 'an additional 10,000', 'type': 'dev', 'relevant_context': 'In 1990, Elizabeth claimed an additional 10,000 people as dependents on her tax return. This led to an investigation by the Internal Revenue Service (IRS) to verify the legitimacy of these claims. The investigation revealed that Elizabeth had mistakenly included individuals who did not meet the criteria for being claimed as dependents, resulting in penalties and fines imposed by the IRS. The incident prompted Elizabeth to seek professional tax advice and diligently review the eligibility of dependents for future tax filings.', 'random_context': "''Germany, 1866-1945'' is a historical book written by Gordon A. Craig, an American historian and professor. The book was first published in 1978 and provides a comprehensive overview of the history of Germany from 1866 to 1945. It covers significant events such as the unification of Germany, World War I, the Weimar Republic, and the rise of the Nazi regime. Craig's work is highly regarded for its thorough research and insightful analysis, making it a valuable resource for anyone interested in German history during this period.", 'wrong_date_context': 'In 1969, Elizabeth claimed an additional 10,000 people as dependents on her tax return. This led to an investigation by the Internal Revenue Service (IRS) to verify the legitimacy of these claims. The investigation revealed that Elizabeth had mistakenly included individuals who did not meet the criteria for being claimed as dependents, resulting in penalties and fines imposed by the IRS. The incident prompted Elizabeth to seek professional tax advice and diligently review the eligibility of dependents for future tax filings.', 'no_prompt': '<bos>How many people did Elizabeth claim in 1990? The answer is: an additional 10,000<eos>', 'rel_prompt': '<bos>How many people did Elizabeth claim in 1990? Here is the context: In 1990, Elizabeth claimed an additional 10,000 people as dependents on her tax return. This led to an investigation by the Internal Revenue Service (IRS) to verify the legitimacy of these claims. The investigation revealed that Elizabeth had mistakenly included individuals who did not meet the criteria for being claimed as dependents, resulting in penalties and fines imposed by the IRS. The incident prompted Elizabeth to seek professional tax advice and diligently review the eligibility of dependents for future tax filings. The answer is: an additional 10,000<eos>', 'rand_prompt': "<bos>How many people did Elizabeth claim in 1990? Here is the context: ''Germany, 1866-1945'' is a historical book written by Gordon A. Craig, an American historian and professor. The book was first published in 1978 and provides a comprehensive overview of the history of Germany from 1866 to 1945. It covers significant events such as the unification of Germany, World War I, the Weimar Republic, and the rise of the Nazi regime. Craig's work is highly regarded for its thorough research and insightful analysis, making it a valuable resource for anyone interested in German history during this period. The answer is: an additional 10,000<eos>", 'wd_prompt': '<bos>How many people did Elizabeth claim in 1990? Here is the context: In 1969, Elizabeth claimed an additional 10,000 people as dependents on her tax return. This led to an investigation by the Internal Revenue Service (IRS) to verify the legitimacy of these claims. The investigation revealed that Elizabeth had mistakenly included individuals who did not meet the criteria for being claimed as dependents, resulting in penalties and fines imposed by the IRS. The incident prompted Elizabeth to seek professional tax advice and diligently review the eligibility of dependents for future tax filings. The answer is: an additional 10,000<eos>', 'mixed_prompt': '<bos>How many people did Elizabeth claim in 1990? The answer is: an additional 10,000<eos>', 'input_ids': [2, 2299, 1767, 1461, 1498, 15419, 5035, 575, 235248, 235274, 235315, 235315, 235276, 235336, 714, 3448, 603, 235292, 671, 5942, 235248, 235274, 235276, 235269, 235276, 235276, 235276, 1], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}
+Error decoding dataset: 0
+Data preprocessed
+Map: 100%|██████████| 60000/60000 [00:05<00:00, 10644.07 examples/s]
+Map: 100%|██████████| 7500/7500 [00:00<00:00, 10289.86 examples/s]
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/training_args.py:1474: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+  0%|          | 0/468 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+
+
+
+
+
+
+
+  2%|▏         | 8/468 [10:07<9:39:15, 75.56s/it]Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_MIXED_nit.py", line 309, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_MIXED_nit.py", line 295, in main
+    trainer.train()
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2216, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3250, in training_step
+    self.accelerator.backward(loss)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/accelerator.py", line 2125, in backward
+    loss.backward(**kwargs)
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

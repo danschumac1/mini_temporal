@@ -1,0 +1,6 @@
+nohup: ignoring input
+\n\nAQA: TRAINING gemma-2b WITH wrong_date_context\n\n
+\n\nAQA: TRAINING gemma-2b WITH random_context\n\n
+\n\nAQA: TRAINING gemma-2b WITH relevant_context\n\n
+\n\nAQA: TRAINING gemma-7b WITH wrong_date_context\n\n
+\n\nAQA: TRAINING gemma-7b WITH random_context\n\n

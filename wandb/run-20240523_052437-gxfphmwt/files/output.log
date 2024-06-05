@@ -1,0 +1,213 @@
+LOG INTO HUGGING FACE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /home/dan/.cache/huggingface/token
+Login successful
+load model
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.42it/s]
+tokenizer
+load data
+Data loaded
+<bos><start_of_turn>user
+Who did not ordain women until 1994?<end_of_turn>
+<start_of_turn>model
+The answer is: The Church of England.<end_of_turn>
+<eos>
+<class 'str'>
+
+
+Map:  88%|████████▊ | 53000/60000 [00:05<00:00, 9375.61 examples/s]
+<bos><start_of_turn>user
+How many northern counties remained part of Britain until 1922?<end_of_turn>
+<start_of_turn>model
+The answer is: six.<end_of_turn>
+<eos>
+Map: 100%|██████████| 60000/60000 [00:06<00:00, 9428.68 examples/s]
+Map: 100%|██████████| 7500/7500 [00:00<00:00, 10323.48 examples/s]
+Data preprocessed
+lora
+Trainable: 78446592 | total: 2584619008 | Percentage: 3.0351%
+Model prepared for training
+Trainer set up
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 4.5397, 'grad_norm': 5.365210056304932, 'learning_rate': 1.9979272839941452e-05, 'epoch': 0.0}
+  0%|          | 0/936 [00:00<?, ?it/s]/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/bitsandbytes/nn/modules.py:426: UserWarning: Input type into Linear4bit is torch.float16, but bnb_4bit_compute_dtype=torch.float32 (default). This will lead to slow inference or training speed.
+  warnings.warn(
+  0%|          | 1/936 [02:24<37:37:36, 144.87s/it]
+
+  0%|          | 2/936 [04:56<38:41:13, 149.12s/it]
+
+  0%|          | 3/936 [07:26<38:42:21, 149.35s/it]
+
+  0%|          | 4/936 [09:52<38:17:13, 147.89s/it]
+
+  1%|          | 5/936 [12:19<38:13:03, 147.78s/it]
+
+  1%|          | 6/936 [14:46<38:05:20, 147.44s/it]
+
+  1%|          | 7/936 [17:14<38:05:33, 147.61s/it]
+
+  1%|          | 8/936 [19:36<37:35:49, 145.85s/it]
+
+  1%|          | 9/936 [22:02<37:35:10, 145.97s/it]
+
+  1%|          | 10/936 [24:28<37:33:24, 146.01s/it]
+
+
+  1%|▏         | 12/936 [29:21<37:33:18, 146.32s/it]
+
+  1%|▏         | 13/936 [31:53<37:57:19, 148.04s/it]
+{'loss': 2.9302, 'grad_norm': 3.35084867477417, 'learning_rate': 1.972285436499033e-05, 'epoch': 0.06}
+
+  1%|▏         | 14/936 [34:26<38:16:42, 149.46s/it]
+
+  2%|▏         | 15/936 [36:48<37:41:16, 147.31s/it]
+
+  2%|▏         | 16/936 [39:17<37:44:20, 147.67s/it]
+
+  2%|▏         | 17/936 [41:45<37:43:59, 147.81s/it]
+
+  2%|▏         | 18/936 [44:14<37:48:35, 148.27s/it]
+
+  2%|▏         | 19/936 [46:42<37:44:37, 148.18s/it]
+
+  2%|▏         | 20/936 [49:11<37:43:01, 148.23s/it]
+
+  2%|▏         | 21/936 [51:46<38:14:24, 150.45s/it]
+
+
+  2%|▏         | 23/936 [56:44<37:53:54, 149.44s/it]
+{'loss': 2.3088, 'grad_norm': 2.8624489307403564, 'learning_rate': 1.9509172302531064e-05, 'epoch': 0.1}
+
+  3%|▎         | 24/936 [59:09<37:31:01, 148.09s/it]
+
+  3%|▎         | 25/936 [1:01:29<36:55:02, 145.89s/it]
+
+  3%|▎         | 26/936 [1:03:54<36:46:50, 145.51s/it]
+
+  3%|▎         | 27/936 [1:06:18<36:38:57, 145.15s/it]
+
+  3%|▎         | 28/936 [1:08:39<36:17:18, 143.87s/it]
+
+  3%|▎         | 29/936 [1:11:11<36:52:00, 146.33s/it]
+
+  3%|▎         | 30/936 [1:13:41<37:04:28, 147.32s/it]
+
+  3%|▎         | 31/936 [1:16:08<36:59:50, 147.17s/it]
+
+  3%|▎         | 32/936 [1:18:32<36:44:44, 146.33s/it]
+
+  4%|▎         | 33/936 [1:20:53<36:17:43, 144.70s/it]
+
+  4%|▎         | 34/936 [1:23:26<36:52:02, 147.14s/it]
+
+  4%|▎         | 35/936 [1:25:51<36:43:16, 146.72s/it]
+
+  4%|▍         | 36/936 [1:28:19<36:44:47, 146.99s/it]
+
+  4%|▍         | 37/936 [1:30:51<37:03:59, 148.43s/it]
+
+  4%|▍         | 38/936 [1:33:13<36:32:44, 146.51s/it]
+
+
+  4%|▍         | 40/936 [1:38:10<36:42:52, 147.51s/it]
+{'loss': 1.9533, 'grad_norm': 1.7933950424194336, 'learning_rate': 1.9145912796350313e-05, 'epoch': 0.17}
+
+  4%|▍         | 41/936 [1:40:47<37:24:50, 150.49s/it]
+
+  4%|▍         | 42/936 [1:43:13<37:00:16, 149.01s/it]
+
+  5%|▍         | 43/936 [1:45:43<36:59:59, 149.16s/it]
+
+  5%|▍         | 44/936 [1:48:05<36:27:51, 147.16s/it]
+
+  5%|▍         | 45/936 [1:50:29<36:12:00, 146.26s/it]
+
+  5%|▍         | 46/936 [1:52:54<36:04:24, 145.92s/it]
+
+  5%|▌         | 47/936 [1:55:14<35:36:25, 144.19s/it]
+
+  5%|▌         | 48/936 [1:57:42<35:50:07, 145.28s/it]
+
+  5%|▌         | 49/936 [2:00:04<35:32:03, 144.22s/it]
+
+  5%|▌         | 50/936 [2:02:36<36:02:48, 146.47s/it]
+
+  5%|▌         | 51/936 [2:05:06<36:16:14, 147.54s/it]
+
+  6%|▌         | 52/936 [2:07:51<37:32:22, 152.88s/it]
+
+  6%|▌         | 53/936 [2:10:23<37:24:16, 152.50s/it]
+
+  6%|▌         | 54/936 [2:12:47<36:46:39, 150.11s/it]
+
+  6%|▌         | 55/936 [2:15:16<36:37:24, 149.65s/it]
+
+  6%|▌         | 56/936 [2:17:38<36:02:59, 147.48s/it]
+
+
+  6%|▌         | 58/936 [2:22:34<35:54:08, 147.21s/it]
+{'loss': 1.86, 'grad_norm': 1.5355144739151, 'learning_rate': 1.876128508392363e-05, 'epoch': 0.25}
+
+  6%|▋         | 59/936 [2:25:02<35:57:06, 147.58s/it]
+
+  6%|▋         | 60/936 [2:27:26<35:39:28, 146.54s/it]Traceback (most recent call last):
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 284, in <module>
+    main()
+  File "/home/dan/mini_temporal/training/fine_tune_gemma_it.py", line 270, in main
+    trainer.train()
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 1885, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 2216, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3238, in training_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/trainer.py", line 3264, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/peft_model.py", line 1129, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 161, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/transformers/models/gemma/modeling_gemma.py", line 1112, in forward
+    logits = self.lm_head(hidden_states)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dan/miniconda3/envs/danEnv/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 49.42 GiB. GPU 0 has a total capacity of 47.53 GiB of which 32.84 GiB is free. Process 2535351 has 344.00 MiB memory in use. Including non-PyTorch memory, this process has 14.09 GiB memory in use. Of the allocated memory 11.94 GiB is allocated by PyTorch, and 1.82 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
